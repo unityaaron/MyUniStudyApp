@@ -15,13 +15,14 @@ import MorePage from './pages/MorePage';
 import ScholarshipsPage from './pages/ScholarshipsPage';
 import JobsPage from './pages/JobsPage';
 import JobsAndScholarships from './pages/JobsAndScholarships';
-
+import LoginPage from './pages/LoginPage'; 
 
 
 const App = () => {
   return (
     <Router>
       <Routes>
+         <Route path="/login" element={<LoginPage />} />
         <Route element={<AAUStudyAppLayout />}>
           <Route path="/" element={<Home />} />        
           <Route path="/news" element={<News/>} />

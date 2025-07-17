@@ -25,8 +25,8 @@ const App = () => {
       <Routes>
          <Route path="/login" element={<Login />} />
          <Route path="register" element={<Register />}/>
-        
 
+        {/* layout route section*/}
         <Route element={<AAUStudyAppLayout />}>
           <Route path="/" element={<Home />} />        
           <Route path="/news" element={<News/>} />

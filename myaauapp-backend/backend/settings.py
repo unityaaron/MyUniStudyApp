@@ -11,6 +11,7 @@ https://docs.djangoproject.com/en/5.2/ref/settings/
 """
 
 from pathlib import Path
+from decouple import config
 
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
@@ -21,7 +22,8 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 # See https://docs.djangoproject.com/en/5.2/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = 'django-insecure-ry&_82m2-me@r(ras*l3)o160m=_i5%y&7hqj#3#68^-j@5y%j'
+# ✅ Secret Key
+SECRET_KEY = config('SECRET_KEY')
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
@@ -32,57 +34,91 @@ ALLOWED_HOSTS = []
 # Application definition
 
 INSTALLED_APPS = [
-    # Django built-ins (leave these at the top)
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    
-    # Required before allauth
-    'django.contrib.sites',
 
-    # Third-party packages
+    # Django REST Framework
     'rest_framework',
-    'rest_framework.authtoken',
-    'corsheaders',
-    'dj_rest_auth',
-    'dj_rest_auth.registration',
+    'rest_framework.authtoken', # Needed for Token Authentication (dj-rest-auth uses it)
 
+    # dj-rest-auth and django-allauth requirements
+    'django.contrib.sites', # IMPORTANT: Must be here for django-allauth
     'allauth',
-    'allauth.account',
+    'allauth.account', # Keep this for now, it's a core part of allauth
     'allauth.socialaccount',
-    'allauth.socialaccount.providers.google',
-
-    # Your custom apps (always last)
-    'quiz',
-    'background_task',
-    'django_extensions'
+    'dj_rest_auth',
+    'dj_rest_auth.registration', # This handles the registration process
+    # 'allauth.socialaccount.providers.google', # REMOVE THIS FOR NOW
+    'corsheaders', # For connecting React to Django
+    'quiz', # Your app
 ]
 
 SITE_ID = 1
 
-REST_USE_JWT = True
+REST_USE_JWT = False
 
-ACCOUNT_USER_MODEL_USERNAME_FIELD = None
-ACCOUNT_USERNAME_REQUIRED = False
+# myaauapp-backend/backend/settings.py (Updated allauth section)
 
-ACCOUNT_SIGNUP_FIELDS = ['email*', 'password1*', 'password2*']  # Only email + password
+# ... (other settings above, like REST_USE_JWT, INSTALLED_APPS, CORS_ALLOWED_ORIGINS) ...
 
-ACCOUNT_LOGIN_METHODS = {'email'}  # This replaces ACCOUNT_AUTHENTICATION_METHOD
+ACCOUNT_ADAPTER = 'allauth.account.adapter.DefaultAccountAdapter'
 
-ACCOUNT_EMAIL_REQUIRED = True  # (Optional — this can stay if needed)
+ACCOUNT_SIGNUP_FIELDS = {
+    'username': {
+        'required': True,
+        'label': 'Username',
+        'widget': 'input',
+        'max_length': 150,
+        'help_text': 'Required. 150 characters or fewer. Letters, digits and @/./+/-/_ only.'
+    },
+    'email': {
+        'required': True,
+        'label': 'Email address',
+        'widget': 'email',
+        'max_length': 254,
+    },
+    'password': {
+        'required': True,
+        'label': 'Password',
+        'widget': 'password',
+    }
+}
+
+
+ACCOUNT_LOGIN_METHODS = ['email']
+ACCOUNT_UNIQUE_EMAIL = True
+ACCOUNT_EMAIL_VERIFICATION = 'none' # Still keeping this simple for now
+ACCOUNT_LOGOUT_ON_PASSWORD_CHANGE = True
+ACCOUNT_LOGIN_ON_EMAIL_CONFIRMATION = True # This only matters if verification is on
+
+
+ACCOUNT_RATE_LIMITS = {
+    'login_failed': '5/5m' # Example: 5 failed login attempts in 5 minutes
+}
 
 REST_FRAMEWORK = {
     'DEFAULT_AUTHENTICATION_CLASSES': (
-        'dj_rest_auth.jwt_auth.JWTCookieAuthentication',
+        'rest_framework.authentication.TokenAuthentication', #This allows tokens for login
+        'rest_framework.authentication.SessionAuthentication', #Good for testing in browser
+    ),
+    'DEFAULT_PERMISSION_CLASSES':(
+        'rest_framework.permissions.IsAuthenticatedOrReadOnly',
     ),
     'DEFAULT_PAGINATION_CLASS': 'rest_framework.pagination.PageNumberPagination',
     'PAGE_SIZE': 10
 }
 
 
+REST_AUTH = {
+    'USE_JWT': False, # ✅ Set this to False if you don't want JWT yet (simpler to start with TokenAuthentication)
+    'OLD_PASSWORD_FIELD_ENABLED': True, # Good for password changes
+    'REGISTER_SERIALIZER': 'dj_rest_auth.registration.serializers.RegisterSerializer', # Standard registration serializer
+    'USER_DETAILS_SERIALIZER': 'dj_rest_auth.serializers.UserDetailsSerializer', # For retrieving user info
+}
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
@@ -119,17 +155,17 @@ WSGI_APPLICATION = 'backend.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/5.2/ref/settings/#databases
 
+# ✅ Database Settings
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql',
-        'NAME': 'myaauapp',
-        'USER': 'postgres',
-        'PASSWORD': 'gAmEbOy100@',
-        'HOST': 'localhost',
-        'PORT': '5432'
+        'NAME': config('DB_NAME'),
+        'USER': config('DB_USER'),
+        'PASSWORD': config('DB_PASSWORD'),
+        'HOST': config('DB_HOST'),
+        'PORT': config('DB_PORT', cast=int),
     }
 }
-
 
 # Password validation
 # https://docs.djangoproject.com/en/5.2/ref/settings/#auth-password-validators
@@ -176,8 +212,7 @@ DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 CORS_ALLOWED_ORIGINS = [
     "http://localhost:5173",
     "http://localhost:5174",
+    "http://127.0.0.1:5173",
+    "http://127.0.0.1:5174",
 ]
 
-
-import os
-os.environ['OAUTHLIB_INSECURE_TRANSPORT'] = '1'

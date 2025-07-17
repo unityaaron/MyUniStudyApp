@@ -1,11 +1,9 @@
-# urls.py (inside my app like quiz/urls.py)
-
+# quiz app urls.py
 from django.urls import path
-from .views import CourseQuestionsView, JobPostListView, GoogleLogin
-
+from .views import CourseQuestionsView, JobPostListView # Removed GoogleLogin import
 
 urlpatterns= [
     path('questions/<str:course_code>/', CourseQuestionsView.as_view()),
     path('jobs/', JobPostListView.as_view()),
-    path('auth/social/login/google/', GoogleLogin.as_view(), name='google_login'),
+    # The social login endpoint is now handled by dj_rest_auth in backend/urls.py
 ]

@@ -66,30 +66,9 @@ REST_USE_JWT = False
 # ... (other settings above, like REST_USE_JWT, INSTALLED_APPS, CORS_ALLOWED_ORIGINS) ...
 
 ACCOUNT_ADAPTER = 'allauth.account.adapter.DefaultAccountAdapter'
+ACCOUNT_SIGNUP_FIELDS = ['email*', 'username*', 'password1*', 'password2*']
 
-ACCOUNT_SIGNUP_FIELDS = {
-    'username': {
-        'required': True,
-        'label': 'Username',
-        'widget': 'input',
-        'max_length': 150,
-        'help_text': 'Required. 150 characters or fewer. Letters, digits and @/./+/-/_ only.'
-    },
-    'email': {
-        'required': True,
-        'label': 'Email address',
-        'widget': 'email',
-        'max_length': 254,
-    },
-    'password': {
-        'required': True,
-        'label': 'Password',
-        'widget': 'password',
-    }
-}
-
-
-ACCOUNT_LOGIN_METHODS = ['email']
+LOGIN_METHODS = ['email']
 ACCOUNT_UNIQUE_EMAIL = True
 ACCOUNT_EMAIL_VERIFICATION = 'none' # Still keeping this simple for now
 ACCOUNT_LOGOUT_ON_PASSWORD_CHANGE = True

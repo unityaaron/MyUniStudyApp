@@ -105,7 +105,7 @@ function Register() {
   return (
     <div>
       <h1>Register Page</h1>
-      <p>Welcome to the registration page for AAU GST App!</p>
+      <p>Welcome to the registration page!</p>
 
       {success && <p style={{ color: 'green', fontWeight: 'bold' }}>{success}</p>}
       {error && <p style={{ color: 'red', fontWeight: 'bold' }}>{error}</p>}
@@ -118,6 +118,7 @@ function Register() {
             id="username"
             name="username"
             value={username}
+            placeholder="Don't lose your username"
             onChange={(e) => setUsername(e.target.value)}
             required
           />
@@ -161,6 +162,12 @@ function Register() {
 
         <button type="submit">Register</button>
       </form>
+
+
+      <br></br>
+        <button onClick={() => navigate('/login')} style={{textDecoration:'none', color:'inherit'}} >🔑 Login</button>
+              
+          
     </div>
   );
 }

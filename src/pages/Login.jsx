@@ -104,8 +104,8 @@ function LoginPage() {
   return (
     <div>
       <h1>Login Page</h1>
-      <h2>Login If You're a Registered User</h2>
-      <p>Please log in to access your AAU GST App account.</p>
+      <h2>Login to your Account or Register as new user</h2>
+      
 
       {success && <p style={{ color: 'green', fontWeight: 'bold' }}>{success}</p>}
       {error && <p style={{ color: 'red', fontWeight: 'bold' }}>{error}</p>}
@@ -153,6 +153,8 @@ function LoginPage() {
 
         <button type="submit">Login</button>
       </form>
+      <br></br>
+      <button onClick={() => navigate('/register')} style={{textDecoration:'none', color:'inherit'}} >📝 Register</button>
     </div>
   );
 }

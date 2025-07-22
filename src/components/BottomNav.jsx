@@ -13,11 +13,11 @@ const BottomNav = () => {
         <span role="img" aria-label="Jobs">🎓</span>
         Jobs & Scholarships
       </NavLink>
-      <NavLink to="/news" className = {({isActive}) => isActive ? 'nav-item active':'nav-item'} style={{ textDecoration: 'none', color: 'inherit' }}>
-        <span role="img" aria-label="News">📰</span>
-        School News
+      <NavLink to="/leaderboard" className = {({isActive}) => isActive ? 'nav-item active':'nav-item'} style={{ textDecoration: 'none', color: 'inherit' }}>
+        <span role="img" aria-label="Leaderboard">🏆</span>
+        Top Scorers
       </NavLink>
-      <NavLink to="/market" className = {({isActive}) => isActive ? 'nav-item active':'nav-item'} style={{ textDecoration: 'none', color: 'inherit' }}>
+      <NavLink to="/buyandsell" className = {({isActive}) => isActive ? 'nav-item active':'nav-item'} style={{ textDecoration: 'none', color: 'inherit' }}>
         <span role="img" aria-label="Market">🛍️</span>
         Buy & Sell
       </NavLink>

@@ -55,6 +55,7 @@ INSTALLED_APPS = [
     # 'allauth.socialaccount.providers.google', # REMOVE THIS FOR NOW
     'corsheaders', # For connecting React to Django
     'quiz', # Your app
+    'buyandsell',
 ]
 
 SITE_ID = 1
@@ -194,4 +195,7 @@ CORS_ALLOWED_ORIGINS = [
     "http://127.0.0.1:5173",
     "http://127.0.0.1:5174",
 ]
+
+MEDIA_URL = '/media/'
+MEDIA_ROOT = BASE_DIR / 'media'
 

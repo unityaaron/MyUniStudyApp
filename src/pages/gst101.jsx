@@ -3,47 +3,30 @@ import axios from 'axios'; // Helps us talk to backend
 
 const GST101Page = () => {
   // 🧠 These track what’s happening during the quiz
-  const [questions, setQuestions] = useState([]); // Starts empty
+  const [questions, setQuestions] = useState([]);
   const [currentIndex, setCurrentIndex] = useState(0);
   const [selectedOption, setSelectedOption] = useState(null);
   const [score, setScore] = useState(0);
 
-  // 📦 This runs when the page first opens
+  // 📦 Load questions from backend on first page load
   useEffect(() => {
-    axios.get("http://localhost:8000/api/questions/GST101/")
+    axios.get('http://127.0.0.1:8000/api/quiz/questions/GST101/')
       .then((res) => {
-        setQuestions(res.data); // 🧠 Save the questions
+        setQuestions(res.data);
       })
       .catch((err) => {
         console.error("Failed to load questions:", err);
       });
   }, []);
 
-  // 🕐 While we wait for data from backend
+  // 🕐 Show loading while waiting for questions
   if (questions.length === 0) {
     return <p>Loading questions...</p>;
   }
 
-  // 🔄 Get the current question from the list
-  const currentQuestion = questions[currentIndex];
-
-  // ✅ Check if selected answer is the right one
-  const isCorrect = selectedOption === currentQuestion.correct_answer;
-
-  // ➡️ Move to next question
-  const handleNext = () => {
-    if (isCorrect) {
-      setScore(score + 1);
-    }
-
-    setSelectedOption(null); // reset selected option
-    setCurrentIndex(currentIndex + 1);
-  };
-
-  // 🎉 If all questions are finished
+  // 🎉 If quiz is finished, show the score
   if (currentIndex >= questions.length) {
     const finalScore = Math.round((score / questions.length) * 100);
-
     return (
       <div className="content">
         <h2>🎉 Quiz Finished!</h2>
@@ -53,13 +36,25 @@ const GST101Page = () => {
     );
   }
 
-  // 🖼️ What the user sees while answering
+  // ✅ This only runs if quiz is still ongoing
+  const currentQuestion = questions[currentIndex];
+  const isCorrect = selectedOption === currentQuestion.correct_answer;
+
+  // ➡️ Move to next question
+  const handleNext = () => {
+    if (isCorrect) {
+      setScore(score + 1);
+    }
+    setSelectedOption(null);
+    setCurrentIndex(currentIndex + 1);
+  };
+
   return (
     <div className="content">
       <h2>Question {currentIndex + 1} of {questions.length}</h2>
       <p><strong>Q:</strong> {currentQuestion.question_text}</p>
 
-      {/* Loop through all options (A-D) */}
+      {/* Loop through A-D options */}
       {Object.entries(currentQuestion.options).map(([key, value]) => {
         let bgColor = '';
         if (selectedOption) {
@@ -88,7 +83,7 @@ const GST101Page = () => {
         );
       })}
 
-      {/* Show result + next button only if option was picked */}
+      {/* Show result + next button only if an option was picked */}
       {selectedOption && (
         <>
           <p>{isCorrect ? "✅ Correct!" : "❌ Wrong Answer"}</p>

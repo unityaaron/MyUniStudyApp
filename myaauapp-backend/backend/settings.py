@@ -56,6 +56,7 @@ INSTALLED_APPS = [
     'corsheaders', # For connecting React to Django
     'quiz', # Your app
     'buyandsell',
+    'background_task',
 ]
 
 SITE_ID = 1

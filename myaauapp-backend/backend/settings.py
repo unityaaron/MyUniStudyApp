@@ -46,7 +46,7 @@ INSTALLED_APPS = [
     'rest_framework.authtoken', # Needed for Token Authentication (dj-rest-auth uses it)
 
     # dj-rest-auth and django-allauth requirements
-    'django.contrib.sites', # IMPORTANT: Must be here for django-allauth
+    'django.contrib.sites', #cpc IMPORTANT: Must be here for django-allauth
     'allauth',
     'allauth.account', # Keep this for now, it's a core part of allauth
     'allauth.socialaccount',

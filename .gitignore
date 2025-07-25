@@ -25,3 +25,6 @@ dist-ssr
 
 # .env file
 .env
+
+/myaauapp-backend/venv/
+venv/

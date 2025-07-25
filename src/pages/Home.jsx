@@ -18,7 +18,7 @@ const Home = () => {
         <Link to="/gst102" className="card" style={{ textDecoration: 'none', color: 'inherit' }}>
           <div className="icon verbal-icon"></div>
           <div className="label">GST 102</div>
-          <div className="count">100 questions</div>
+          <div className="count">100 questions!</div>
         </Link>
       </div>
     </div>

@@ -1,4 +1,8 @@
 from django.db import models
+from django.db.models.signals import post_save # This listens for a "save" signal
+from django.dispatch import receiver # This helps connect our function to the signal
+
+
 
 # Create your models here.
 # buyandsell/models.py
@@ -40,3 +44,34 @@ class BuyAndSellItem(models.Model):
     def __str__(self):
         # This is what will be displayed in the Django admin site for each item
         return f"{self.title} by {self.seller.username}"
+class UserProfile(models.Model):
+    # This creates a special one-to-one link to Django's built-in User model.
+    # It means each Django User can have exactly one UserProfile.
+    user = models.OneToOneField(settings.AUTH_USER_MODEL, on_delete=models.CASCADE, related_name='profile')
+
+    # This is our new field to store the notification preference.
+    # BooleanField means it can be True (on) or False (off).
+    # default=True means by default, notifications are ON for new users.
+    notifications_enabled = models.BooleanField(default=True)
+
+    def __str__(self):
+        # This helps us see a clear name in the Django admin
+        return f"Profile for {self.user.username}"
+
+# ✨ NEW: Signal to automatically create a UserProfile when a new User is created ✨
+# This is like a tiny helper that watches for new users.
+# When a new User account is saved, this function automatically creates a matching UserProfile for them.
+@receiver(post_save, sender=settings.AUTH_USER_MODEL)
+def create_user_profile(sender, instance, created, **kwargs):
+    if created: # 'created' is True if a brand new user was just saved
+        UserProfile.objects.create(user=instance) # Create a new UserProfile linked to this new user
+
+# ✨ NEW: Signal to automatically save the UserProfile when the User is saved ✨
+# This ensures that if a User is updated (e.g., username changes), their profile also gets saved.
+@receiver(post_save, sender=settings.AUTH_USER_MODEL)
+def save_user_profile(sender, instance, **kwargs):
+    # Try to save the linked profile. If a user doesn't have a profile yet (which shouldn't happen
+    # if create_user_profile works), it will just skip.
+    # This check is important to prevent errors if the profile isn't yet created by the signal.
+    if hasattr(instance, 'profile'):
+        instance.profile.save()

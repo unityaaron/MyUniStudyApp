@@ -21,10 +21,11 @@ import GST101_Leaderboard from './pages/gst101_leaderboard';
 import MarketPlace from './pages/marketplace';
 import SellerPage from './pages/sellerpage';
 import BuyandSell from './pages/buyandsell';
-
+import { ThemeProvider } from './context/ThemeContext';
 
 const App = () => {
   return (
+    <ThemeProvider>
     <Router>
       <Routes>
         {/* --- PUBLIC ROUTES (No Layout, always visible) --- */}
@@ -55,6 +56,7 @@ const App = () => {
         </Route>
       </Routes>
     </Router>
+    </ThemeProvider>
   );
 };
 

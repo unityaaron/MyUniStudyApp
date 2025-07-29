@@ -1,5 +1,5 @@
 from rest_framework import serializers
-from .models import Question, JobPost
+from .models import Question, JobPost, QuizScore
 
 class QuestionSerializer(serializers.ModelSerializer):
     options = serializers.SerializerMethodField()
@@ -20,4 +20,16 @@ class JobPostSerializer(serializers.ModelSerializer):
         class Meta:
             model = JobPost
             fields = '__all__'
+
+class QuizScoreSerializer(serializers.ModelSerializer):
+     user = serializers.CharField(source='user.username', read_only=True)
+     course_view = serializers.CharField(source='course.code', read_only=True)
+
+     class Meta:
+          model = QuizScore
+          fields = ['id', 'user', 'course_code', 'highest_score']
+          read_only_fields = ['user', 'course_code'] 
+     
+
+
 

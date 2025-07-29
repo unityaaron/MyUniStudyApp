@@ -1,4 +1,5 @@
 from django.db import models
+from django.conf import settings
 
 # Create your models here.
 class Course(models.Model):
@@ -44,3 +45,27 @@ class JobPost(models.Model):
     #this tells Django to always show the newest scraped jobs first
     class Meta:
         ordering = ['-scraped_at'] #the '-' means descending order (newest first) 
+
+
+
+class QuizScore(models.Model):
+    # 1. Who got this score? Link to the User who took the quiz.
+    #    settings.AUTH_USER_MODEL means "use Django's built-in User model."
+    user = models.ForeignKey(settings.AUTH_USER_MODEL, on_delete=models.CASCADE, related_name='quiz_highest_scores')
+
+    # 2. Which course was this score for? Link to our Course model.
+    course = models.ForeignKey(Course, on_delete=models.CASCADE, related_name='course_highest_scores')
+
+    # 3. What was their highest score for this course? We'll store it as a whole number.
+    highest_score = models.IntegerField(default=0) # Starts at 0 if no score yet.
+
+    # This special part ensures that for any ONE user and any ONE course,
+    # there can only be ONE entry in this table.
+    # This is how we make sure we only store the *highest* score per user per course.
+    class Meta:
+        unique_together = ('user', 'course') # Means the combination of user AND course must be unique.
+        ordering = ['-highest_score']        # Default way to sort scores (highest first).
+
+    # This helps us see nice names in the Django Admin.
+    def __str__(self):
+        return f"{self.user.username}'s highest score for {self.course.code}: {self.highest_score}"

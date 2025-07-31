@@ -23,7 +23,7 @@ class JobPostSerializer(serializers.ModelSerializer):
 
 class QuizScoreSerializer(serializers.ModelSerializer):
      user = serializers.CharField(source='user.username', read_only=True)
-     course_view = serializers.CharField(source='course.code', read_only=True)
+     course_code = serializers.CharField(source='course.code', read_only=True)
 
      class Meta:
           model = QuizScore

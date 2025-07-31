@@ -337,8 +337,7 @@ const GST101Page = () => { // Renamed from GST101Page for consistency with our p
               // Use ternary for color: green for correct, red for wrong.
               color: selectedOptionForDisplay === currentQuestion.correct_answer ? 'green' : 'red'
           }}>
-              {/* Display "Correct!" with a checkmark if the selected option is correct, otherwise "Wrong Answer" with an X. */}
-              {selectedOptionForDisplay === currentQuestion.correct_answer ? "✅ Correct!" : "❌ Wrong Answer"}
+              
           </p>
         )}
       </div>

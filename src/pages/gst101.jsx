@@ -169,9 +169,7 @@ const GST101Page = () => { // Renamed from GST101Page for consistency with our p
   if (questions.length === 0) {
     return (
       <div className="content">
-        <h1>Loading GST101 Questions...</h1>
-        <p>Please make sure your Django backend server is running and accessible!</p>
-        <p>If not, check your browser console (F12) for errors.</p>
+        <h1>Loading Questions...</h1>      
       </div>
     );
   }
@@ -237,7 +235,7 @@ const GST101Page = () => { // Renamed from GST101Page for consistency with our p
         borderRadius: '10px',
         marginBottom: '20px'
       }}>
-        <h1>GST101 Quiz</h1>
+        <h1><span style={{color: 'black'}}>GST101 Quiz</span></h1>
         <div>
           <span style={{
             backgroundColor: timeLeft < 10 ? '#ff6b6b' : '#28a745', // Timer turns red at 10 seconds
@@ -276,7 +274,8 @@ const GST101Page = () => { // Renamed from GST101Page for consistency with our p
         border: '1px solid #ddd',
         borderRadius: '10px',
         padding: '25px',
-        marginBottom: '20px'
+        marginBottom: '20px',
+        color: 'black'
       }}>
         <h3 style={{ marginBottom: '20px', lineHeight: '1.5' }}>
           {currentQuestion.question_text}

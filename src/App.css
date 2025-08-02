@@ -145,6 +145,10 @@ body {
   align-items: center;
   justify-content: center;
   color: var(--nav-text-color); /* Uses theme variable */
+  text-decoration: none;
+  transition: all 0.3s ease-in-out;
+  padding: 5px 0;
+  
 }
 
 .nav-item a { /* Added to ensure links inside nav items inherit color and remove underline */
@@ -155,7 +159,12 @@ body {
 .active {
   color: var(--nav-active-color); /* Uses theme variable */
   font-weight: bold;
-  border-bottom: 2px solid var(--nav-active-color);
+  transform: scale(1.1)
+}
+
+.nav-item:hover {
+  transform: translateY(-3px); /* Slight lift on hover */
+  color: #f0f0f0; /* Slightly lighter white on hover */
 }
 
 /* Sidebar and overlay styles */

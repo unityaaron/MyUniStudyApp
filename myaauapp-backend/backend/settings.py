@@ -54,9 +54,9 @@ INSTALLED_APPS = [
     'dj_rest_auth.registration', # This handles the registration process
     # 'allauth.socialaccount.providers.google', # REMOVE THIS FOR NOW
     'corsheaders', # For connecting React to Django
-    'quiz', # Your app
     'buyandsell',
     'background_task',
+    'quiz.apps.QuizConfig',
 ]
 
 SITE_ID = 1

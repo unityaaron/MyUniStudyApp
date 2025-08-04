@@ -5,11 +5,12 @@ from django.shortcuts import render, get_object_or_404
 # Create your views here.
 from rest_framework.views import APIView
 from rest_framework.response import Response
-from .models import Course, Question, JobPost, QuizScore
-from .serializers import QuestionSerializer, JobPostSerializer, QuizScoreSerializer
+from .models import Course, Question, JobPost, QuizScore, ScholarshipPost
+from .serializers import QuestionSerializer, JobPostSerializer, QuizScoreSerializer, ScholarshipPostSerializer
 from rest_framework.pagination import PageNumberPagination
 from rest_framework import status
 from rest_framework.permissions import IsAuthenticated
+from rest_framework import generics
 
   
 
@@ -37,6 +38,41 @@ class JobPostListView(APIView):
         paginated_jobs = paginator.paginate_queryset(jobs, request)
         serializer = JobPostSerializer(paginated_jobs, many=True)
         return paginator.get_paginated_response(serializer.data)
+    
+
+
+
+#scholarshippost
+class ScholarshipPostListAPIView(generics.ListAPIView):
+    # What is ListAPIView?
+    # It's a pre-built tool from Django REST Framework that knows how to
+    # get a list of things from your database and turn them into JSON.
+
+    # What is queryset?
+    # This tells the view *which* data it should get from the database.
+    # Here, we're telling it to get ALL ScholarshipPost objects.
+    # .all() means "give me everything."
+    queryset = ScholarshipPost.objects.all()
+
+    # What is serializer_class?
+    # This tells the view *how* to convert the Python objects it gets from
+    # the database into JSON. We point it to the ScholarshipPostSerializer
+    # we just created.
+    serializer_class = ScholarshipPostSerializer
+
+    # Optional: You can add ordering here if you want the scholarships
+    # to be returned in a specific order, e.g., newest first.
+    # The '-' before 'created_at' means descending order (newest first).
+    # If you remove the '-', it would be oldest first.
+    # If you want to order by date_posted, you'd use 'date_posted'.
+    # Note: If date_posted is a CharField, sorting might be alphabetical.
+    # If you want true date sorting, we'd need to convert it to a DateField in the model.
+    # For now, let's stick with created_at which is a proper DateTimeField.
+    # queryset = ScholarshipPost.objects.all().order_by('-created_at')
+
+
+
+
 
 class SubmitQuizResultView(APIView):
     permission_classes=[IsAuthenticated]
@@ -135,3 +171,9 @@ class LeaderboardView(APIView):
 
         # 4. Send the packaged data to React
         return Response(serializer.data)
+    
+
+
+
+
+

@@ -48,6 +48,25 @@ class JobPost(models.Model):
 
 
 
+class ScholarshipPost(models.Model):
+    title = models.CharField(max_length=255)
+    link = models.URLField(unique=True)
+    summary = models.TextField(blank=True, null=True) # To store summary/excerpt
+    date_posted = models.CharField(max_length=100, blank=True, null=True) # To store the date
+    image_url = models.URLField(max_length=500, blank=True, null=True) # To store the image URL
+    source = models.CharField(max_length=100)
+    created_at = models.DateTimeField(auto_now_add=True)
+    updated_at = models.DateTimeField(auto_now=True)
+
+    def __str__(self):
+        return self.title
+
+    class Meta:
+        ordering = ['-created_at']
+        verbose_name = "Scholarship Post"
+        verbose_name_plural = "Scholarship Posts"
+
+        
 class QuizScore(models.Model):
     # 1. Who got this score? Link to the User who took the quiz.
     #    settings.AUTH_USER_MODEL means "use Django's built-in User model."

@@ -1,0 +1,101 @@
+question_text,option_a,option_b,option_c,option_d,correct_answer
+"Almost the entire mass of an atom is concentrated in the __________.",proton,electrons,nucleus,neutrons,c
+"Electron was discovered by __________.",Chadwick,Thomson,Goldstein,Bohr,b
+"An atom has a mass number of 23 and atomic number 11. The number of protons is __________.",11,12,23,44,a
+"Which of the following represents a chemical property or change?","Br₂ (l) → Br₂ (g)","Gold is malleable and ductile","High‑purity water has resistance ≥ 18.2 MΩ·cm","2 H₂O (l) → 2 H₂ (g) + O₂ (g)",d
+"Which substance conducts electricity in water?",C₈H₁₈,C₆H₁₂O₆,CHCl₃,KClO₄,d
+"Range of pH scale is __________.",7 to 10,0 to 10,0 to 14,7 to 14,c
+"pH of an antacid solution is usually __________.",≤ 6.5,≥ 7.0,> 10,> 14,b
+"In thermochemistry, an isolated system __________.",exchanges mass and energy,exchanges volume/pressure,does not exchange mass or energy,partially exchanges energy,c
+"Specific heat capacity is the amount of heat required to raise 1 g of a substance by __________.",1 °C or 1 K,2 °C,10 °C,0.1 °C,a
+"For the reaction C₆H₆ + O₂ → CO₂ + H₂O, how much O₂ is required to burn 1 mole C₆H₆ fully?",6 mol,12 mol,9 mol,7.5 mol,d
+"Concentration of nitrate ion in 425 mL solution containing 32 g Mg(NO₃)₂ is ________ M.",0.75 M,1.02 M,1.50 M,0.32 M,b
+"Electronic configuration of element with atomic number 26 is __________.",[Ar] 4s² 3d⁶,[Ar] 4s² 3d⁵,[Ne] 3s² 3p⁶,[Ar] 4s¹ 3d⁷,a
+"Pressure of 0.55 mol NH₃ gas in a 2.00 L vessel at 25 °C is about ________ atm.",3.01,6.73,1.25,0.82,b
+"Partial pressure of Ar in a gas mix with total 1380 mmHg and 1.50 mol Ar is ________ mmHg.",302,410,500,620,a
+"Balanced equation for PCl + H₂O → H₃PO₃ + HCl has coefficients __________.",1:1:1:1,1:2:1:2,1:3:1:3,2:3:2:3,c
+"Stoichiometry: Determine grams of Al in 2.154 × 10⁻⁴ kg.",2.15 g,7.98 g,9.22 g,4.32 g,b
+"Matter is made of very small particles called __________.",electrons,atoms,molecules,elements,b
+"Elements in the same group in periodic table ________ chemically.",tend to be more similar,less similar,not similar,identical,a
+"The law PV = nRT is known as __________.",Boyle's law,Ideal gas law,Charles' law,Dalton's law,b
+"Planck's constant (h) equals approximately ________ J·s.",6.626 × 10⁻³⁴,1.38 × 10⁻²³,3.00 × 10⁸,0.0821,a
+"Speed of light (c) is ________ m/s.",3.00 × 10⁶,3.00 × 10⁸,6.02 × 10²³,0.0821,b
+"q = mcΔT expresses formula for __________.",ideal gas law,specific heat calculation,equilibrium constant,partial pressure,b
+"The Rydberg constant equals __________.",6.626 × 10⁻³⁴ J·s,2.179 × 10⁻¹⁸ J,0.0821 L·atm/(mol·K),3.00 × 10⁸ m/s,b
+"1 atm equals ________ mmHg (Torr).",760,800,101,1000,a
+"1 cal equals ________ J.",4.0,4.184,3.00,6.02,b
+"Which of the following uses of hydrogen is NOT correct?",Synthesis of ammonia,Hydrogenation of oil,Manufacture of methanol,Synthesis of zinc,d
+"What is the solubility of MgF₂ in pure water if Kₛₚ = 6.8 × 10⁻⁹?",0.0012 M,0.0024 M,0.0008 M,0.0056 M,a
+"A 0.43 g sample of iron per liter of water corresponds to what in ppm?",430 ppm,0.43 ppm,4.3 ppm,43 ppm,a
+"Calculate Keq if at 450 °C [H₂] = 0.885 M, [I₂] = 0.20 M, [HI] = 0.945 M.",1.2,5.045,0.89,2.5,b
+"Which balanced equation corresponds to PCl + H₂O → H₃PO₃ + HCl?",1:1:1:1,1:2:1:2,1:3:1:3,2:3:2:3,c
+"Which gas law relates P, V, n and T at constant?",Boyle's law,Charles' law,Dalton's law,Ideal gas law,d
+"Compute the pressure of 0.55 mol NH₃ in 2.00 L at 25 °C.",0.82 atm,1.25 atm,3.01 atm,6.73 atm,d
+"Partial pressure of Ar in mixture: total 1380 mmHg, 1.50 mol Ar.",302 mmHg,410 mmHg,500 mmHg,620 mmHg,a
+"What is the ground‑state electron configuration for atomic number 26?",[Ar] 4s² 3d⁶,[Ar] 4s² 3d⁵,[Ne] 3s² 3p⁶,[Ar] 4s¹ 3d⁷,a
+"Which physical constant equals approximately 2.179 × 10⁻¹⁸ J?",Planck's constant,Rydberg constant,Ideal gas constant,Avogadro's number,b
+"Avogadro's number is equal to:",6.022 × 10²³,3.00 × 10⁸,4.184 × 10⁻³,1.38 × 10⁻²³,a
+"Which formula is used to calculate heat transfer using specific heat?",PV = nRT,q = mcΔT,E = mc²,PV = RT/n,b
+"Which of the following represents a chemical change?",Br₂(l) → Br₂(g),Gold is malleable,High purity water has high resistance,2H₂O(l) → 2H₂(g) + O₂(g),d
+"Measurement of heat capacity refers to the heat needed to raise 1 g by __________.",0.1 °C,1 K,10 °C,2 °C,b
+"In thermochemistry, an isolated system __________.",exchanges mass and energy,exchanges volume/pressure,exchanges neither mass nor energy,exchanges only energy,c
+"What is the molecular formula of a compound whose vapor density is 37 and gives CO₂ and H₂O upon combustion?",C₁₂H₂₆,C₈H₁₈,C₄H₈,C₆H₆,b
+"Which intermolecular force comes from shifting electrons even in nonpolar molecules?",Hydrogen bonding,Dipole–dipole,London dispersion,Ionic bond,c
+"Which molecule is polar bonds but overall nonpolar due to symmetry?",CO₂,HF,H₂O,NH₃,a
+"For a reaction shift, if [H₂] and [I₂] are zero but [HI] is nonzero with Keq ≫ 1, the system will ____.",shift right,shift left,stay surprised,remain static,a
+"Which compound has the weakest intermolecular forces?",CH₃–O–CH₃,CH₃CH₂OH,CH₄,CH₂Cl₂,c
+"Which compound is most soluble in nonpolar solvent like carbon tetrachloride?",KBr,CH₃CH₂OH,Br₂,CH₃Cl,c
+"What effect increases rate of reaction?",Temperature,Catalyst,Concentration,All of the above,d
+"Which equilibrium constant expression corresponds to N₂ + 3H₂ → 2NH₃?",Keq = [NH₃]² / ([N₂][H₂]³),Keq = [NH₃] / [N₂][H₂],Keq = ([N₂][H₂]³) / [NH₃]²,Keq = [N₂][H₂] / [NH₃]²,a
+"Which orbital diagram matches oxide ion O²⁻?",1s² 2s² 2p⁶,1s² 2s² 2p⁵,1s² 2s² 2p⁴,1s² 2s² 2p³,a
+"Which element requires most energy to remove electron?",Li,Cs,Na,Rb,c
+"Which of these is not a property of hydrogen?",It is colourless,It has a pungent smell,It can be oxidized to water,It reduces sulfur to hydrogen sulfide,b
+"Hydrogen may be used for all but one of the following:",Synthesis of ammonia,Hydrogenation of oil,Manufacture of methanol,Synthesis of zinc,d
+"Hydrogen may not be advantageous as a fuel because:",It has unlimited quantity in the sea,It is pollution‑free,It can be stored and used when needed,It is a secondary source of energy,d
+"What is the absolute charge of an electron?",–1 × 10⁻¹⁹ C,+1 × 10⁻¹⁹ C,1 × 10⁻¹⁹ C,16 × 10⁻¹⁹ C,a
+"The proton is heavier than an electron by approximately:",1850 times,1840 times,1000 times,100 times,a
+"Carbon‑12 atom has:","6 electrons, 6 protons, 6 neutrons","6 electrons, 12 protons, 6 neutrons","12 electrons, 6 protons, 6 neutrons","18 electrons, 6 protons, 6 neutrons",a
+"The fixed circular paths around the nucleus are called:",orbits,orbitals,nucleons,mesons,a
+"Rutherford's gold foil experiment discovered that atoms are mostly:",empty space,solid spheres,proton clusters,neutron clouds,a
+"Which model of matter was proposed by Empedocles and supported by Aristotle?",The atom as an indivisible particle,The four‑element model,The raisin bun model,The planetary model,b
+"Which researcher first disproved Dalton's atomic model?",Democritus,Thomson,Rutherford,Bohr,c
+"When neutral atoms gain one or more electrons, ____ are formed.",hadrons,cations,fermions,anions,d
+"Which two represent a pair of isotopes?",I and IV,III and IV,I and II,II and V,b
+"Which of the following are allotropes?",Air and oxygen,Phosgene and phosphine,Red phosphorus and white phosphorus,Carbon tetrachloride and carbon tetrabromide,c
+"An element with 24 protons, 24 electrons, and 28 neutrons has a molar mass of:",76 amu,56 amu,52 amu,48 amu,b
+"Which set of elements are likely to have similar chemical properties?","Ca, Co, Cr","H, He, Ne","Pb, Bi, Po","Na, K, Li",d
+"Which formula and name combination is incorrect?",SF₆ – sulfur hexafluoride,N₂O₃ – dinitrogen tetraoxide,P₄O₁₀ – tetraphosphorus decaoxide,SeF₄ – selenium tetrafluoride,b
+"Under what conditions do real gases approximate ideal gases most closely?",Low pressure & high temperature,High pressure & low temperature,High pressure & high temperature,All gases behave ideally always,a
+"Which sequence describes free‑radical reaction steps?","Substitution, elimination, termination","Initiation, propagation, termination","Initiation, elimination, termination","Elimination, termination, substitution",b
+"Principal greenhouse gas from fossil fuel combustion is:",Water vapor,Carbon dioxide,Ozone,Methane,b
+"Which of the following is a mixture?",H₂(g),O₂(aq),NaCl(s),CH₃OH(l),b
+"If a gas occupies 1.12 dm³ at STP and weighs 2.3 g, what gas is it?",SO₂,O₂,CO₂,SO₃,a
+"For reaction N₂ + 3H₂ ⇌ 2NH₃, what happens when H₂ is added?",Shifts right,Shifts left,No effect,Reaction reverses,a
+"Decreasing temperature in the exothermic reaction N₂ + 3H₂ ⇌ 2NH₃ shifts equilibrium:",Right,Left,No effect,At equilibrium,a
+"Increasing pressure on N₂ + 3H₂ ⇌ 2NH₃ shifts equilibrium:",Right,Left,No effect,Reaction slows,a
+"What is the value of Kc for N₂ + 3H₂ ⇌ 2NH₃, given initial and reacting moles?",2x,4x,4x,2x,b
+"Which solution of pH 6, 8 & 9.5 contains the maximum OH⁻ ion concentration?",pH 6,pH 8,pH 9.5,Data insufficient,c
+"Ammonium sulphate salt is classified as:",Basic salt,Acidic salt,Neutral salt,Complex salt,a
+"By‐product gases from the chlor–alkali process include:",Hydrogen only,Hydrogen and oxygen,Hydrogen and chlorine,Chlorine and nitrogen,c
+"Sp³d² hybridization in [Co(NH₃)₆]³⁺ yields which geometry?",Octahedral,Square planar,Tetrahedral,Trigonal planar,a
+"Dipole moment is highest in which molecule?",CH,NH,CO,NF,b
+"In an MX₆ octahedral molecule, how many X–M–X bonds are at 180°?",Four,Two,Three,Six,c
+"Which pair both have sp² hybridization at the central atom?",NH₃ and NO₂⁻,BF₃ and NH₂⁻,BF₃ and NO₂⁻,NH₂⁻ and H₂O,c
+"Formal charge on P and bond order in PO₄³⁻ are:",0 & 0,0 & 1,1 & 0,1 & 1,b
+"Which reaction does NOT represent an extensive property?",Mass,Temperature,Volume,Mole,b
+"Which is NOT a strong electrolyte?",NaCl,CuSO₄,H₂SO₄,CH₃COOH,d
+"H₂ + I₂ ⇌ 2HI at equilibrium, if Keq ≫ 1 and initially HI is present with no H₂ or I₂, the reaction will:",Shift right,Shift left,Remain static,Remain surprised,a
+"Partial pressure of Ar in a mixture at 1380 mmHg with 1.50 mol Ar present is:",302 mmHg,410 mmHg,500 mmHg,620 mmHg,a
+"Solubility of MgF₂ when Ksp = 6.8 × 10⁻⁹ is approximately:",0.0012 M,0.0024 M,0.0008 M,0.0056 M,a
+"Concentration of nitrate ion in 425 mL solution containing 32 g Mg(NO₃)₂ is:",0.75 M,1.02 M,1.50 M,0.32 M,b
+"Electronic configuration of element with atomic number 26 is:",[Ar] 4s² 3d⁶,[Ar] 4s² 3d⁵,[Ne] 3s² 3p⁶,[Ar] 4s¹ 3d⁷,a
+"Number of moles of Al in 2.154 × 10⁻⁴ kg Al is:",2.15 mol,7.98 mol,9.22 mol,4.32 mol,b
+"Amount of O₂ needed to fully burn 1 mol of C₆H₆ is:",6 mol,9 mol,7.5 mol,12 mol,c
+"For reaction N₂ + 3H₂ ⇌ 2NH₃, the expression for Keq is:",[NH₃]² / ([N₂][H₂]³),[NH₃] / [N₂][H₂],([N₂][H₂]³) / [NH₃]²,[N₂][H₂] / [NH₃]²,a
+"Effect that increases reaction rate: temperature, catalyst, and concentration is:",Temperature only,Catalyst only,Concentration only,All of the above,d
+"Which compound has weakest intermolecular forces (IMFs)?",CH₃–O–CH₃,CH₃CH₂OH,CH₄,CH₂Cl₂,c
+"Which compound is most soluble in a non-polar solvent like CCl₄?",KBr,CH₃CH₂OH,Br₂,CH₃Cl,c
+"Moving to higher pressure for N₂ + 3H₂ ⇌ 2NH₃ shifts equilibrium:",Right,Left,No effect,Slows reaction,a
+"Lowering temperature for the exothermic reaction N₂ + 3H₂ ⇌ 2NH₃ shifts equilibrium:",Right,Left,No effect,At equilibrium,a
+"If initial N₂ + H₂ react and produce x moles NH₃, Kc equals:",2x,4x,4x,2x,b
+"A solution with HCl titrated against Na₂CO₃ yields HCl concentration of:",0.10 M,0.20 M,0.15 M,0.25 M,b

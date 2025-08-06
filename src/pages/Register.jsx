@@ -165,7 +165,7 @@ function Register() {
 
 
       <br></br>
-        <button onClick={() => navigate('/login')} style={{textDecoration:'none', color:'inherit'}} >🔑 Login</button>
+        <button onClick={() => navigate('/login')} style={{textDecoration:'none', color:'#333333'}} >🔑 Login</button>
               
           
     </div>

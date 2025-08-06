@@ -103,7 +103,7 @@ function LoginPage() {
 
   return (
     <div>
-      <h1>Login Page 345</h1>
+      <h1>Login Page</h1>
       <h2>Login to your Account or Register as new user</h2>
       
 
@@ -154,7 +154,7 @@ function LoginPage() {
         <button type="submit">Login</button>
       </form>
       <br></br>
-      <button onClick={() => navigate('/register')} style={{textDecoration:'none', color:'inherit'}} >📝 Register</button>
+      <button onClick={() => navigate('/register')} style={{textDecoration:'none', color:'#333333'}} >📝 Register</button>
     </div>
   );
 }

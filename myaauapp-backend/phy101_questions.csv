@@ -1,0 +1,101 @@
+question_text,option_a,option_b,option_c,option_d,correct_answer
+"Distinguish between the concept of heat and temperature.","Heat is a form of energy transferred; temperature measures hotness.","Heat is a measure of hotness; temperature is energy.","Heat and temperature both measure energy only.","Heat is tangibility; temperature is matter.",a
+"Which of the following is NOT true?","Evaporation occurs at any temperature of a liquid.","Boiling takes place only at the surface of the liquid.","Evaporation occurs only at the surface of a liquid.","Boiling of a liquid takes place at a definite temperature and pressure.",b
+"Linear expansivity α refers to the increase in length per original length per degree C.","True","False – it refers to volume change.","False – it refers to density change.","False – it refers to area expansion.",a
+"Boyle's Law states that at constant temperature PV is:","Constant","Proportional to V²","Proportional to T","Inverse of pressure",a
+"Thermal conductivity in solids can be compared using the concept of:","Equivalent material","Specific heat","Thermal expansion","Density difference",a
+"Heat capacity is the amount of heat required to change temperature by:","1 °C","10 °C","1 K per kilogram","per mole of substance",a
+"Specific latent heat of fusion refers to heat required to convert:","1 kg solid at melting point to liquid at same temperature","1 g solid to gas at its boiling point","1 kg liquid to vapor above boiling point","1 g solid to liquid below melting point",a
+"A gas follows PV = nRT. This is known as the:","Ideal gas equation","Boyle's law","Charles's law","Avogadro's law",a
+"Which of the following measures the degree of hotness objectively?","Thermometer","Heat capacity","Specific heat","Power",a
+"The study of heat measurement is known as:","Calorimetry","Thermometry","Thermodynamics","Heat transfer",a
+"A clean glass capillary tube has angle of contact zero, so water in it:","Rises to form a meniscus","Falls in the tube","Has no capillary action","Spreads out flat",a
+"Surface tension γ for water at 20 °C is approximately:","7.2 × 10⁻² N/m","4.5 × 10⁻¹ N/m","1.0 N/m","0.0 N/m",a
+"Viscosity is fluid's resistance to:","Flow","Volume change","Temperature increase","Pressure change",a
+"Bernoulli's equation relates fluid pressure with:","Velocity and height","Density change","Temperature only","Viscosity directly",a
+"Archimedes' principle deals with which physical phenomenon?","Buoyancy","Viscosity","Surface tension","Thermal conduction",a
+"Density is defined as mass divided by:","Volume","Area","Length","Time",a
+"Relative density compares the density of a substance with that of:","Water","Air","Mercury","Oil",a
+"Power is defined as the rate of:","Doing work or heat transfer","Heat absorption","Temperature rise","Mass flow",a
+"Which scientist demonstrated that heat is a form of energy?","Prescot Joule","James Watt","Charles Law","Avogadro",a
+"Types of thermometer include all EXCEPT:","Molecular thermometer","Liquid‐in‐glass thermometer","Resistance thermometer","Thermoelectric thermometer",a
+"Self‑assessment exercises in the book help students to:","Review and practise key concepts","Learn new formulas only","Just read chapters passively","Ignore previous topics",a
+"Charles's Law states that volume is proportional to:","Absolute temperature at constant pressure","Pressure at constant volume","Mass only","Force",a
+"Bulk modulus measures resistance to:","Uniform compression","Stretching lengthwise","Shear deformation","Temperature rise",a
+"Shear modulus relates shear stress to:","Angular strain","Bulk volume","Normal strain","Density change",a
+"Hooke's Law holds only when material is within:","Elastic limit","Plastic region","Yield point","Fracture zone",a
+"Convert 50 °F to Celsius scale.","10 °C","5 °C","15 °C","0 °C",a
+"At what temperature do Fahrenheit and Celsius scales coincide?","-40 °C","0 °C","100 °C","-32 °C",a
+"A platinum resistance thermometer reads 10 Ω at 0 °C and 14 Ω at 100 °C. What is the resistance at 20 °C?","11 Ω","12 Ω","13 Ω","14 Ω",a
+"Which of the following statements is true for an ideal gas?","Internal energy depends only on temperature.","Internal energy depends only on volume.","Internal energy depends only on pressure.","Internal energy is constant.",a
+"What is the approximate density of hydrogen compared to air?","Much lower molecular mass, hence much lower density","About the same density","Slightly higher density","Cannot be determined",a
+"Which liquid has the highest viscosity at room temperature?","Water","Kerosene","Palm oil","Alcohol",c
+"In which phenomenon is surface tension most important?","Floating of a steel wire on water","Boiling water","Sedimentation in a centrifuge","Evaporation",a
+"Which statement about viscosity is correct?","Viscosity increases with increasing temperature.","It varies with velocity of surfaces.","It is the same for all liquids.","Viscous force and upthrust act upward.",b
+"The molecules of a liquid are held together by what type of forces?","Cohesive forces","Adhesive forces","Viscosity forces","Gravitational forces",a
+"Which of the following is NOT true about thermal conductivity in solids?","It compares materials by equivalent conduction.","It is independent of material structure.","It depends on temperature gradient.","It depends on cross-sectional area.",b
+"Convert 30 °F to Celsius.","-1.1 °C","-10 °C","1.1 °C","0 °C",a
+"What physical principle explains buoyancy?","Archimedes' principle","Bernoulli's principle","Hooke's law","Pascal's law",a
+"Which materials are compared using relative density?","Substance versus water","Substance versus air","Substance versus mercury","Substance versus oil",a
+"If a gas doubles its temperature (Kelvin) at constant pressure, volume becomes:","Double","Half","Same","Quadruple",a
+"A 250 g water at 20 °C poured into 500 g aluminium pan at 150 °C. Final thermal equilibrium temperature is?","59.1 °C","43.7 °C","32.5 °C","87.4 °C",b
+"The length of mercury column at melting and boiling fixed points are 1.06 cm and 20.86 cm respectively. What temperature is produced by 7.0 cm?","30 °C","40 °C","20 °C","10 °C",a
+"Which scale property should thermometric substance possess?","High sensitivity to temperature change","Low variability over range","High thermal resistance","Inert behavior with environment",a
+"Heat capacity is defined as heat required to raise temperature by:","1 °C","10 °C","per °K","per mole",a
+"Specific latent heat of fusion refers to heat needed to convert:","1 kg solid to liquid at melting point","1 kg liquid to gas at boiling point","1 g solid to vapor","1 kg liquid to solid",a
+"Identify the type of heat transfer that requires no medium.","Radiation","Conduction","Convection","Diffusion",a
+"Thermal equilibrium occurs when heat gained equals:","Heat lost","Temperature gained","Energy change","Net work done",a
+"Which scientist showed heat is a form of energy?","Joule","Watt","Avogadro","Boyle",a
+"Which physical quantity is directly proportional to absolute temperature?","Average molecular kinetic energy","Pressure only","Volume only","Density",a
+"Refer to PDF's Module 1—Unit 1 content: temperature is a measure of:","Degree of hotness or coldness","Total energy","Heat content","Work done",a
+"Which mode of heat transfer involves particle collisions in solids?","Conduction","Convection","Radiation","Evaporation",a
+"Define the coefficient of linear expansion α.","Increase in length per original length per °C","Change in area per °C","Volume change per °C","Mass change per °C",a
+"In solids, heat conduction occurs via:","Particle collisions and vibrations","Bulk flow of the medium","Radiant energy only","None of the above",a
+"Method NOT used in measuring linear expansion is:","Henning's tube method","Optical lever method","Fizeau's method","Thermocouple method",d
+"In convection, heat transfer is due to:","Bulk fluid movement","Molecular collisions only","Radiation","Vibration of solids",a
+"What apparatus measures emf variation with temperature using dissimilar metals?","Thermo-electric thermometer","Gas thermometer","Liquid-in‑glass thermometer","Resistance thermometer",a
+"Value of surface tension γ for water at 20 °C is around:","7.2 × 10⁻² N/m","1.0 N/m","4.5 × 10⁻¹ N/m","Zero",a
+"Clean glass capillary tube angle of contact ensures:","Meniscus rises","Meniscus falls","No capillary effect","Mercury adhesion",a
+"Excess pressure inside a small bubble is given by:","2γ/r","γ²/r","γ/r²","r/γ",a
+"Relative density of a substance compares it with:","Water","Air","Mercury","Oil",a
+"Density is defined as mass divided by:","Volume","Area","Length","Time",a
+"Using Archimedes' principle relates to which property?","Buoyancy","Viscosity","Surface tension","Elasticity",a
+"Bernoulli's principle is used to explain:","Fluid pressure reduction with speed","Surface tension behavior","Elastic deformation","Heat conduction",a
+"Torque within elastic limit obeys:","Hooke's law","Newton's law","Boyle's law","Charles's law",a
+"Pressure at a depth h in liquid =:","ρgh","PV","Force/Area","T/V",a
+"Self‑assessment exercises are used to:","Review and practise key concepts","Just read chapters","Ignore past topics","Learn only formulas",a
+"Viscosity unit has dimensions:","ML⁻¹T⁻¹","MT⁻²","L²T⁻¹","M⁰L⁰T⁰",a
+"Viscous force acts opposite to:","Motion of fluid","Pressure gradient","Surface tension forces","Heat transfer direction",a
+"Terminal velocity is achieved when net force equals:","Zero","Gravity force only","Up thrust only","Viscous drag only",a
+"In fluids, streamline flow indicates:","Laminar flow","Turbulent flow","Evaporation","Elastic deformation",a
+"Density influences upthrust experienced by object in fluid.","True","False","Depends on shape only","Depends on temperature only",a
+"Viscosity of glycerine at 0 °C compared to water at same temperature is:","Much higher","About the same","Much lower","Zero",a
+"Coefficient of volume expansion β is approximately:","3α","α/3","2α","α²",a
+"Convection vs conduction: what transfers heat via moving fluid?","Convection","Conduction","Radiation","Diffusion",a
+"What measures temperature changes over time?","Thermometer","Heat capacity","Surface tension","Viscosity",a
+"Which law relates force to deformation within elastic limit?","Hooke's law","Boyle's law","Bernoulli's law","Charles's law",a
+"At what temperature do the Fahrenheit and Celsius scales coincide?","-40 °C","0 °C","100 °C","-32 °C",a
+"A steel ball diameter is 0.90000 cm and hole in aluminium plate is 0.8990 cm at 20 °C. At what temperature will the ball just pass through the hole? (α_steel = 1.10×10⁻⁵ °C⁻¹, α_Al = 2.20×10⁻⁵ °C⁻¹)","101.0 °C","121.0 °C","220.0 °C","241.0 °C",b
+"A 0.5 kg copper piece heated from 20 °C to 100 °C with specific heat 0.385 J/g·°C. Heat energy required is:","15.4 kJ","154 J","1.54 kJ","154 kJ",a
+"A gas occupies 5 L at 1 atm and 300 K. If temperature rises to 600 K at constant pressure, new volume becomes:","10 L","5 L","2.5 L","100 L",a
+"A tiny water droplet of radius 0.010 cm falls through air. Its terminal velocity is closest to:","1.1 m/s","5.4 m/s","8.2 m/s","11.3 m/s",b
+"A resistance thermometer reads 16.5 Ω in melting ice and 42.5 Ω in steam at 100 °C. At 30 °C read:","19.5 Ω","21.7 Ω","24.3 Ω","17.8 Ω",c
+"In mixture method: heat of substance measurement relies on which conservation principle?","Conservation of energy","Conservation of momentum","Conservation of charge","Conservation of angular momentum",a
+"What scale property should a thermometric substance possess?","High sensitivity to temperature change","Low variability over range","High thermal resistance","Inert behaviour with environment",a
+"What measures overheating or cooling over time?","Thermometer","Heat capacity","Surface tension","Viscosity",a
+"Define viscosity unit dimensionally.","M L⁻¹ T⁻¹","M T⁻²","L² T⁻¹","M⁰ L⁰ T⁰",a
+"Pressure at depth h in a liquid equals:","ρgh","PV","Force/Area","T/V",a
+"Excess pressure inside a small bubble is:","2γ/r","γ²/r","γ/r²","r/γ",a
+"Surface tension for water at 20 °C is roughly:","7.2×10⁻² N/m","0.45 N/m","1.0 N/m","0 N/m",a
+"Coefficient of volume expansion β is approximately:","3α","α/3","2α","α²",a
+"What is Archimedes' principle?","Body immersed in fluid experiences upthrust equal to weight of fluid displaced","Pressure difference causes flow","Surface tension supports light objects","Viscosity resists motion",a
+"Bernoulli's principle illustrates that higher fluid speed results in:","Lower pressure","Higher pressure","No pressure change","Increase in density",a
+"Streamline flow indicates which type of fluid behaviour?","Laminar flow","Turbulent flow","Evaporation","Elastic deformation",a
+"Terminal velocity is reached when net force is:","Zero","Equal to gravity only","Equal to viscous drag only","Equal to upthrust only",a
+"In an ideal gas, internal energy depends only on:","Temperature","Pressure","Volume","Mass",a
+"Internal energy variation among ideal gas molecules depends on:","Temperature only","Volume only","Pressure only","nRT product",a
+"Define linear expansivity α:","Increase in length per original length per °C","Volume per temperature","Density change per °C","Mass per length per °C",a
+"Conduction in solids transfers heat via:","Particle collisions and vibrations","Bulk fluid flow","Electromagnetic radiation","Convective currents",a
+"Which method is NOT used to measure linear expansion?","Thermocouple method","Henning's tube method","Optical lever method","Fizeau's method",a
+"Convection transfers heat by:","Bulk motion of fluid","Vibrations only","Radiation","Molecular conduction",a
+"Define specific latent heat of fusion:","Heat required to convert 1 kg solid at melting point to liquid at same temperature","Heat needed to evaporate 1 kg water","Heat to raise 1 kg solid by 1 °C","Heat to raise vapor temperature",a

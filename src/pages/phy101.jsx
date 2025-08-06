@@ -1,11 +1,11 @@
-// src/pages/GST102QuizPage.jsx
+// src/pages/PHY101QuizPage.jsx
 
 // Part 1: Bring in the Tools (Our React building blocks)
 import React, { useState, useEffect, useCallback } from 'react';
 import axios from 'axios';
 
 // Part 2: Create our React Page Component
-const GST102Page = () => {
+const PHY101Page = () => {
   // Part 3: The Quiz Manager's Sticky Notes (State Variables)
   const [questions, setQuestions] = useState([]);
   const [currentIndex, setCurrentIndex] = useState(0);
@@ -46,7 +46,7 @@ const GST102Page = () => {
       const response = await axios.post(
         'http://localhost:8000/api/quiz/submit-quiz-result/',
         {
-          course_code: 'GST102',
+          course_code: 'PHY101',
           score: correctAnswersCount
         },
         {
@@ -94,7 +94,7 @@ const GST102Page = () => {
   // Robot 1: Get questions when component loads
   useEffect(() => {
     console.log("Robot 1: Starting to fetch questions...");
-    axios.get('http://localhost:8000/api/quiz/questions/GST102/')
+    axios.get('http://localhost:8000/api/quiz/questions/PHY101/')
       .then((response) => {
         console.log("Robot 1: Questions fetched successfully!", response.data);
         setQuestions(response.data);
@@ -228,7 +228,7 @@ const GST102Page = () => {
         borderRadius: '10px',
         marginBottom: '20px'
       }}>
-        <h1><span style={{color: 'black'}}>GST102 Quiz</span></h1>
+        <h1><span style={{color: 'black'}}>PHY101 Quiz</span></h1>
         <div>
           <span style={{
             backgroundColor: timeLeft < 10 ? '#ff6b6b' : '#28a745',
@@ -349,5 +349,5 @@ const GST102Page = () => {
   );
 };
 
-export default GST102Page;
+export default PHY101Page;
 

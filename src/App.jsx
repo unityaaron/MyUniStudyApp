@@ -6,6 +6,11 @@ import Home from './pages/Home';
 
 import GST101Page from './pages/gst101';
 import GST102Page from './pages/gst102';
+import GST201Page from './pages/gst201';
+import BIO101Page from './pages/bio101';
+import CHM101Page from './pages/chm101';
+import PHY101Page from './pages/phy101';
+
 import './App.css';
 import ProfilePage from './pages/ProfilePage';
 import SettingsPage from './pages/SettingsPage';
@@ -42,7 +47,11 @@ const App = () => {
                 <Route path="/" element={<Home />} />        
                 <Route path='buyandsell' element={<BuyandSell />} />
                 <Route path="/gst101" element={<GST101Page />} />
-                <Route path="/gst102" element={<GST102Page />} /> 
+                <Route path="/gst201" element={<GST201Page />} />
+                <Route path="/gst102" element={<GST102Page />} />
+                <Route path="/bio101" element={<BIO101Page />} />
+                <Route path="/chm101" element={<CHM101Page />} />
+                <Route path="/phy101" element={<PHY101Page />} /> 
                 <Route path="/profile" element={<ProfilePage />} />
                 <Route path="/settings" element={<SettingsPage />} />
                 <Route path="/jobsandscholarships" element={<JobsAndScholarships />} />

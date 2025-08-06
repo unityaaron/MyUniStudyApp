@@ -23,6 +23,11 @@ import Register from './pages/Register';
 import ProtectedRoute from './components/ProtectedRoute'; // ✅ New: Import ProtectedRoute
 import LeaderBoardScores from './pages/LeaderBoardScores';
 import GST101_Leaderboard from './pages/gst101_leaderboard';
+import GST102_Leaderboard from './pages/gst102_leaderboard';
+import GST201_Leaderboard from './pages/gst201_leaderboard';
+import BIO101_Leaderboard from './pages/bio101_leaderboard';
+import PHY101_Leaderboard from './pages/phy101_leaderboard';
+import CHM101_Leaderboard from './pages/chm101_leaderboard';
 import MarketPlace from './pages/marketplace';
 import SellerPage from './pages/sellerpage';
 import BuyandSell from './pages/buyandsell';
@@ -59,6 +64,11 @@ const App = () => {
                 <Route path='scholarships' element={<ScholarshipsPage />} />
                 <Route path='leaderboard' element={<LeaderBoardScores />} />
                 <Route path='gst101_leaderboard' element={<GST101_Leaderboard />} />
+                <Route path='gst102_leaderboard' element={<GST102_Leaderboard />} />
+                <Route path='gst201_leaderboard' element={<GST201_Leaderboard />} />
+                <Route path='bio101_leaderboard' element={<BIO101_Leaderboard />} />
+                <Route path='chm101_leaderboard' element={<CHM101_Leaderboard />} />
+                <Route path='phy101_leaderboard' element={<PHY101_Leaderboard />} />
                 <Route path='marketplace' element={<MarketPlace />} />
                 <Route path='sellerpage' element={<SellerPage />} />
             </Route> 

@@ -86,7 +86,7 @@ body {
 
 .cards {
   display: flex;
-  gap: 15px;
+  gap: 5px;
 }
 
 .card {

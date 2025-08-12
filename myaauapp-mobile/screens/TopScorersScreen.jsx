@@ -14,7 +14,7 @@ const TopScorersScreen = ({ navigation }) => {
   const renderItem = ({ item }) => (
     <TouchableOpacity
       style={styles.courseButton}
-      onPress={() => console.log(`Go to Leaderboard for ${item.title}`)}
+      onPress={() => navigation.navigate('LeaderboardPage', { courseTitle: item.title })}
     >
       <Text style={styles.courseButtonText}>{item.title}</Text>
     </TouchableOpacity>

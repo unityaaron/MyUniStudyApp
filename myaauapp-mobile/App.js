@@ -11,7 +11,9 @@ import QuizScreen from './screens/QuizScreen.jsx';
 import JobsAndScholarshipsScreen from './screens/JobsandScholarshipsScreen.jsx';
 import JobsPage from './screens/JobsPageScreen.jsx';
 import ScholarshipsPage from './screens/ScholarshipsPageScreen.jsx';
+import TopScorersScreen from './screens/TopScorersScreen.jsx';
 import BuySellScreen from './screens/BuySellScreen.jsx';
+import LeaderboardPage from './screens/LeaderBoardPage.jsx';
 
 
 // This creates our bottom tabs navigator.
@@ -75,10 +77,16 @@ function TopScorersStackScreen() {
         component={TopScorersScreen}
         options={{ headerShown: false }}
       />
-      {/* We will add a Leaderboard page here later */}
+      {/* ADD THIS NEW LINE: */}
+      <TopScorersStack.Screen
+        name="LeaderboardPage"
+        component={LeaderboardPage}
+        options={{ headerShown: false }}
+      />
     </TopScorersStack.Navigator>
   );
 }
+
 
 const BuySellStack = createStackNavigator();
 

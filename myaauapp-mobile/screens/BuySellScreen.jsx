@@ -10,7 +10,7 @@ const BuySellScreen = ({ navigation }) => {
         {/* MarketPlace Card */}
         <TouchableOpacity 
           style={styles.card}
-          onPress={() => console.log('Marketplace pressed!')}
+          onPress={() => navigation.navigate('MarketplacePage')}
         >
           <Ionicons name="hand-right-outline" size={80} color="black" />
           <Text style={styles.cardLabel}>Market Place</Text>
@@ -20,7 +20,7 @@ const BuySellScreen = ({ navigation }) => {
         {/* SellerPage Card */}
         <TouchableOpacity 
           style={styles.card}
-          onPress={() => console.log('Seller page pressed!')}
+          onPress={() => navigation.navigate('SellerPage')}
         >
           <Ionicons name="pricetag-outline" size={80} color="black" />
           <Text style={styles.cardLabel}>Seller</Text>

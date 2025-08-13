@@ -1,6 +1,6 @@
 import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
 import { NavigationContainer } from '@react-navigation/native';
-import { StyleSheet, Text, View } from 'react-native';
+import { StyleSheet, SafeAreaView, Text, View } from 'react-native';
 import { Ionicons } from '@expo/vector-icons';
 import { createStackNavigator } from '@react-navigation/stack';
 import { createDrawerNavigator } from '@react-navigation/drawer';
@@ -39,7 +39,7 @@ function HomeStackScreen() {
   return (
     <HomeStack.Navigator>
       <HomeStack.Screen
-        name="Home"
+        name="HomeMain"
         component={HomeScreen}
         options={({ navigation }) => ({
           header: (props) => <Header navigation={navigation} />,
@@ -171,10 +171,38 @@ function MainTabNavigator() {
         },
       })}
     >
-      <Tab.Screen name="Home" component={HomeStackScreen} />
-      <Tab.Screen name="Jobs & Scholarships" component={JobsAndScholarshipsStackScreen} />
-      <Tab.Screen name="Top Scorers" component={TopScorersStackScreen} />
-      <Tab.Screen name="Buy & Sell" component={BuySellStackScreen} />
+      <Tab.Screen 
+  name="Home" 
+  component={HomeStackScreen} 
+  options={({ navigation }) => ({
+    header: (props) => <Header navigation={navigation} />,
+    headerShown: true, // Show the header on this screen
+  })}
+/>
+<Tab.Screen 
+  name="Jobs & Scholarships" 
+  component={JobsAndScholarshipsStackScreen} 
+  options={({ navigation }) => ({
+    header: (props) => <Header navigation={navigation} />,
+    headerShown: true, // Show the header on this screen
+  })}
+/>
+<Tab.Screen 
+  name="Top Scorers" 
+  component={TopScorersStackScreen} 
+  options={({ navigation }) => ({
+    header: (props) => <Header navigation={navigation} />,
+    headerShown: true, // Show the header on this screen
+  })}
+/>
+<Tab.Screen 
+  name="Buy & Sell" 
+  component={BuySellStackScreen} 
+  options={({ navigation }) => ({
+    header: (props) => <Header navigation={navigation} />,
+    headerShown: true, // Show the header on this screen
+  })}
+/>
     </Tab.Navigator>
   );
 }
@@ -196,6 +224,7 @@ const styles = StyleSheet.create({
 // We put the NavigationContainer first, then the Drawer, and then our tabs inside.
 export default function App() {
   return (
+    <SafeAreaView style={{ flex: 1 }}>
     <NavigationContainer>
       <Drawer.Navigator screenOptions={{ headerShown: false }} drawerContent={props => <CustomDrawerContent {...props} />}>
         <Drawer.Screen name="MainTabs" component={MainTabNavigator} />
@@ -242,5 +271,6 @@ export default function App() {
         />
       </Drawer.Navigator>
     </NavigationContainer>
+    </SafeAreaView>
   );
 }

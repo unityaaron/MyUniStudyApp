@@ -28,7 +28,7 @@ SECRET_KEY = config('SECRET_KEY')
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['172.20.10.3', 'localhost', '127.0.0.1']
 
 
 # Application definition
@@ -196,6 +196,7 @@ CORS_ALLOWED_ORIGINS = [
     "http://127.0.0.1:5173",
     "http://127.0.0.1:5174",
     "http://172.20.10.3:8000",
+    "http://localhost:8081",
 ]
 
 MEDIA_URL = '/media/'

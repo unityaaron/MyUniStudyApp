@@ -4,12 +4,12 @@ import { Ionicons } from '@expo/vector-icons';
 
 // This is our data for the courses.
 const courses = [
-  { id: '1', title: 'GST 101', questions: '100 questions' },
-  { id: '2', title: 'GST 102', questions: '100 questions' },
-  { id: '3', title: 'GST 201', questions: '100 questions' },
-  { id: '4', title: 'BIO 101', questions: '100 questions' },
-  { id: '5', title: 'PHY 101', questions: '100 questions' },
-  { id: '6', title: 'CHM 101', questions: '100 questions' },
+  { id: 'GST101', title: 'GST 101', questions: '100 questions' },
+  { id: 'GST102', title: 'GST 102', questions: '100 questions' },
+  { id: 'GST201', title: 'GST 201', questions: '100 questions' },
+  { id: 'BIO101', title: 'BIO 101', questions: '100 questions' },
+  { id: 'PHY101', title: 'PHY 101', questions: '100 questions' },
+  { id: 'CHM101', title: 'CHM 101', questions: '100 questions' },
 ];
 
 const HomeScreen = ({ navigation }) => {

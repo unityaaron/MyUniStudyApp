@@ -6,6 +6,7 @@ import axios from 'axios';
 import { useNavigation } from '@react-navigation/native';
 import { FontAwesomeIcon } from '@fortawesome/react-native-fontawesome';
 import { faEye, faEyeSlash } from '@fortawesome/free-solid-svg-icons';
+import AsyncStorage from '@react-native-async-storage/async-storage'; // ✅ We need this for saving the token.
 
 // This is your base URL for the Django backend. Make sure it's correct.
 const API_BASE_URL = 'http://172.20.10.3:8000'; 
@@ -49,10 +50,13 @@ export default function LoginPage({ onLoginSuccess }) {
         headers: loginHeaders,
       });
 
+      // ✅ Now that the login is successful, we get the token from the response.
+      const authToken = loginResponse.data.key; // The token is usually in a 'key' property from dj-rest-auth.
+      await AsyncStorage.setItem('authToken', authToken); // ✅ And we save it!
+      
       console.log('Login successful:', loginResponse.data);
       Alert.alert('Success', 'Logged in successfully!');
       
-      // ✅ This is the correct way to tell the app you're logged in.
       // We call the onLoginSuccess function, which will update the state in App.js.
       if (onLoginSuccess) {
         onLoginSuccess();

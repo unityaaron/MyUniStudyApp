@@ -121,10 +121,7 @@ const ProfilePage = () => {
         ) : (
           <Text style={styles.infoText}>No user data available. Please try logging in again.</Text>
         )}
-      </View>
-      <TouchableOpacity onPress={handleLogout} style={styles.logoutButton}>
-        <Text style={styles.logoutButtonText}>Log Out</Text>
-      </TouchableOpacity>
+      </View>      
     </ScrollView>
   );
 };

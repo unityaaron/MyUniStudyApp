@@ -16,6 +16,7 @@ import {
 } from 'react-native';
 import AsyncStorage from '@react-native-async-storage/async-storage'; // Our tool for getting the token.
 import { API_URL } from '../constants/api'; // Our API address constant.
+import axios from 'axios'; // ✨ NEW: Using axios is often easier for a beginner.
 
 // This is our main screen component for the marketplace.
 function MarketplacePage({ navigation }) {
@@ -27,63 +28,48 @@ function MarketplacePage({ navigation }) {
   const [nextPageUrl, setNextPageUrl] = useState(null); // The address for the next page of items.
   const [previousPageUrl, setPreviousPageUrl] = useState(null); // The address for the previous page.
   const [currentPage, setCurrentPage] = useState(1); // The number of the page we are on.
+  // ✨ NEW: A note to explicitly track if the user is logged in.
+  const [isUserAuthenticated, setIsUserAuthenticated] = useState(false);
+
 
   // === 2. The Worker Function (fetchItems) ===
   // This is a special function that goes and gets the items from the server.
   // We use `useCallback` to make sure this function is only created once.
   const fetchItems = useCallback(async (url) => {
+    // Before we even try to fetch, we check if the user is authenticated.
+    if (!isUserAuthenticated) {
+        setError('You must be logged in to view items.');
+        setLoading(false);
+        return;
+    }
+
     setLoading(true); // Start loading, turn on the spinning circle.
     setError(''); // Clear any old errors.
 
     try {
-      // ✅ CORRECT WAY: Get the token from AsyncStorage.
+      // We get the token from AsyncStorage.
       const authToken = await AsyncStorage.getItem('authToken');
-
+      
+      // If the token is missing, we don't proceed.
       if (!authToken) {
-        setError('You must be logged in to view items.');
-        setLoading(false);
-        // We can navigate to the login screen if the token is missing.
-        // navigation.navigate('Login');
-        return;
+        throw new Error('Authentication token not found. Please log in.');
       }
 
-      // We use the `fetch` tool to make a GET request to our server.
-      const response = await fetch(
+      // We use the `axios` tool to make a GET request to our server.
+      const response = await axios.get(
         url || `${API_URL}/api/buyandsell/`, // Use the provided URL, or the default first page.
         {
-          method: 'GET',
           headers: {
             'Authorization': `Token ${authToken}`, // Put our token in the header.
-            'Content-Type': 'application/json', // We tell the server what kind of data we expect.
           },
         }
       );
 
-      // If the server's response was not successful (like a 401 or 500 error), we throw an error.
-      if (!response.ok) {
-        // We get the error message from the server if there is one.
-        const data = await response.json();
-        let errorMessage = `Failed to load items: ${response.status} ${response.statusText}.`;
-        if (data.detail) {
-          errorMessage = `Error: ${data.detail}`;
-        }
-        if (response.status === 401 || response.status === 403) {
-          errorMessage = 'Your session has expired or you are not authorized. Please log in again.';
-          await AsyncStorage.removeItem('authToken'); // We remove the bad token.
-          // In a real app, you would navigate to the login screen here.
-        }
-        throw new Error(errorMessage);
-      }
-
-      // If everything worked, we get the data from the server.
-      const data = await response.json();
-
-      setItems(data.results); // We save the list of items to our `items` sticky note.
-      setNextPageUrl(data.next); // We save the next page's address.
-      setPreviousPageUrl(data.previous); // We save the previous page's address.
+      setItems(response.data.results); // We save the list of items to our `items` sticky note.
+      setNextPageUrl(response.data.next); // We save the next page's address.
+      setPreviousPageUrl(response.data.previous); // We save the previous page's address.
 
       // We figure out the current page number from the URL.
-      // `URL` is available in React Native, so this part is the same.
       const currentUrl = url || `${API_URL}/api/buyandsell/`;
       const urlParams = new URLSearchParams(new URL(currentUrl).search);
       const pageNum = urlParams.get('page');
@@ -91,20 +77,48 @@ function MarketplacePage({ navigation }) {
 
     } catch (err) {
       // If anything goes wrong, we save the error message.
-      console.error('Error fetching items:', err);
-      setError(err.message || 'An unexpected error occurred.');
-      Alert.alert('Error', err.message || 'An unexpected error occurred.');
+      console.error('Error fetching items:', err.response || err);
+      // We check if the error is a 401 Unauthorized error.
+      if (err.response && (err.response.status === 401 || err.response.status === 403)) {
+        const errorMsg = 'Your session has expired. Please log in again.';
+        setError(errorMsg);
+        Alert.alert('Error', errorMsg);
+        await AsyncStorage.removeItem('authToken'); // We remove the bad token.
+        setIsUserAuthenticated(false); // We update our state to reflect the user is no longer logged in.
+      } else {
+        setError(err.message || 'An unexpected error occurred.');
+        Alert.alert('Error', err.message || 'An unexpected error occurred.');
+      }
     } finally {
       setLoading(false); // We stop loading, hide the spinning circle.
     }
-  }, []); // `[]` means this function won't change, so `useEffect` is happy.
-
+  }, [isUserAuthenticated]); // ✨ MODIFIED: The function now depends on `isUserAuthenticated` state.
 
   // === 3. The Lifecycle Manager (useEffect) ===
-  // This tells React to run our `fetchItems` function one time, when the screen first opens.
+  // This special function runs when the screen first opens.
   useEffect(() => {
-    fetchItems(); // We call the function without any address, so it gets the first page.
-  }, [fetchItems]); // We need `fetchItems` in the list so React knows to run this effect.
+    // We create a helper function to check the token and update our state.
+    const checkAuthentication = async () => {
+      const token = await AsyncStorage.getItem('authToken');
+      // `!!` is a quick way to turn the token (or `null`) into `true` or `false`.
+      setIsUserAuthenticated(!!token); 
+    };
+
+    checkAuthentication();
+  }, []); // This effect only runs once when the component is created.
+
+  // ✨ MODIFIED: A second useEffect hook that only runs when the authentication status changes.
+  // This is the key fix! It makes sure we only try to fetch items AFTER we've confirmed the user's login status.
+  useEffect(() => {
+    // If the user is authenticated, we start fetching the items.
+    if (isUserAuthenticated) {
+      fetchItems(); // We call the function to start fetching data.
+    } else {
+      // If the user is not authenticated, we stop loading and show an error.
+      setLoading(false);
+      setError('You must be logged in to view the marketplace.');
+    }
+  }, [isUserAuthenticated, fetchItems]); // This effect depends on our new state and the fetch function.
 
 
   // === 4. Handlers for the "Next" and "Previous" buttons ===
@@ -139,7 +153,7 @@ function MarketplacePage({ navigation }) {
   // This is what actually shows up on the user's phone.
   
   // We show a loading indicator if we are waiting for data.
-  if (loading && items.length === 0) {
+  if (loading) {
     return (
       <View style={styles.loadingContainer}>
         <ActivityIndicator size="large" color="#007bff" />

@@ -2,19 +2,21 @@ import React from 'react';
 import { View, Text, StyleSheet, TouchableOpacity, FlatList } from 'react-native';
 
 const courses = [
-  { id: '1', title: 'GST 101' },
-  { id: '2', title: 'GST 102' },
-  { id: '3', title: 'GST 201' },
-  { id: '4', title: 'BIO 101' },
-  { id: '5', title: 'CHM 101' },
-  { id: '6', title: 'PHY 101' },
+  // We have both the id and the title here.
+  { id: 'GST101', title: 'GST 101' },
+  { id: 'GST102', title: 'GST 102' },
+  { id: 'GST201', title: 'GST 201' },
+  { id: 'BIO101', title: 'BIO 101' },
+  { id: 'CHM101', title: 'CHM 101' },
+  { id: 'PHY101', title: 'PHY 101' },
 ];
 
 const TopScorersScreen = ({ navigation }) => {
   const renderItem = ({ item }) => (
     <TouchableOpacity
       style={styles.courseButton}
-      onPress={() => navigation.navigate('LeaderboardPage', { courseTitle: item.title })}
+      // ✨ MODIFIED: We now pass both the courseTitle and the courseId.
+      onPress={() => navigation.navigate('LeaderboardPage', { courseTitle: item.title, courseId: item.id })}
     >
       <Text style={styles.courseButtonText}>{item.title}</Text>
     </TouchableOpacity>

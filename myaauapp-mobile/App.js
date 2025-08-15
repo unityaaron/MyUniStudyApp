@@ -216,9 +216,12 @@ function MainTabNavigator() {
 
 // === 5. The Main App Navigator (All the screens for a logged-in user) ===
 // We have to wrap all the parts of the main app in one place.
-function MainAppNavigator() {
+// ✅ We now give it an `onLogout` prop.
+function MainAppNavigator({ onLogout }) {
   return (
-    <Drawer.Navigator screenOptions={{ headerShown: false }} drawerContent={props => <CustomDrawerContent {...props} />}>
+    // ✅ We pass the `onLogout` function and the `isAuthenticated` state to the drawer content.
+    // The `isAuthenticated` is now available here because we pass it from the main App component.
+    <Drawer.Navigator screenOptions={{ headerShown: false }} drawerContent={props => <CustomDrawerContent {...props} onLogout={onLogout} isAuthenticated={true} />}>
       <Drawer.Screen name="MainTabs" component={MainTabNavigator} />
 
       <Drawer.Screen
@@ -268,6 +271,17 @@ export default function App() {
   const [isLoading, setIsLoading] = useState(true); // Is the app loading? Starts as true.
   const [isAuthenticated, setIsAuthenticated] = useState(false); // Is the user logged in? Starts as false.
 
+  // This is the new function that will be called to log the user out.
+  // It removes the token and tells the app the user is no longer logged in.
+  const handleLogout = async () => {
+    try {
+      await AsyncStorage.removeItem('authToken'); // Erase the token.
+      setIsAuthenticated(false); // Tell the app to go back to the login screen.
+    } catch (e) {
+      console.error("Failed to remove auth token", e);
+    }
+  };
+
   // This special effect runs only one time, right when the app starts.
   useEffect(() => {
     // This is a special function that checks for our login token in storage.
@@ -309,7 +323,8 @@ export default function App() {
       <NavigationContainer>
         {isAuthenticated ? (
           // ✅ If `isAuthenticated` is true, we show our main app.
-          <MainAppNavigator />
+          // We pass our `handleLogout` function here.
+          <MainAppNavigator onLogout={handleLogout} />
         ) : (
           // ❌ If `isAuthenticated` is false, we show the login/register pages.
           <AuthStackScreen onLoginSuccess={() => setIsAuthenticated(true)} />

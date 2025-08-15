@@ -1,93 +1,107 @@
 // screens/RegisterScreen.jsx
 
 // Part 1: Bring in the Tools (React Native Building Blocks)
-import React, { useState } from 'react';
+// We import React and the special "useState" and "useEffect" tools.
+// These let us manage and save information on the screen.
+import React, { useState, useEffect } from 'react';
 import {
-  View,
-  Text,
-  StyleSheet,
-  TextInput,
-  TouchableOpacity,
-  ActivityIndicator,
-  Alert
+  View, // A simple container, like a <div>
+  Text, // For showing text on the screen
+  StyleSheet, // For writing down how our components should look
+  TextInput, // For letting the user type things in
+  TouchableOpacity, // A button that becomes see-through when you press it
+  ActivityIndicator, // The little spinning loading circle
+  Alert // For showing pop-up messages
 } from 'react-native';
-import { useNavigation } from '@react-navigation/native';
-import { API_URL } from '../constants/api'; // Import our API_URL constant
+import { useNavigation } from '@react-navigation/native'; // A tool to let us move between screens
+import axios from 'axios'; // The tool we use to talk to our Django backend
+import { API_URL } from '../constants/api'; // Our special file that holds the backend address
 
 // Part 2: Create our React Screen Component
+// This is like a mini-program for our screen. We call it RegisterPage.
 const RegisterPage = () => {
   // Part 3: The Register Manager's Sticky Notes (State Variables)
-  const [username, setUsername] = useState('');
-  const [email, setEmail] = useState('');
-  const [password, setPassword] = useState('');
-  const [confirmPassword, setConfirmPassword] = useState('');
-  const [loading, setLoading] = useState(false);
-  const [error, setError] = useState('');
+  // These are like temporary memory slots. When they change, React knows to update the screen.
+  const [username, setUsername] = useState(''); // Holds the username the user types in
+  const [email, setEmail] = useState(''); // Holds the email
+  const [password, setPassword] = useState(''); // Holds the password
+  const [confirmPassword, setConfirmPassword] = useState(''); // Holds the confirmed password
+  const [loading, setLoading] = useState(false); // A true/false switch to show the loading circle
+  const [error, setError] = useState(''); // Holds any error messages we need to show
+  const [csrfToken, setCsrfToken] = useState(''); // This is where we will save the security token
 
-  const navigation = useNavigation();
+  const navigation = useNavigation(); // This gives us a tool to navigate to other pages
 
-  // Function to handle form submission
+  // A function whose only job is to get the CSRF token from the backend
+  const fetchCsrfToken = async () => {
+    try {
+      // ✅ THE FIX: We are telling the app the full address to find the token.
+      // Your Django urls.py has 'api/buyandsell/' before the 'get-csrf/'.
+      const response = await axios.get(`${API_URL}/api/buyandsell/get-csrf/`);
+      const token = response.data.csrfToken;
+      setCsrfToken(token); // We save the token in our sticky note
+      console.log('CSRF Token fetched:', token);
+    } catch (err) {
+      console.error('Failed to fetch CSRF token:', err);
+      // We set a general error to let the user know something is wrong
+      setError('Could not connect to the server to get the CSRF token. Please try again later.');
+    }
+  };
+
+  // This will run one time when the screen first opens.
+  // It calls our new function to get the CSRF token right away.
+  // We use the empty brackets [] to tell React to only run this once.
+  useEffect(() => {
+    fetchCsrfToken();
+  }, []);
+
+  // Function to handle form submission (what happens when you press the button)
   const handleRegister = async () => {
-    setLoading(true);
-    setError('');
+    setLoading(true); // Turn on the loading spinner
+    setError(''); // Clear any old error messages
 
     // Frontend validation: Check if passwords match
     if (password !== confirmPassword) {
       setError('Passwords do not match.');
       setLoading(false);
-      return;
+      return; // Stop the function right here
     }
     
     // Frontend validation: Check if fields are not empty
     if (!username || !email || !password || !confirmPassword) {
       setError('All fields are required.');
       setLoading(false);
-      return;
+      return; // Stop the function
+    }
+
+    // Also check if the CSRF token is available
+    if (!csrfToken) {
+        setError('Could not get CSRF token. Please restart the app or try again.');
+        setLoading(false);
+        return; // Stop the function
     }
 
     try {
-      // 1. Prepare the data to send to your Django backend
+      // The backend expects 'password1' and 'password2'
       const registrationData = {
         username: username,
         email: email,
-        password: password, // Note: Django's djoser requires 'password' not 'password1'
-        re_password: confirmPassword, // djoser requires 're_password'
+        password1: password, 
+        password2: confirmPassword,
       };
 
-      // 2. Make an API call to our Django backend
-      const response = await fetch(`${API_URL}/auth/registration/`, {
-        method: 'POST',
-        headers: {
-          'Content-Type': 'application/json',
-        },
-        body: JSON.stringify(registrationData),
-      });
-
-      // 3. Check if the response was successful
-      if (!response.ok) {
-        const errorData = await response.json();
-        let errorMessage = "Registration failed. Please check your details.";
-        // Handle specific error messages from Django
-        if (errorData.username) {
-            errorMessage += ` Username: ${errorData.username.join(', ')}.`;
+      // This is the important line where we send the data to Django
+      const response = await axios.post(
+        `${API_URL}/auth/registration/`, 
+        registrationData,
+        {
+          headers: {
+            'Content-Type': 'application/json',
+            // Now we add the CSRF token to our headers, like a secret password for Django
+            'X-CSRFToken': csrfToken,
+          },
         }
-        if (errorData.email) {
-            errorMessage += ` Email: ${errorData.email.join(', ')}.`;
-        }
-        if (errorData.password) {
-            errorMessage += ` Password: ${errorData.password.join(', ')}.`;
-        }
-        if (errorData.re_password) {
-            errorMessage += ` ${errorData.re_password.join(', ')}`;
-        }
-        if (errorData.non_field_errors) {
-            errorMessage += ` ${errorData.non_field_errors.join(', ')}`;
-        }
-        if (errorData.detail) {
-            errorMessage += ` ${errorData.detail}`;
-        }
-        throw new Error(errorMessage);
-      }
+      );
 
       // 4. Handle a successful response from Django
       console.log('Registration successful:', response.data);
@@ -99,14 +113,33 @@ const RegisterPage = () => {
       }, 2000); // Wait for 2 seconds (2000 milliseconds)
 
     } catch (err) {
+      // If something goes wrong, we will catch the error here
       console.error('Registration error:', err);
-      setError(err.message);
+      let errorMessage = "Registration failed. Please check your details.";
+      if (err.response) {
+        const errorData = err.response.data;
+        if (errorData.username) { errorMessage += ` Username: ${errorData.username.join(', ')}.`; }
+        if (errorData.email) { errorMessage += ` Email: ${errorData.email.join(', ')}.`; }
+        if (errorData.password) { errorMessage += ` Password: ${errorData.password.join(', ')}.`; }
+        if (errorData.password2) { errorMessage += ` ${errorData.password2.join(', ')}`; }
+        if (errorData.non_field_errors) { errorMessage += ` ${errorData.non_field_errors.join(', ')}`; }
+        if (errorData.detail) { errorMessage += ` ${errorData.detail}`; }
+      } else if (err.request) {
+        errorMessage = 'No response from server. Is the Django backend running?';
+      } else {
+        errorMessage = 'An unexpected error occurred.';
+      }
+
+      setError(errorMessage);
+      Alert.alert('Registration Failed', errorMessage);
+      
     } finally {
-      setLoading(false); // 6. Stop the loading spinner
+      setLoading(false); // 6. Stop the loading spinner no matter what happens
     }
   };
 
   // --- What You See on the Screen (The Display Part / JSX) ---
+  // This is the visual part of our screen, made from our React Native building blocks.
   return (
     <View style={styles.container}>
       <Text style={styles.title}>Register</Text>
@@ -159,7 +192,7 @@ const RegisterPage = () => {
       <TouchableOpacity
         style={styles.button}
         onPress={handleRegister}
-        disabled={loading}
+        disabled={loading || !csrfToken} // The button is disabled while loading or if we don't have a token
       >
         {loading ? (
           <ActivityIndicator color="#fff" />
@@ -179,6 +212,7 @@ const RegisterPage = () => {
 };
 
 // Part 4: The Stylesheet (Our Style Guide)
+// This is where we define how each component looks, like colors, sizes, and spacing.
 const styles = StyleSheet.create({
   container: {
     flex: 1,

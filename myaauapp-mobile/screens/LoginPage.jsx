@@ -110,6 +110,14 @@ export default function LoginPage({ onLoginSuccess }) {
       <TouchableOpacity style={styles.button} onPress={handleLogin}>
         <Text style={styles.buttonText}>Log In</Text>
       </TouchableOpacity>
+      
+      {/* ✅ FIX: Add a link to navigate to the register page. */}
+      <View style={styles.linkContainer}>
+        <Text style={styles.text}>Don't have an account? </Text>
+        <TouchableOpacity onPress={() => navigation.navigate('Register')}>
+          <Text style={styles.linkText}>Register</Text>
+        </TouchableOpacity>
+      </View>
     </View>
   );
 }
@@ -164,6 +172,20 @@ const styles = StyleSheet.create({
   },
   buttonText: {
     color: '#fff',
+    fontWeight: 'bold',
+  },
+  // ✅ FIX: Add styles for the new link container and text.
+  linkContainer: {
+    flexDirection: 'row',
+    marginTop: 20,
+  },
+  text: {
+    fontSize: 16,
+    color: '#555',
+  },
+  linkText: {
+    fontSize: 16,
+    color: '#007bff',
     fontWeight: 'bold',
   },
 });

@@ -2,7 +2,7 @@ import React from 'react';
 import { View, Text, StyleSheet, TouchableOpacity } from 'react-native';
 import { Ionicons } from '@expo/vector-icons';
 
-const JobsScreen = ({ navigation }) => {
+const JobsAndScholarshipsScreen = ({ navigation }) => {
   return (
     <View style={styles.container}>
       <Text style={styles.title}>Jobs & Scholarships</Text>
@@ -70,4 +70,4 @@ const styles = StyleSheet.create({
   },
 });
 
-export default JobsScreen;
+export default JobsAndScholarshipsScreen;

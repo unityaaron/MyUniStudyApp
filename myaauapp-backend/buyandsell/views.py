@@ -40,3 +40,26 @@ class UserProfileView(generics.RetrieveUpdateAPIView):
 
 
 
+#THIS PART IS FOR NATIVE LOGIN:
+
+# We need to add a simple view whose only job is to get a token.
+# You can add this view to the same file where your login view is.
+from django.middleware.csrf import get_token
+from django.http import JsonResponse
+from rest_framework.decorators import api_view, permission_classes
+from rest_framework.permissions import AllowAny
+
+# ... your other imports and views ...
+
+# ✅ This new view will respond to a GET request and return the token.
+@api_view(['GET'])
+@permission_classes([AllowAny])
+def get_csrf_token(request):
+    """
+    Returns a CSRF token.
+    React Native app should call this endpoint first to get the token.
+    """
+    # This function from Django gets or creates a new token.
+    token = get_token(request)
+    # We return a simple JSON response with the token.
+    return JsonResponse({'csrfToken': token})

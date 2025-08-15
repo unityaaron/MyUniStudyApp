@@ -199,6 +199,18 @@ CORS_ALLOWED_ORIGINS = [
     "http://localhost:8081",
 ]
 
+#THIS IS FOR REACT NATIVE LOGIN
+CORS_ALLOW_CREDENTIALS = True
+
+
+#THIS IS FOR REACT NATIVE LOGIN AS WELL
+# ✅ This tells Django to trust requests from your app's origin.
+CSRF_TRUSTED_ORIGINS = [
+    "http://localhost:8081",
+    "http://127.0.0.1:8081",
+    "http://172.20.10.3:8000",
+]
+
 MEDIA_URL = '/media/'
 MEDIA_ROOT = BASE_DIR / 'media'
 

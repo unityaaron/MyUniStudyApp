@@ -1,182 +1,165 @@
-// screens/LoginScreen.jsx
+// C:\Users\OSAGIE AARON UNITY\Desktop\github_request\MyAauApp\myaauapp-mobile\screens\LoginPage.jsx
 
-// Part 1: Bring in the Tools (React Native Building Blocks)
 import React, { useState } from 'react';
-import { 
-  View, 
-  Text, 
-  StyleSheet, 
-  TextInput, 
-  TouchableOpacity, 
-  ActivityIndicator,
-  Alert
-} from 'react-native';
+import { View, Text, TextInput, TouchableOpacity, StyleSheet, Alert } from 'react-native';
+import axios from 'axios';
 import { useNavigation } from '@react-navigation/native';
-import AsyncStorage from '@react-native-async-storage/async-storage';
-import { API_URL } from '../constants/api'; // Import our API_URL constant
+import { FontAwesomeIcon } from '@fortawesome/react-native-fontawesome';
+import { faEye, faEyeSlash } from '@fortawesome/free-solid-svg-icons';
 
-// Part 2: Create our React Screen Component
-const LoginPage = () => {
-  // Part 3: The Login Manager's Sticky Notes (State Variables)
+// This is your base URL for the Django backend. Make sure it's correct.
+const API_BASE_URL = 'http://172.20.10.3:8000'; 
+
+// We'll set up an Axios instance to handle the base URL and headers.
+const api = axios.create({
+  baseURL: API_BASE_URL,
+  headers: {
+    'Content-Type': 'application/json',
+  },
+});
+
+export default function LoginPage({ onLoginSuccess }) {
   const [username, setUsername] = useState('');
+  const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
-  const [loading, setLoading] = useState(false);
-  const [error, setError] = useState('');
-
+  const [showPassword, setShowPassword] = useState(false);
   const navigation = useNavigation();
 
-  // A new function to handle the login process
   const handleLogin = async () => {
-    // 1. Reset our loading and error states
-    setLoading(true);
-    setError('');
-
+    // 1. First, we need to get the CSRF token from the Django backend.
     try {
-      // 2. Make an API call to our Django backend
-      const response = await fetch(`${API_URL}/auth/login/`, {
-        method: 'POST',
-        headers: {
-          'Content-Type': 'application/json',
-        },
-        // 3. Send the username and password in the request body
-        body: JSON.stringify({ username, password }),
+      // The new endpoint we created in Django.
+      const csrfResponse = await api.get('/api/buyandsell/get-csrf/');
+      const csrfToken = csrfResponse.data.csrfToken;
+
+      console.log('Successfully fetched CSRF token:', csrfToken);
+
+      // 2. Now we can make the login request with the CSRF token in the headers.
+      // We set the token in the headers for this specific request.
+      const loginHeaders = {
+        ...api.defaults.headers,
+        'X-CSRFToken': csrfToken,
+      };
+      
+      const loginResponse = await api.post('/auth/login/', {
+        username: username,
+        email: email,
+        password: password,
+      }, {
+        headers: loginHeaders,
       });
 
-      // 4. Check if the response was successful
-      if (!response.ok) {
-        // If not, read the error message from the backend
-        const errorData = await response.json();
-        throw new Error(errorData.non_field_errors?.[0] || 'Login failed. Please check your credentials.');
+      console.log('Login successful:', loginResponse.data);
+      Alert.alert('Success', 'Logged in successfully!');
+      
+      // ✅ This is the correct way to tell the app you're logged in.
+      // We call the onLoginSuccess function, which will update the state in App.js.
+      if (onLoginSuccess) {
+        onLoginSuccess();
       }
+      
+    } catch (error) {
+      console.log('Full error response:', error.response);
 
-      const data = await response.json();
-      const token = data.token;
-      
-      // 5. Save the token to AsyncStorage
-      await AsyncStorage.setItem('authToken', token);
-      
-      // 6. Alert the user and navigate to the Home screen
-      Alert.alert("Success", "You have been logged in successfully!");
-      navigation.navigate('Home'); 
-    
-    } catch (err) {
-      console.error("Login Error:", err);
-      setError(err.message);
-    } finally {
-      setLoading(false); // 7. Stop the loading spinner
+      // This is the line that will show the correct, helpful error message.
+      // We'll try to get a specific message from the server response.
+      const errorMessage = error.response?.data?.detail || 
+                           error.response?.data?.non_field_errors?.[0] || 
+                           'An unexpected error occurred. Please check your username, email, and password.';
+
+      console.error(`Login Error: ${errorMessage}`);
+      Alert.alert('Login Failed', errorMessage);
     }
   };
 
-  // --- What You See on the Screen (The Display Part / JSX) ---
   return (
     <View style={styles.container}>
       <Text style={styles.title}>Login</Text>
-      
-      {/* Show an error message if there is one */}
-      {error ? <Text style={styles.errorText}>{error}</Text> : null}
-
-      {/* Username Input */}
       <TextInput
         style={styles.input}
         placeholder="Username"
         value={username}
         onChangeText={setUsername}
-        autoCapitalize="none"
-        placeholderTextColor="#888"
       />
-
-      {/* Password Input */}
       <TextInput
         style={styles.input}
-        placeholder="Password"
-        value={password}
-        onChangeText={setPassword}
-        secureTextEntry // Hides the text as the user types
-        placeholderTextColor="#888"
+        placeholder="Email"
+        value={email}
+        onChangeText={setEmail}
+        keyboardType="email-address"
       />
-
-      {/* Login Button */}
-      <TouchableOpacity
-        style={styles.button}
-        onPress={handleLogin}
-        disabled={loading}
-      >
-        {loading ? (
-          <ActivityIndicator color="#fff" />
-        ) : (
-          <Text style={styles.buttonText}>Log In</Text>
-        )}
-      </TouchableOpacity>
-      
-      <View style={styles.linkContainer}>
-        <Text style={styles.text}>Don't have an account? </Text>
-        <TouchableOpacity onPress={() => navigation.navigate('Register')}>
-          <Text style={styles.linkText}>Register</Text>
+      <View style={styles.passwordInputContainer}>
+        <TextInput
+          style={styles.passwordInput}
+          placeholder="Password"
+          value={password}
+          onChangeText={setPassword}
+          secureTextEntry={!showPassword}
+        />
+        <TouchableOpacity
+          style={styles.eyeIcon}
+          onPress={() => setShowPassword(!showPassword)}
+        >
+          <FontAwesomeIcon icon={showPassword ? faEye : faEyeSlash} />
         </TouchableOpacity>
       </View>
+      <TouchableOpacity style={styles.button} onPress={handleLogin}>
+        <Text style={styles.buttonText}>Log In</Text>
+      </TouchableOpacity>
     </View>
   );
-};
+}
 
-// Part 4: The Stylesheet (Our Style Guide)
 const styles = StyleSheet.create({
   container: {
     flex: 1,
     justifyContent: 'center',
     alignItems: 'center',
     padding: 20,
-    backgroundColor: '#f0f4f7',
+    backgroundColor: '#f8f8f8',
   },
   title: {
-    fontSize: 32,
+    fontSize: 24,
     fontWeight: 'bold',
-    marginBottom: 40,
-    color: '#000',
+    marginBottom: 20,
   },
   input: {
     width: '100%',
-    height: 50,
-    backgroundColor: '#fff',
-    borderRadius: 8,
-    paddingHorizontal: 15,
-    fontSize: 16,
-    color: '#000',
-    marginBottom: 15,
+    height: 40,
+    borderColor: '#ccc',
     borderWidth: 1,
-    borderColor: '#ddd',
+    borderRadius: 8,
+    paddingHorizontal: 10,
+    marginBottom: 10,
+    backgroundColor: '#fff',
+  },
+  passwordInputContainer: {
+    flexDirection: 'row',
+    alignItems: 'center',
+    width: '100%',
+    height: 40,
+    borderColor: '#ccc',
+    borderWidth: 1,
+    borderRadius: 8,
+    paddingHorizontal: 10,
+    marginBottom: 20,
+    backgroundColor: '#fff',
+  },
+  passwordInput: {
+    flex: 1,
+  },
+  eyeIcon: {
+    padding: 5,
   },
   button: {
+    backgroundColor: '#007BFF',
     width: '100%',
-    height: 50,
-    backgroundColor: '#007bff',
+    padding: 15,
     borderRadius: 8,
-    justifyContent: 'center',
     alignItems: 'center',
-    marginTop: 10,
   },
   buttonText: {
     color: '#fff',
-    fontSize: 18,
-    fontWeight: 'bold',
-  },
-  errorText: {
-    color: 'red',
-    marginBottom: 10,
-    textAlign: 'center',
-  },
-  linkContainer: {
-    flexDirection: 'row',
-    marginTop: 20,
-  },
-  text: {
-    fontSize: 16,
-    color: '#555',
-  },
-  linkText: {
-    fontSize: 16,
-    color: '#007bff',
     fontWeight: 'bold',
   },
 });
-
-export default LoginPage;

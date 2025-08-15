@@ -4,6 +4,7 @@ from django.urls import path, include
 from django.conf import settings
 from django.conf.urls.static import static
 
+
 # No more direct imports for dj_rest_auth views, as we're using `include` for their URL sets.
 
 urlpatterns = [

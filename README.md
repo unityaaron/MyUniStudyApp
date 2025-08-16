@@ -155,7 +155,7 @@ Follow these steps to get the backend server running on your machine.
 
 Clone the repository and navigate into the backend folder:
 
-git clone https://github.com/unityaaron/MyAauApp
+git clone https://github.com/unityaaron/MyUniStudyApp
 cd AAU-GST-App/backend
 
 Create and activate a virtual environment:

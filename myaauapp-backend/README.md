@@ -53,7 +53,7 @@ PostgreSQL (v17+)
 Step-by-Step Instructions
 Clone the repository:
 
-git clone https://github.com/unityaaron/MyAauApp
+git clone https://github.com/unityaaron/MyUniStudyApp
 
 (Note: If you have already cloned the repository, you can skip this step.)
 

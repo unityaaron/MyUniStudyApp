@@ -2,85 +2,78 @@ import React from 'react';
 import { View, Text, StyleSheet, TouchableOpacity } from 'react-native';
 import { Ionicons } from '@expo/vector-icons';
 import { DrawerContentScrollView, DrawerItemList } from '@react-navigation/drawer';
+import { useTheme } from './ThemeProvider';
 
-// We now accept props!
-// 'navigation' is for moving between screens.
-// 'isAuthenticated' is the sticky note from App.js.
-// 'onLogout' is the function we will call to log out.
 const CustomDrawerContent = (props) => {
-  // Let's get these props from the list of props that are passed.
   const { navigation, isAuthenticated, onLogout } = props;
+  
+  const { theme } = useTheme();
+  const isDark = theme === 'dark';
 
-  // This function will now clear the token and then close the sidebar.
   const handleLogoutClick = async () => {
     console.log('Logging out...');
-    await onLogout(); // This will clear the token and update the app state.
-    navigation.closeDrawer(); // We close the sidebar after logging out.
+    await onLogout();
+    navigation.closeDrawer();
   };
 
   return (
-    // DrawerContentScrollView lets us scroll if we have many items.
-    <DrawerContentScrollView {...props}>
+    <DrawerContentScrollView {...props} contentContainerStyle={isDark ? styles.containerDark : styles.containerLight}>
       <View style={styles.container}>
-        <View style={styles.drawerHeader}>
-          {/* ... the rest of your header code is unchanged ... */}
+        <View style={[styles.drawerHeader, isDark ? styles.drawerHeaderDark : styles.drawerHeaderLight]}>
           <TouchableOpacity onPress={() => navigation.closeDrawer()} style={styles.closeBtn}>
-            <Ionicons name="close-circle-outline" size={28} color="#333" />
+            <Ionicons name="close-circle-outline" size={28} color={isDark ? '#fff' : '#333'} />
           </TouchableOpacity>
-          <Text style={styles.headerText}>My Profile</Text>
+          <Text style={[styles.headerText, isDark ? styles.textDark : styles.textLight]}>My Profile</Text>
         </View>
 
         <View style={styles.drawerItems}>
-          {/* We use a conditional check to show different buttons. */}
           {isAuthenticated ? (
-            // If the user is logged in, show these options
             <View>
               <TouchableOpacity
-                style={styles.drawerItem}
+                style={[styles.drawerItem, isDark ? styles.drawerItemDark : styles.drawerItemLight]}
                 onPress={() => navigation.navigate('ProfilePage')} 
               >
-                <Ionicons name="person-circle-outline" size={24} color="#555" />
-                <Text style={styles.drawerItemText}>Profile</Text>
+                <Ionicons name="person-circle-outline" size={24} color={isDark ? '#ddd' : '#555'} />
+                <Text style={[styles.drawerItemText, isDark ? styles.textDark : styles.textLight]}>Profile</Text>
               </TouchableOpacity>
               <TouchableOpacity
-                style={styles.drawerItem}
+                style={[styles.drawerItem, isDark ? styles.drawerItemDark : styles.drawerItemLight]}
                 onPress={() => navigation.navigate('SettingsPage')} 
               >
-                <Ionicons name="settings-outline" size={24} color="#555" />
-                <Text style={styles.drawerItemText}>Settings</Text>
+                <Ionicons name="settings-outline" size={24} color={isDark ? '#ddd' : '#555'} />
+                <Text style={[styles.drawerItemText, isDark ? styles.textDark : styles.textLight]}>Settings</Text>
               </TouchableOpacity>
               <TouchableOpacity
-                style={styles.drawerItem}
+                style={[styles.drawerItem, isDark ? styles.drawerItemDark : styles.drawerItemLight]}
                 onPress={() => navigation.navigate('MorePage')} 
               >
-                <Ionicons name="ellipsis-horizontal-circle-outline" size={24} color="#555" />
-                <Text style={styles.drawerItemText}>More</Text>
+                <Ionicons name="ellipsis-horizontal-circle-outline" size={24} color={isDark ? '#ddd' : '#555'} />
+                <Text style={[styles.drawerItemText, isDark ? styles.textDark : styles.textLight]}>More</Text>
               </TouchableOpacity>
-              {/* This is the new Logout button. */}
               <TouchableOpacity
-                style={[styles.drawerItem, styles.logoutItem]}
+                // 🟢 FIX: We now use a new style that specifically sets the border color for the theme.
+                style={[styles.drawerItem, styles.logoutItem, isDark ? styles.logoutItemDark : styles.logoutItemLight]}
                 onPress={handleLogoutClick}
               >
-                <Ionicons name="log-out-outline" size={24} color="red" />
+                <Ionicons name="log-out-outline" size={24} color="#f44336" />
                 <Text style={[styles.drawerItemText, styles.logoutText]}>Logout</Text>
               </TouchableOpacity>
             </View>
           ) : (
-            // If the user is NOT logged in, show these options
             <View>
               <TouchableOpacity
-                style={styles.drawerItem}
+                style={[styles.drawerItem, isDark ? styles.drawerItemDark : styles.drawerItemLight]}
                 onPress={() => navigation.navigate('Login')}
               >
-                <Ionicons name="log-in-outline" size={24} color="#555" />
-                <Text style={styles.drawerItemText}>Login</Text>
+                <Ionicons name="log-in-outline" size={24} color={isDark ? '#ddd' : '#555'} />
+                <Text style={[styles.drawerItemText, isDark ? styles.textDark : styles.textLight]}>Login</Text>
               </TouchableOpacity>
               <TouchableOpacity
-                style={styles.drawerItem}
+                style={[styles.drawerItem, isDark ? styles.drawerItemDark : styles.drawerItemLight]}
                 onPress={() => navigation.navigate('Register')}
               >
-                <Ionicons name="person-add-outline" size={24} color="#555" />
-                <Text style={styles.drawerItemText}>Register</Text>
+                <Ionicons name="person-add-outline" size={24} color={isDark ? '#ddd' : '#555'} />
+                <Text style={[styles.drawerItemText, isDark ? styles.textDark : styles.textLight]}>Register</Text>
               </TouchableOpacity>
             </View>
           )}
@@ -93,44 +86,55 @@ const CustomDrawerContent = (props) => {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: 'white',
     paddingTop: 40,
   },
+  containerLight: { backgroundColor: 'white' },
+  containerDark: { backgroundColor: '#121212' },
+
   drawerHeader: {
     flexDirection: 'row',
     alignItems: 'center',
     padding: 20,
     borderBottomWidth: 1,
-    borderBottomColor: '#eee',
     marginBottom: 10,
   },
+  drawerHeaderLight: { borderBottomColor: '#eee' },
+  drawerHeaderDark: { borderBottomColor: '#2C2C2C' },
+  
   closeBtn: {
     paddingRight: 15,
   },
+
   headerText: {
     fontSize: 20,
     fontWeight: 'bold',
   },
+  textLight: { color: 'black' },
+  textDark: { color: 'white' },
+
   drawerItems: {
     flex: 1,
   },
+
   drawerItem: {
     flexDirection: 'row',
     alignItems: 'center',
     padding: 15,
     borderBottomWidth: 1,
-    borderBottomColor: '#f0f0f0',
   },
+  drawerItemLight: { borderBottomColor: '#f0f0f0' },
+  drawerItemDark: { borderBottomColor: '#2C2C2C' },
+  
   drawerItemText: {
     marginLeft: 15,
     fontSize: 18,
-    color: '#555',
   },
+
   logoutItem: {
-    marginTop: 20,
-    borderTopWidth: 1,
-    borderTopColor: '#f0f0f0',
+    marginTop: 0,
+    borderBottomWidth: 0,
   },
+
   logoutText: {
     color: 'red',
   },

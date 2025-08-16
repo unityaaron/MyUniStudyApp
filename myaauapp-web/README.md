@@ -61,3 +61,11 @@ API Integration: Successfully consumed a custom REST API, handling requests and 
 Component-Based Architecture: Utilized React's component model to build a modular and scalable user interface with reusable components.
 
 Responsive Design: Architected a UI that provides a great user experience on any device, a crucial skill for modern web development.
+
+
+Contact
+For any questions, feel free to contact me:
+
+Name: Unity Aaron
+Email: aaronunity1@gmail.com
+LinkedIn: https://www.linkedin.com/in/unity-aaron-b4a281226

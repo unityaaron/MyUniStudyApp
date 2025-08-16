@@ -9,7 +9,6 @@ import { createStackNavigator } from '@react-navigation/stack';
 import { createDrawerNavigator } from '@react-navigation/drawer';
 import AsyncStorage from '@react-native-async-storage/async-storage';
 import { Ionicons } from '@expo/vector-icons';
-// ⚠️ We need to make sure to import both the ThemeProvider and useTheme hook.
 import { ThemeProvider, useTheme } from './components/ThemeProvider';
 
 // We import all of your screen components here.
@@ -41,16 +40,33 @@ const TopScorersStack = createStackNavigator();
 const BuySellStack = createStackNavigator();
 const AuthStack = createStackNavigator();
 
-// === 3. Your Stack Navigator Functions (They are not changing) ===
+// 🟢 FIX: Create a function to get themed options for the stack navigators.
+// This ensures that all screens inside the stacks get the correct background color.
+const ThemedStackOptions = () => {
+  const { theme } = useTheme();
+  const isDark = theme === 'dark';
+  return {
+    headerShown: true, // We will show the header for all these screens
+    cardStyle: {
+      backgroundColor: isDark ? '#121212' : '#ffffff', // Set the screen background color
+    },
+  };
+};
+
+// === 3. Your Stack Navigator Functions (Updated with a fix) ===
 function HomeStackScreen() {
+  const themedOptions = ThemedStackOptions();
   return (
-    <HomeStack.Navigator>
+    // 🟢 FIX: Apply the themed options to the stack navigator.
+    <HomeStack.Navigator screenOptions={themedOptions}>
       <HomeStack.Screen
         name="HomeMain"
         component={HomeScreen}
         options={({ navigation }) => ({
           header: (props) => <Header navigation={navigation} />,
-          headerShown: false,
+          // 🟢 FIX: The Stack.Navigator has headerShown: true, so we can remove this line.
+          // The custom header will now show up correctly.
+          // headerShown: false,
         })}
       />
       <HomeStack.Screen
@@ -58,7 +74,8 @@ function HomeStackScreen() {
         component={QuizScreen}
         options={({ navigation }) => ({
           header: (props) => <StackHeader {...props} title="Quiz" />,
-          headerShown: true,
+          // 🟢 FIX: The Stack.Navigator has headerShown: true, so we can remove this line.
+          // headerShown: true,
         })}
       />
     </HomeStack.Navigator>
@@ -66,14 +83,17 @@ function HomeStackScreen() {
 }
 
 function JobsAndScholarshipsStackScreen() {
+  const themedOptions = ThemedStackOptions();
   return (
-    <JobsStack.Navigator>
+    // 🟢 FIX: Apply the themed options to the stack navigator.
+    <JobsStack.Navigator screenOptions={themedOptions}>
       <JobsStack.Screen
         name="JobsAndScholarships"
         component={JobsAndScholarshipsScreen}
         options={({ navigation }) => ({
           header: (props) => <Header navigation={navigation} />,
-          headerShown: false,
+          // 🟢 FIX: Removed.
+          // headerShown: false,
         })}
       />
       <JobsStack.Screen
@@ -81,7 +101,8 @@ function JobsAndScholarshipsStackScreen() {
         component={JobsPage}
         options={({ navigation }) => ({
           header: (props) => <StackHeader {...props} title="Jobs" />,
-          headerShown: true,
+          // 🟢 FIX: Removed.
+          // headerShown: true,
         })}
       />
       <JobsStack.Screen
@@ -89,7 +110,8 @@ function JobsAndScholarshipsStackScreen() {
         component={ScholarshipsPage}
         options={({ navigation }) => ({
           header: (props) => <StackHeader {...props} title="Scholarships" />,
-          headerShown: true,
+          // 🟢 FIX: Removed.
+          // headerShown: true,
         })}
       />
     </JobsStack.Navigator>
@@ -97,14 +119,17 @@ function JobsAndScholarshipsStackScreen() {
 }
 
 function TopScorersStackScreen() {
+  const themedOptions = ThemedStackOptions();
   return (
-    <TopScorersStack.Navigator>
+    // 🟢 FIX: Apply the themed options to the stack navigator.
+    <TopScorersStack.Navigator screenOptions={themedOptions}>
       <TopScorersStack.Screen
         name="TopScorersHome"
         component={TopScorersScreen}
         options={({ navigation }) => ({
           header: (props) => <Header navigation={navigation} />,
-          headerShown: false,
+          // 🟢 FIX: Removed.
+          // headerShown: false,
         })}
       />
       <TopScorersStack.Screen
@@ -112,7 +137,8 @@ function TopScorersStackScreen() {
         component={LeaderboardPage}
         options={({ navigation }) => ({
           header: (props) => <StackHeader {...props} title="Leaderboard" />,
-          headerShown: true,
+          // 🟢 FIX: Removed.
+          // headerShown: true,
         })}
       />
     </TopScorersStack.Navigator>
@@ -120,14 +146,17 @@ function TopScorersStackScreen() {
 }
 
 function BuySellStackScreen() {
+  const themedOptions = ThemedStackOptions();
   return (
-    <BuySellStack.Navigator>
+    // 🟢 FIX: Apply the themed options to the stack navigator.
+    <BuySellStack.Navigator screenOptions={themedOptions}>
       <BuySellStack.Screen
         name="BuySellHome"
         component={BuySellScreen}
         options={({ navigation }) => ({
           header: (props) => <Header navigation={navigation} />,
-          headerShown: false,
+          // 🟢 FIX: Removed.
+          // headerShown: false,
         })}
       />
       <BuySellStack.Screen
@@ -135,7 +164,8 @@ function BuySellStackScreen() {
         component={MarketplacePage}
         options={({ navigation }) => ({
           header: (props) => <StackHeader {...props} title="Marketplace" />,
-          headerShown: true,
+          // 🟢 FIX: Removed.
+          // headerShown: true,
         })}
       />
       <BuySellStack.Screen
@@ -143,7 +173,8 @@ function BuySellStackScreen() {
         component={SellerPage}
         options={({ navigation }) => ({
           header: (props) => <StackHeader {...props} title="Sell an Item" />,
-          headerShown: true,
+          // 🟢 FIX: Removed.
+          // headerShown: true,
         })}
       />
     </BuySellStack.Navigator>
@@ -152,7 +183,6 @@ function BuySellStackScreen() {
 
 // === 4. Your Tab Navigator Function ===
 function MainTabNavigator() {
-  // 🟢 We use the useTheme hook here to get the theme
   const { theme } = useTheme();
   const isDark = theme === 'dark';
 
@@ -160,7 +190,10 @@ function MainTabNavigator() {
     <Tab.Navigator
       initialRouteName="Home"
       screenOptions={({ route }) => ({
+        // 🟢 FIX: We no longer need to set a header on the Tab screens,
+        // because the Stack Navigators handle the headers.
         headerShown: false,
+        
         tabBarIcon: ({ focused, color, size }) => {
           let iconName;
           if (route.name === 'Home') {
@@ -176,63 +209,32 @@ function MainTabNavigator() {
         },
         tabBarActiveTintColor: 'yellow',
         tabBarInactiveTintColor: 'white',
-        // 🟢 We change the background color of the tab bar based on the theme
         tabBarStyle: {
           backgroundColor: isDark ? '#1F1F1F' : '#2E8B57',
         },
       })}
     >
-      <Tab.Screen
-        name="Home"
-        component={HomeStackScreen}
-        options={({ navigation }) => ({
-          header: (props) => <Header navigation={navigation} />,
-          headerShown: true,
-        })}
-      />
-      <Tab.Screen
-        name="Jobs & Scholarships"
-        component={JobsAndScholarshipsStackScreen}
-        options={({ navigation }) => ({
-          header: (props) => <Header navigation={navigation} />,
-          headerShown: true,
-        })}
-      />
-      <Tab.Screen
-        name="Top Scorers"
-        component={TopScorersStackScreen}
-        options={({ navigation }) => ({
-          header: (props) => <Header navigation={navigation} />,
-          headerShown: true,
-        })}
-      />
-      <Tab.Screen
-        name="Buy & Sell"
-        component={BuySellStackScreen}
-        options={({ navigation }) => ({
-          header: (props) => <Header navigation={navigation} />,
-          headerShown: true,
-        })}
-      />
+      <Tab.Screen name="Home" component={HomeStackScreen} />
+      <Tab.Screen name="Jobs & Scholarships" component={JobsAndScholarshipsStackScreen} />
+      <Tab.Screen name="Top Scorers" component={TopScorersStackScreen} />
+      <Tab.Screen name="Buy & Sell" component={BuySellStackScreen} />
     </Tab.Navigator>
   );
 }
 
 // === 5. The Main App Navigator (All the screens for a logged-in user) ===
 function MainAppNavigator({ onLogout }) {
-  // 🟢 We use the useTheme hook here as well
   const { theme } = useTheme();
   const isDark = theme === 'dark';
 
   return (
-    <Drawer.Navigator 
-      screenOptions={{ 
+    <Drawer.Navigator
+      screenOptions={{
         headerShown: false,
-        // 🟢 We apply the theme to the drawer's background color
         drawerStyle: {
           backgroundColor: isDark ? '#121212' : '#ffffff',
         },
-      }} 
+      }}
       drawerContent={props => <CustomDrawerContent {...props} onLogout={onLogout} isAuthenticated={true} />}
     >
       <Drawer.Screen name="MainTabs" component={MainTabNavigator} />
@@ -266,14 +268,12 @@ function MainAppNavigator({ onLogout }) {
 
 // === 6. The Auth Navigator (For users who are not logged in) ===
 function AuthStackScreen({ onLoginSuccess }) {
-  // 🟢 We use the useTheme hook here as well
   const { theme } = useTheme();
   const isDark = theme === 'dark';
 
   return (
-    <AuthStack.Navigator screenOptions={{ 
+    <AuthStack.Navigator screenOptions={{
       headerShown: false,
-      // 🟢 Apply the theme to the stack's background
       cardStyle: {
         backgroundColor: isDark ? '#121212' : '#f0f4f7'
       }
@@ -328,7 +328,6 @@ export default function App() {
     );
   }
 
-  // 🟢 The ThemeProvider is now wrapping the entire app.
   return (
     <SafeAreaView style={{ flex: 1 }}>
       <ThemeProvider>
@@ -344,7 +343,6 @@ export default function App() {
   );
 }
 
-// Simple styles for the loading screen.
 const styles = StyleSheet.create({
   loadingContainer: {
     flex: 1,

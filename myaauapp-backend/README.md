@@ -92,3 +92,10 @@ Database Modeling: Gained hands-on experience with database schemas and relation
 Secure Authentication: Implemented a modern, token-based authentication system, a critical skill for any web developer.
 
 Project Structure: Built a scalable backend with a clear and logical folder structure, following industry best practices.
+
+Contact
+For any questions, feel free to contact me:
+
+Name: Unity Aaron
+Email: aaronunity1@gmail.com
+LinkedIn: https://www.linkedin.com/in/unity-aaron-b4a281226

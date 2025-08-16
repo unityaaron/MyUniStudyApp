@@ -1,6 +1,10 @@
+// screens/HomeScreen.jsx
+
 import React from 'react';
 import { View, Text, StyleSheet, TouchableOpacity, ScrollView } from 'react-native';
 import { Ionicons } from '@expo/vector-icons';
+// 🟢 FIX: Import the useTheme hook
+import { useTheme } from '../components/ThemeProvider';
 
 // This is our data for the courses.
 const courses = [
@@ -13,21 +17,30 @@ const courses = [
 ];
 
 const HomeScreen = ({ navigation }) => {
+  // 🟢 FIX: Get the current theme to style the component
+  const { theme } = useTheme();
+  const isDark = theme === 'dark';
+
   return (
-    <ScrollView style={styles.container}>
-      <Text style={styles.title}>Practice Questions</Text>
+    // 🟢 FIX: Apply the dynamic container style
+    <ScrollView style={[styles.container, isDark ? styles.containerDark : styles.containerLight]}>
+      {/* 🟢 FIX: Apply the dynamic title style */}
+      <Text style={[styles.title, isDark ? styles.titleDark : styles.titleLight]}>Practice Questions</Text>
       <View style={styles.cardsContainer}>
         {courses.map((course) => (
-          <TouchableOpacity 
-            key={course.id} 
-            style={styles.card}
+          // 🟢 FIX: Apply the dynamic card style
+          <TouchableOpacity
+            key={course.id}
+            style={[styles.card, isDark ? styles.cardDark : styles.cardLight]}
             onPress={() => navigation.navigate('Quiz', { courseId: course.id })}
           >
             <View style={styles.iconContainer}>
-              <Ionicons name="book-outline" size={80} color="black" />
+              {/* 🟢 FIX: Change the icon color */}
+              <Ionicons name="book-outline" size={80} color={isDark ? 'white' : 'black'} />
             </View>
-            <Text style={styles.cardLabel}>{course.title}</Text>
-            <Text style={styles.cardCount}>{course.questions}</Text>
+            {/* 🟢 FIX: Apply the dynamic text styles */}
+            <Text style={[styles.cardLabel, isDark ? styles.textDark : styles.textLight]}>{course.title}</Text>
+            <Text style={[styles.cardCount, isDark ? styles.textDark : styles.textLight]}>{course.questions}</Text>
           </TouchableOpacity>
         ))}
       </View>
@@ -35,16 +48,29 @@ const HomeScreen = ({ navigation }) => {
   );
 };
 
+// 🟢 FIX: We now have two sets of styles for the theme.
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: '#F5F5F5',
     padding: 20,
+  },
+  // 🟢 FIX: New container colors for light and dark mode.
+  containerLight: {
+    backgroundColor: '#F5F5F5',
+  },
+  containerDark: {
+    backgroundColor: '#121212',
   },
   title: {
     fontSize: 24,
     fontWeight: 'bold',
     marginBottom: 20,
+  },
+  titleLight: {
+    color: 'black',
+  },
+  titleDark: {
+    color: 'white',
   },
   cardsContainer: {
     flexDirection: 'row',
@@ -53,12 +79,23 @@ const styles = StyleSheet.create({
   },
   card: {
     width: '48%',
-    backgroundColor: 'white',
     borderRadius: 10,
     padding: 20,
     marginBottom: 15,
     alignItems: 'center',
+  },
+  // 🟢 FIX: New card styles for light and dark mode.
+  cardLight: {
+    backgroundColor: 'white',
     shadowColor: '#000',
+    shadowOffset: { width: 0, height: 2 },
+    shadowOpacity: 0.1,
+    shadowRadius: 4,
+    elevation: 5,
+  },
+  cardDark: {
+    backgroundColor: '#1F1F1F', // Dark gray for the card background
+    shadowColor: '#fff',
     shadowOffset: { width: 0, height: 2 },
     shadowOpacity: 0.1,
     shadowRadius: 4,
@@ -70,11 +107,16 @@ const styles = StyleSheet.create({
   cardLabel: {
     fontSize: 18,
     fontWeight: 'bold',
-    color: '#333',
   },
   cardCount: {
     fontSize: 14,
-    color: '#666',
+  },
+  // 🟢 FIX: New text colors for light and dark mode.
+  textLight: {
+    color: '#333',
+  },
+  textDark: {
+    color: 'white',
   },
 });
 

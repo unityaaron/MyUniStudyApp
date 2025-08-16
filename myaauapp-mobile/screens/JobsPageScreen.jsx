@@ -14,6 +14,8 @@ import {
   Linking
 } from 'react-native';
 import { API_URL } from '../constants/api'; // Import our API_URL constant
+// 🟢 FIX: Import our theme hook
+import { useTheme } from '../components/ThemeProvider';
 
 // Part 2: Create our React Screen Component
 const JobsPage = () => {
@@ -24,6 +26,22 @@ const JobsPage = () => {
   const [nextPageUrl, setNextPageUrl] = useState(null);
   const [previousPageUrl, setPreviousPageUrl] = useState(null);
   const [currentPage, setCurrentPage] = useState(1);
+
+  // 🟢 FIX: Get the theme from the hook
+  const { theme } = useTheme();
+  const isDark = theme === 'dark';
+  // 🟢 FIX: Define a few new color variables based on the theme
+  const containerBgColor = isDark ? '#121212' : '#f0f4f7';
+  const cardBgColor = isDark ? '#1F1F1F' : '#fff';
+  const textColor = isDark ? 'white' : '#000';
+  const secondaryTextColor = isDark ? '#A9A9A9' : '#555';
+  const tertiaryTextColor = isDark ? '#D3D3D3' : '#333';
+  const jobTitleColor = isDark ? '#fff' : '#333';
+  const jobSummaryColor = isDark ? '#ccc' : '#666';
+  const jobInfoColor = isDark ? '#999' : '#999';
+  const infoTextColor = isDark ? '#fff' : '#555';
+  const pageNumberColor = isDark ? '#fff' : '#333';
+  const errorTextColor = 'red'; // Error text should probably stay red
 
   // 2. Function to fetch job posts from Django API
   const fetchJobPosts = useCallback(async (url) => {
@@ -94,37 +112,40 @@ const JobsPage = () => {
   // 5. Conditional rendering for loading, error, or no jobs
   if (loading) {
     return (
-      <View style={styles.centeredContainer}>
-        <ActivityIndicator size="large" color="#007bff" />
-        <Text style={styles.loadingText}>Loading job posts...</Text>
+      <View style={[styles.centeredContainer, { backgroundColor: containerBgColor }]}>
+        <ActivityIndicator size="large" color={secondaryTextColor} />
+        <Text style={[styles.loadingText, { color: secondaryTextColor }]}>Loading job posts...</Text>
       </View>
     );
   }
 
   if (error) {
     return (
-      <View style={styles.centeredContainer}>
-        <Text style={styles.errorText}>Error: {error}</Text>
+      <View style={[styles.centeredContainer, { backgroundColor: containerBgColor }]}>
+        <Text style={[styles.errorText, { color: errorTextColor }]}>Error: {error}</Text>
       </View>
     );
   }
 
   if (jobPosts.length === 0 && currentPage === 1) {
     return (
-      <View style={styles.centeredContainer}>
-        <Text style={styles.infoText}>No job posts found yet.</Text>
+      <View style={[styles.centeredContainer, { backgroundColor: containerBgColor }]}>
+        <Text style={[styles.infoText, { color: infoTextColor }]}>No job posts found yet.</Text>
       </View>
     );
   }
 
   // 6. Main render: Display job posts and pagination buttons
   return (
-    <View style={styles.mainContainer}>
-      <Text style={styles.pageTitle}>Job Posts</Text>
+    // 🟢 FIX: Use a dynamic style for the main container
+    <View style={[styles.mainContainer, { backgroundColor: containerBgColor }]}>
+      {/* 🟢 FIX: Use a dynamic style for the text color */}
+      <Text style={[styles.pageTitle, { color: textColor }]}>Job Posts</Text>
       
       <ScrollView contentContainerStyle={styles.scrollContent}>
         {jobPosts.map(job => (
-          <View key={job.id} style={styles.jobCard}>
+          // 🟢 FIX: Use a dynamic style for the job card's background
+          <View key={job.id} style={[styles.jobCard, { backgroundColor: cardBgColor }]}>
             {job.image_url ? (
               <Image
                 source={{ uri: job.image_url }}
@@ -132,10 +153,11 @@ const JobsPage = () => {
                 resizeMode="contain"
               />
             ) : null}
-            <Text style={styles.jobTitle}>{job.title}</Text>
-            <Text style={styles.jobSummary}>{job.summary}</Text>
-            <Text style={styles.jobInfo}>Source: {job.source}</Text>
-            <Text style={styles.jobInfo}>Posted: {job.date_posted || new Date(job.scraped_at).toLocaleDateString()}</Text>
+            {/* 🟢 FIX: Use a dynamic style for the text colors */}
+            <Text style={[styles.jobTitle, { color: jobTitleColor }]}>{job.title}</Text>
+            <Text style={[styles.jobSummary, { color: jobSummaryColor }]}>{job.summary}</Text>
+            <Text style={[styles.jobInfo, { color: jobInfoColor }]}>Source: {job.source}</Text>
+            <Text style={[styles.jobInfo, { color: jobInfoColor }]}>Posted: {job.date_posted || new Date(job.scraped_at).toLocaleDateString()}</Text>
             
             <TouchableOpacity
               style={styles.applyButton}
@@ -156,7 +178,8 @@ const JobsPage = () => {
         >
           <Text style={styles.paginationButtonText}>Previous</Text>
         </TouchableOpacity>
-        <Text style={styles.pageNumber}>Page {currentPage}</Text>
+        {/* 🟢 FIX: Use a dynamic style for the page number text */}
+        <Text style={[styles.pageNumber, { color: pageNumberColor }]}>Page {currentPage}</Text>
         <TouchableOpacity
           onPress={handleNextPage}
           disabled={!nextPageUrl || loading}
@@ -173,35 +196,29 @@ const JobsPage = () => {
 const styles = StyleSheet.create({
   mainContainer: {
     flex: 1,
-    backgroundColor: '#f0f4f7',
     padding: 10,
   },
   centeredContainer: {
     flex: 1,
     justifyContent: 'center',
     alignItems: 'center',
-    backgroundColor: '#f0f4f7',
   },
   loadingText: {
     marginTop: 10,
     fontSize: 16,
-    color: '#333',
   },
   errorText: {
-    color: 'red',
     textAlign: 'center',
     fontSize: 16,
   },
   infoText: {
     fontSize: 16,
-    color: '#555',
   },
   pageTitle: {
     fontSize: 24,
     fontWeight: 'bold',
     textAlign: 'center',
     marginBottom: 15,
-    color: '#000',
   },
   scrollContent: {
     flexGrow: 1,
@@ -210,7 +227,6 @@ const styles = StyleSheet.create({
   },
   jobCard: {
     width: '100%',
-    backgroundColor: '#fff',
     borderRadius: 8,
     padding: 15,
     marginBottom: 15,
@@ -230,16 +246,13 @@ const styles = StyleSheet.create({
     fontSize: 18,
     fontWeight: 'bold',
     marginBottom: 5,
-    color: '#333',
   },
   jobSummary: {
     fontSize: 14,
-    color: '#666',
     marginBottom: 10,
   },
   jobInfo: {
     fontSize: 12,
-    color: '#999',
     marginBottom: 3,
   },
   applyButton: {
@@ -279,7 +292,6 @@ const styles = StyleSheet.create({
   pageNumber: {
     fontSize: 18,
     fontWeight: 'bold',
-    color: '#333',
   },
 });
 

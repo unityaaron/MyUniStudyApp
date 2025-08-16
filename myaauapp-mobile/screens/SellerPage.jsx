@@ -1,7 +1,6 @@
 // screens/SellerScreen.jsx
 
 // This is where we bring in all the tools we need to build our screen.
-// We are now using 'expo-image-picker'.
 import React, { useState } from 'react';
 import {
   View,
@@ -15,18 +14,23 @@ import {
 } from 'react-native';
 import { API_URL } from '../constants/api';
 import AsyncStorage from '@react-native-async-storage/async-storage';
-import * as ImagePicker from 'expo-image-picker'; // ✅ NEW: We import the Expo Image Picker library.
+import * as ImagePicker from 'expo-image-picker';
+// 🟢 FIX: Import the useTheme hook from your ThemeProvider.
+import { useTheme } from '../components/ThemeProvider';
 
 // This is our main screen component.
 const SellerPage = ({ navigation }) => {
+  // 🟢 FIX: Get the current theme and check if it's dark
+  const { theme } = useTheme();
+  const isDark = theme === 'dark';
+
   // === 1. The Manager's Sticky Notes (State Variables) ===
   const [title, setTitle] = useState('');
   const [description, setDescription] = useState('');
   const [price, setPrice] = useState('');
   const [whatsappNumber, setWhatsappNumber] = useState('');
   const [location, setLocation] = useState('');
-  const [image, setImage] = useState(null); // This will hold the information about the picture.
-
+  const [image, setImage] = useState(null);
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState('');
 
@@ -54,12 +58,9 @@ const SellerPage = ({ navigation }) => {
 
   // === 4. Our new and correct function for picking an image with Expo ===
   const handleImagePicker = async () => {
-    // We first check if the app has permission to access the photo gallery.
-    // This is the correct way to handle permissions with Expo.
     const { status } = await ImagePicker.requestMediaLibraryPermissionsAsync();
 
     if (status !== 'granted') {
-      // If the user says no, we show an alert telling them why we need permission.
       Alert.alert(
         'Permission required',
         'Sorry, we need camera roll permissions to make this work!'
@@ -67,19 +68,16 @@ const SellerPage = ({ navigation }) => {
       return;
     }
 
-    // Now that we have permission, we can open the photo gallery.
     let result = await ImagePicker.launchImageLibraryAsync({
-      mediaTypes: ImagePicker.MediaTypeOptions.Images, // We only want to see images.
-      allowsEditing: true, // This allows the user to crop or edit the picture after they pick it.
-      aspect: [4, 3], // The picture will be cropped to a 4:3 size.
-      quality: 1, // We want the best quality picture.
+      mediaTypes: ImagePicker.MediaTypeOptions.Images,
+      allowsEditing: true,
+      aspect: [4, 3],
+      quality: 1,
     });
 
     console.log(result);
 
-    // If the user did not cancel, we save the picture information.
     if (!result.canceled) {
-      // The information is inside `result.assets`. We get the first one.
       setImage(result.assets[0]);
     }
   };
@@ -115,7 +113,6 @@ const SellerPage = ({ navigation }) => {
       formData.append('whatsapp_number', whatsappNumber);
       formData.append('location', location);
       
-      // ✅ This part is still the same: we format the file information correctly.
       if (image) {
         formData.append('image', {
           uri: image.uri,
@@ -161,71 +158,137 @@ const SellerPage = ({ navigation }) => {
     }
   };
 
+  // 🟢 FIX: Create a dynamic styles object based on the current theme.
+  const themedStyles = StyleSheet.create({
+    container: {
+      flexGrow: 1,
+      padding: 20,
+      backgroundColor: isDark ? '#121212' : '#f0f4f7',
+    },
+    pageTitle: {
+      fontSize: 24,
+      fontWeight: 'bold',
+      textAlign: 'center',
+      marginBottom: 10,
+      color: isDark ? '#fff' : '#000',
+    },
+    infoText: {
+      fontSize: 14,
+      textAlign: 'center',
+      marginBottom: 5,
+      color: isDark ? '#ddd' : '#555',
+    },
+    label: {
+      fontSize: 16,
+      marginBottom: 5,
+      fontWeight: 'bold',
+      color: isDark ? '#fff' : '#333',
+    },
+    input: {
+      backgroundColor: isDark ? '#333' : '#fff',
+      borderColor: isDark ? '#555' : '#ccc',
+      color: isDark ? '#fff' : '#000',
+      borderWidth: 1,
+      borderRadius: 5,
+      padding: 10,
+      fontSize: 16,
+    },
+    imagePickerButton: {
+      backgroundColor: isDark ? '#333' : '#fff',
+      borderColor: isDark ? '#555' : '#ccc',
+      borderWidth: 1,
+      borderRadius: 5,
+      padding: 10,
+      alignItems: 'center',
+    },
+    imagePickerButtonText: {
+      color: isDark ? '#00bfff' : '#007bff',
+      fontSize: 16,
+    },
+    submitButton: {
+      backgroundColor: isDark ? '#00bfff' : '#007bff',
+      padding: 15,
+      borderRadius: 5,
+      alignItems: 'center',
+      marginTop: 20,
+    },
+    submitButtonText: {
+      color: 'white',
+      fontSize: 18,
+      fontWeight: 'bold',
+    },
+  });
+
   // === 6. The Screen's Drawing Board (The JSX) ===
   return (
-    <ScrollView contentContainerStyle={styles.container}>
-      <Text style={styles.pageTitle}>Post New Item</Text>
-      <Text style={styles.infoText}>Fill out the form to post your product, service, or hostel.</Text>
-      <Text style={styles.infoText}>(All fields are required)</Text>
+    <ScrollView contentContainerStyle={themedStyles.container}>
+      <Text style={themedStyles.pageTitle}>Post New Item</Text>
+      <Text style={themedStyles.infoText}>Fill out the form to post your product, service, or hostel.</Text>
+      <Text style={themedStyles.infoText}>(All fields are required)</Text>
 
       <View style={styles.inputGroup}>
-        <Text style={styles.label}>Title:</Text>
+        <Text style={themedStyles.label}>Title:</Text>
         <TextInput
-          style={styles.input}
+          style={themedStyles.input}
           value={title}
           onChangeText={setTitle}
           placeholder="e.g., Apple iPhone 12 Pro"
+          placeholderTextColor={isDark ? '#aaa' : '#888'}
         />
       </View>
 
       <View style={styles.inputGroup}>
-        <Text style={styles.label}>Description:</Text>
+        <Text style={themedStyles.label}>Description:</Text>
         <TextInput
-          style={[styles.input, styles.multilineInput]}
+          style={[themedStyles.input, styles.multilineInput]}
           value={description}
           onChangeText={setDescription}
           multiline={true}
           numberOfLines={4}
           placeholder="Describe your item..."
+          placeholderTextColor={isDark ? '#aaa' : '#888'}
         />
       </View>
 
       <View style={styles.inputGroup}>
-        <Text style={styles.label}>Price (e.g., 15000.00):</Text>
+        <Text style={themedStyles.label}>Price (e.g., 15000.00):</Text>
         <TextInput
-          style={styles.input}
+          style={themedStyles.input}
           value={price}
           onChangeText={handlePriceChange}
           keyboardType="numeric"
           placeholder="e.g., 15000.00"
+          placeholderTextColor={isDark ? '#aaa' : '#888'}
         />
       </View>
 
       <View style={styles.inputGroup}>
-        <Text style={styles.label}>WhatsApp Number (e.g., +2348012345678):</Text>
+        <Text style={themedStyles.label}>WhatsApp Number (e.g., +2348012345678):</Text>
         <TextInput
-          style={styles.input}
+          style={themedStyles.input}
           value={whatsappNumber}
           onChangeText={setWhatsappNumber}
           keyboardType="phone-pad"
           placeholder="e.g., +2348012345678"
+          placeholderTextColor={isDark ? '#aaa' : '#888'}
         />
       </View>
 
       <View style={styles.inputGroup}>
-        <Text style={styles.label}>Location:</Text>
+        <Text style={themedStyles.label}>Location:</Text>
         <TextInput
-          style={styles.input}
+          style={themedStyles.input}
           value={location}
           onChangeText={setLocation}
           placeholder="e.g., Main Campus Area"
+          placeholderTextColor={isDark ? '#aaa' : '#888'}
         />
       </View>
 
       <View style={styles.inputGroup}>
-        <Text style={styles.label}>Image:</Text>
-        <TouchableOpacity style={styles.imagePickerButton} onPress={handleImagePicker}>
-          <Text style={styles.imagePickerButtonText}>
+        <Text style={themedStyles.label}>Image:</Text>
+        <TouchableOpacity style={themedStyles.imagePickerButton} onPress={handleImagePicker}>
+          <Text style={themedStyles.imagePickerButtonText}>
             {image ? 'Image Selected' : 'Choose an image'}
           </Text>
         </TouchableOpacity>
@@ -233,11 +296,11 @@ const SellerPage = ({ navigation }) => {
       </View>
 
       <TouchableOpacity
-        style={styles.submitButton}
+        style={themedStyles.submitButton}
         onPress={handleSubmit}
         disabled={loading}
       >
-        <Text style={styles.submitButtonText}>
+        <Text style={themedStyles.submitButtonText}>
           {loading ? 'Posting...' : 'Post Item'}
         </Text>
       </TouchableOpacity>
@@ -245,58 +308,16 @@ const SellerPage = ({ navigation }) => {
   );
 };
 
-// === 7. The Stylesheet ===
+// === 7. The Stylesheet (We leave the static styles here) ===
 const styles = StyleSheet.create({
-  container: {
-    flexGrow: 1,
-    padding: 20,
-    backgroundColor: '#f0f4f7',
-  },
-  pageTitle: {
-    fontSize: 24,
-    fontWeight: 'bold',
-    textAlign: 'center',
-    marginBottom: 10,
-    color: '#000',
-  },
-  infoText: {
-    fontSize: 14,
-    textAlign: 'center',
-    marginBottom: 5,
-    color: '#555',
-  },
+  // 🟢 FIX: We only keep the styles that do not change with the theme.
+  // We'll use a new `themedStyles` object for all the color changes.
   inputGroup: {
     marginBottom: 15,
-  },
-  label: {
-    fontSize: 16,
-    marginBottom: 5,
-    fontWeight: 'bold',
-    color: '#333',
-  },
-  input: {
-    backgroundColor: '#fff',
-    borderColor: '#ccc',
-    borderWidth: 1,
-    borderRadius: 5,
-    padding: 10,
-    fontSize: 16,
   },
   multilineInput: {
     height: 100,
     textAlignVertical: 'top',
-  },
-  imagePickerButton: {
-    backgroundColor: '#fff',
-    borderColor: '#ccc',
-    borderWidth: 1,
-    borderRadius: 5,
-    padding: 10,
-    alignItems: 'center',
-  },
-  imagePickerButtonText: {
-    color: '#007bff',
-    fontSize: 16,
   },
   imagePreview: {
     width: 100,
@@ -305,18 +326,6 @@ const styles = StyleSheet.create({
     borderRadius: 5,
     marginTop: 10,
     alignSelf: 'center',
-  },
-  submitButton: {
-    backgroundColor: '#007bff',
-    padding: 15,
-    borderRadius: 5,
-    alignItems: 'center',
-    marginTop: 20,
-  },
-  submitButtonText: {
-    color: 'white',
-    fontSize: 18,
-    fontWeight: 'bold',
   },
 });
 

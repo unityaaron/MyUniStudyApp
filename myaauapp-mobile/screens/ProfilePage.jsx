@@ -6,6 +6,8 @@ import { View, Text, StyleSheet, TouchableOpacity, ActivityIndicator, Alert, Scr
 import { useNavigation } from '@react-navigation/native';
 import AsyncStorage from '@react-native-async-storage/async-storage';
 import { API_URL } from '../constants/api'; // Assuming you have a constants/api.js file
+// 🟢 FIX: Import the useTheme hook
+import { useTheme } from '../components/ThemeProvider'; 
 
 // Part 2: Create our React Screen Component
 const ProfilePage = () => {
@@ -16,6 +18,10 @@ const ProfilePage = () => {
 
   // Use the navigation hook to move between screens
   const navigation = useNavigation();
+  
+  // 🟢 FIX: Get the current theme and check if it's dark
+  const { theme } = useTheme();
+  const isDark = theme === 'dark';
 
   // A new function to handle logging out
   const handleLogout = async () => {
@@ -89,16 +95,19 @@ const ProfilePage = () => {
   // Display loading, error, or user data
   if (loading) {
     return (
-      <View style={styles.centeredContainer}>
-        <ActivityIndicator size="large" color="#007bff" />
-        <Text style={styles.loadingText}>Loading profile...</Text>
+      // 🟢 FIX: Apply theme styles to the container
+      <View style={[styles.centeredContainer, isDark ? styles.centeredDark : styles.centeredLight]}>
+        <ActivityIndicator size="large" color={isDark ? '#007bff' : '#007bff'} />
+        {/* 🟢 FIX: Apply theme styles to the text */}
+        <Text style={[styles.loadingText, isDark ? styles.textDark : styles.textLight]}>Loading profile...</Text>
       </View>
     );
   }
 
   if (error) {
     return (
-      <View style={styles.centeredContainer}>
+      // 🟢 FIX: Apply theme styles to the container
+      <View style={[styles.centeredContainer, isDark ? styles.centeredDark : styles.centeredLight]}>
         <Text style={styles.errorText}>Error: {error}</Text>
       </View>
     );
@@ -106,20 +115,27 @@ const ProfilePage = () => {
 
   // If user data is available, display it
   return (
-    <ScrollView contentContainerStyle={styles.container}>
-      <View style={styles.profileCard}>
-        <Text style={styles.title}>Your Profile</Text>
+    // 🟢 FIX: Apply theme styles to the container
+    <ScrollView contentContainerStyle={[styles.container, isDark ? styles.containerDark : styles.containerLight]}>
+      {/* 🟢 FIX: Apply theme styles to the profile card */}
+      <View style={[styles.profileCard, isDark ? styles.cardDark : styles.cardLight]}>
+        {/* 🟢 FIX: Apply theme styles to the title */}
+        <Text style={[styles.title, isDark ? styles.textDark : styles.textLight]}>Your Profile</Text>
         {userData ? (
           <View>
-            <Text style={styles.label}>Username:</Text>
-            <Text style={styles.value}>{userData.username}</Text>
-            <View style={styles.divider} />
-            <Text style={styles.label}>Email:</Text>
-            <Text style={styles.value}>{userData.email}</Text>
+            {/* 🟢 FIX: Apply theme styles to the labels */}
+            <Text style={[styles.label, isDark ? styles.labelDark : styles.labelLight]}>Username:</Text>
+            {/* 🟢 FIX: Apply theme styles to the values */}
+            <Text style={[styles.value, isDark ? styles.textDark : styles.textLight]}>{userData.username}</Text>
+            <View style={[styles.divider, isDark ? styles.dividerDark : styles.dividerLight]} />
+            {/* 🟢 FIX: Apply theme styles to the labels */}
+            <Text style={[styles.label, isDark ? styles.labelDark : styles.labelLight]}>Email:</Text>
+            {/* 🟢 FIX: Apply theme styles to the values */}
+            <Text style={[styles.value, isDark ? styles.textDark : styles.textLight]}>{userData.email}</Text>
             {/* You can display other fields here if Django provides them */}
           </View>
         ) : (
-          <Text style={styles.infoText}>No user data available. Please try logging in again.</Text>
+          <Text style={[styles.infoText, isDark ? styles.textDark : styles.textLight]}>No user data available. Please try logging in again.</Text>
         )}
       </View>      
     </ScrollView>
@@ -128,17 +144,22 @@ const ProfilePage = () => {
 
 // Part 4: The Stylesheet (Our Style Guide)
 const styles = StyleSheet.create({
+  // 🟢 FIX: Define new styles for both themes
   centeredContainer: {
     flex: 1,
     justifyContent: 'center',
     alignItems: 'center',
     padding: 20,
+  },
+  centeredLight: {
     backgroundColor: '#f0f4f7',
+  },
+  centeredDark: {
+    backgroundColor: '#121212',
   },
   loadingText: {
     marginTop: 10,
     fontSize: 16,
-    color: '#333',
   },
   errorText: {
     color: 'red',
@@ -148,12 +169,16 @@ const styles = StyleSheet.create({
   container: {
     flexGrow: 1,
     padding: 20,
-    backgroundColor: '#f0f4f7',
     alignItems: 'center',
+  },
+  containerLight: {
+    backgroundColor: '#f0f4f7',
+  },
+  containerDark: {
+    backgroundColor: '#121212',
   },
   profileCard: {
     width: '100%',
-    backgroundColor: '#fff',
     borderRadius: 10,
     padding: 20,
     marginBottom: 20,
@@ -163,33 +188,55 @@ const styles = StyleSheet.create({
     shadowRadius: 5,
     elevation: 3,
   },
+  cardLight: {
+    backgroundColor: '#fff',
+    shadowColor: '#000',
+  },
+  cardDark: {
+    backgroundColor: '#1F1F1F',
+    shadowColor: '#fff',
+  },
   title: {
     fontSize: 24,
     fontWeight: 'bold',
     marginBottom: 20,
     textAlign: 'center',
-    color: '#000',
   },
   label: {
     fontSize: 16,
     fontWeight: '600',
-    color: '#555',
     marginTop: 10,
+  },
+  labelLight: {
+    color: '#555',
+  },
+  labelDark: {
+    color: '#ccc',
   },
   value: {
     fontSize: 18,
-    color: '#000',
     marginTop: 5,
   },
   divider: {
     height: 1,
-    backgroundColor: '#eee',
     marginVertical: 15,
+  },
+  dividerLight: {
+    backgroundColor: '#eee',
+  },
+  dividerDark: {
+    backgroundColor: '#333',
   },
   infoText: {
     textAlign: 'center',
-    color: '#888',
     fontSize: 16,
+  },
+  // 🟢 FIX: Add styles for light and dark text
+  textLight: {
+    color: 'black',
+  },
+  textDark: {
+    color: 'white',
   },
   logoutButton: {
     backgroundColor: '#dc3545',

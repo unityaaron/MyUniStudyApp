@@ -69,3 +69,11 @@ Mobile-Specific APIs: Learned to work with mobile-specific APIs like Secure Stor
 Mobile App Debugging: Developed skills in debugging mobile applications, including managing device logs and network requests.
 
 User Experience (UX) for Mobile: Focused on creating a clean, responsive, and intuitive user experience tailored for the mobile environment.
+
+
+Contact
+For any questions, feel free to contact me:
+
+Name: Unity Aaron
+Email: aaronunity1@gmail.com
+LinkedIn: https://www.linkedin.com/in/unity-aaron-b4a281226

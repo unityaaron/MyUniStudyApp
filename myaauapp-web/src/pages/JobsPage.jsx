@@ -31,7 +31,7 @@ function JobsPage() {
 
       // Make a GET request to your Django backend's jobs API endpoint
       const response = await axios.get(
-        url || 'http://127.0.0.1:8000/api/quiz/jobs/', // Use provided URL or default base URL
+        import.meta.env.VITE_API_URL + '/api/quiz/jobs/', // Use provided URL or default base URL
         // No headers needed for public API endpoint
         // If you wanted to send the token for a protected endpoint:
         // {
@@ -48,7 +48,7 @@ function JobsPage() {
       setPreviousPageUrl(response.data.previous); // Save the URL for the previous page
 
       // Figure out the current page number from the URL
-      const currentUrl = url || 'http://127.0.0.1:8000/api/quiz/jobs/';
+      const currentUrl = url || import.meta.env.VITE_API_URL + '/api/quiz/jobs/';
       const urlParams = new URLSearchParams(new URL(currentUrl).search);
       const pageNum = urlParams.get('page');
       setCurrentPage(pageNum ? parseInt(pageNum) : 1); // Set current page, default to 1

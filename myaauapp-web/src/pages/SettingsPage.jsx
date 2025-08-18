@@ -31,7 +31,7 @@ function SettingsPage() {
         }
 
         // Make a GET request to Django's UserProfile API to get current settings
-        const response = await axios.get('http://127.0.0.1:8000/api/buyandsell/user-profile/', {
+        const response = await axios.get(import.meta.env.VITE_API_URL + '/api/buyandsell/user-profile/', {
           headers: {
             'Authorization': `Token ${authToken}` // Authenticate the request
           }
@@ -73,7 +73,7 @@ function SettingsPage() {
 
       // Send a PATCH request to Django's UserProfile API to update only 'notifications_enabled'
       const response = await axios.patch(
-        'http://127.0.0.1:8000/api/buyandsell/user-profile/',
+        import.meta.env.VITE_API_URL + '/api/buyandsell/user-profile/',
         { notifications_enabled: newSetting }, // Send only the changed field
         {
           headers: {

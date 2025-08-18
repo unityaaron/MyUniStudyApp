@@ -35,7 +35,7 @@ function LoginPage() {
 
       // Make a POST request to your Django backend's login endpoint
       const response = await axios.post(
-        'http://127.0.0.1:8000/auth/login/', // Your Django API endpoint for login
+        import.meta.env.VITE_API_URL + '/auth/login/', // Your Django API endpoint for login
         loginData,
         {
           headers: {

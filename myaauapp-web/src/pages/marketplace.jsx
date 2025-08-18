@@ -29,7 +29,7 @@ function MarketPlace() {
 
       // Use the URL passed to the function, or the default API URL if none is provided
       const response = await axios.get(
-        url || 'http://127.0.0.1:8000/api/buyandsell/', // Use provided URL or default
+        import.meta.env.VITE_API_URL + '/api/buyandsell/', // Use provided URL or default
         {
           headers: {
             'Authorization': `Token ${authToken}`
@@ -44,7 +44,7 @@ function MarketPlace() {
       // If we got a URL, we need to figure out the current page.
       // This is a bit tricky because Django only gives 'next' and 'previous' URLs.
       // A simple way is to check the 'page' query parameter.
-      const currentUrl = url || 'http://127.0.0.1:8000/api/buyandsell/';
+      const currentUrl = url || import.meta.env.VITE_API_URL + '/api/buyandsell/';
       const urlParams = new URLSearchParams(new URL(currentUrl).search);
       const pageNum = urlParams.get('page');
       setCurrentPage(pageNum ? parseInt(pageNum) : 1); // Set current page number

@@ -23,7 +23,7 @@ const GST102_Leaderboard = () => {
                 // Remember: your main project urls.py has path('api/quiz/', include('quiz.urls'))
                 // and quiz/urls.py has path('leaderboard/<str:course_code>/', LeaderboardView.as_view())
                 const response = await axios.get(
-                    `http://localhost:8000/api/quiz/leaderboard/GST102/`, // Hardcoded GST101 for now
+                    axios.get(import.meta.env.VITE_API_URL + '/api/quiz/leaderboard/GST102/'), // Hardcoded GST101 for now
                     {
                         headers: {
                             Authorization: `Token ${authToken}` // Send the token for authentication

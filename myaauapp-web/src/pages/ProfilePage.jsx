@@ -34,7 +34,7 @@ const ProfilePage = () => {
         }
 
         // 3. Make a GET request to Django's /auth/user/ endpoint
-        const response = await axios.get('http://127.0.0.1:8000/auth/user/', {
+        const response = await axios.get(import.meta.env.VITE_API_URL + '/auth/user/', {
           headers: {
             // ✅ CRITICAL: Include the Authorization header with the token
             'Authorization': `Token ${authToken}` // Format: "Token YOUR_ACTUAL_TOKEN_HERE"

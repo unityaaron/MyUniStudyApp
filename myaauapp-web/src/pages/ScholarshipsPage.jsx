@@ -23,7 +23,7 @@ function ScholarshipsPage() {
       // Make a GET request to your Django backend's scholarships API endpoint
       // The endpoint is 'http://127.0.0.1:8000/api/quiz/scholarships/'
       const response = await axios.get(
-        url || 'http://127.0.0.1:8000/api/quiz/scholarships/', // Use provided URL or default base URL
+        url || import.meta.env.VITE_API_URL + '/api/quiz/scholarships/', // Use provided URL or default base URL
       );
 
       // Django REST Framework's PageNumberPagination wraps results in an object:
@@ -33,7 +33,7 @@ function ScholarshipsPage() {
       setPreviousPageUrl(response.data.previous);      // Save the URL for the previous page
 
       // Figure out the current page number from the URL
-      const currentUrl = url || 'http://127.0.0.1:8000/api/quiz/scholarships/';
+      const currentUrl = url || import.meta.env.VITE_API_URL + '/api/quiz/scholarships/';
       const urlParams = new URLSearchParams(new URL(currentUrl).search);
       const pageNum = urlParams.get('page');
       setCurrentPage(pageNum ? parseInt(pageNum) : 1); // Set current page, default to 1

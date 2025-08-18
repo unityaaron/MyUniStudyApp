@@ -44,7 +44,7 @@ const GST201Page = () => {
       console.log("DEBUG FRONTEND: Score value IMMEDIATELY before sending to backend:", correctAnswersCount);
 
       const response = await axios.post(
-        'http://localhost:8000/api/quiz/submit-quiz-result/',
+        import.meta.env.VITE_API_URL + '/api/quiz/submit-quiz-result/',
         {
           course_code: 'GST201',
           score: correctAnswersCount
@@ -94,7 +94,7 @@ const GST201Page = () => {
   // Robot 1: Get questions when component loads
   useEffect(() => {
     console.log("Robot 1: Starting to fetch questions...");
-    axios.get('http://localhost:8000/api/quiz/questions/GST201/')
+    axios.get(import.meta.env.VITE_API_URL + '/api/quiz/questions/GST201/')
       .then((response) => {
         console.log("Robot 1: Questions fetched successfully!", response.data);
         setQuestions(response.data);

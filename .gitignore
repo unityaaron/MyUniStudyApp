@@ -28,3 +28,5 @@ dist-ssr
 
 /myaauapp-backend/venv/
 venv/
+/backend/staticfiles/
+/myaauapp-web/.env*

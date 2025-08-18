@@ -80,7 +80,7 @@ function SellerPage() {
 
       // 7. Make the POST request to your Django backend API
       const response = await axios.post(
-        'http://127.0.0.1:8000/api/buyandsell/', // Your Django API endpoint for creating items
+        import.meta.env.VITE_API_URL + '/api/buyandsell/', // Your Django API endpoint for creating items
         formData, // Send the FormData object
         {
           headers: {

@@ -40,7 +40,7 @@ function Register() {
       };
 
       const response = await axios.post(
-        'http://127.0.0.1:8000/auth/registration/',
+        import.meta.env.VITE_API_URL + '/auth/registration/',
         registrationData,
         {
           headers: {

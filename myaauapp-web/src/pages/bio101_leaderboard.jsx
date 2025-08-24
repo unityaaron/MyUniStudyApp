@@ -1,7 +1,7 @@
-// src/pages/BIO101_Leaderboard.jsx
+// src/pages/BIO101_Leaderboard.jsx test
 
-import React, { useState, useEffect } from 'react'; // ✨ MODIFIED: Added useState and useEffect
-import axios from 'axios'; // ✨ NEW: For making API calls easily
+import React, { useState, useEffect } from 'react';
+import axios from 'axios';
 
 const BIO101_Leaderboard = () => {
     // 1. State to hold our leaderboard data
@@ -17,32 +17,49 @@ const BIO101_Leaderboard = () => {
         const fetchLeaderboard = async () => {
             try {
                 // Get the authentication token from where you store it (e.g., localStorage)
-                const authToken = localStorage.getItem('authToken'); // Adjust this if your token is stored elsewhere
+                const authToken = localStorage.getItem('authToken');
 
-                // Make the API call to your Django backend
-                // Remember: your main project urls.py has path('api/quiz/', include('quiz.urls'))
-                // and quiz/urls.py has path('leaderboard/<str:course_code>/', LeaderboardView.as_view())
+                // ✨ THIS IS THE FIXED URL LINE ✨
+                // We use a template literal `${}` to build the URL correctly.
+                const apiUrl = `${import.meta.env.VITE_API_URL}/api/quiz/leaderboard/BIO101/`;
+                
                 const response = await axios.get(
-                    `${import.meta.env.VITE_API_URL}/api/quiz/leaderboard/BIO101/`, // Hardcoded BIO101 for now
+                    apiUrl,
                     {
                         headers: {
-                            Authorization: `Token ${authToken}` // Send the token for authentication
+                            Authorization: `Token ${authToken}`
                         }
                     }
                 );
                 
-                // Only take the top 50 scores, as per your requirement
-                const top50Scores = response.data.slice(0, 50); 
-                setLeaderboard(top50Scores); // Save the data to our state
-                setLoading(false); // Data has loaded, so set loading to false
+                // 1. Get the data from the API response.
+                const apiData = response.data;
+
+                // 2. Check if the data is a list. Your backend is set up to send a list.
+                if (Array.isArray(apiData)) {
+                    // Sort the list by 'highest_score' from high to low
+                    apiData.sort((a, b) => b.highest_score - a.highest_score);
+                    
+                    // Slice the list to only get the top 50 scores
+                    const top50Scores = apiData.slice(0, 50); 
+                    
+                    // Set the state with the new, clean list
+                    setLeaderboard(top50Scores);
+                } else {
+                    // This error will show if your backend is not sending a list.
+                    console.error("Data received from the API is not a valid list:", apiData);
+                    setLeaderboard([]); // Set an empty list to prevent errors
+                }
+
+                setLoading(false);
             } catch (err) {
                 console.error("Failed to fetch leaderboard:", err);
-                setError("Failed to load leaderboard. Please try again later."); // Set an error message
-                setLoading(false); // Stop loading even if there's an error
+                setError("Failed to load leaderboard. Please try again later.");
+                setLoading(false);
             }
         };
 
-        fetchLeaderboard(); // Call the function to fetch data when the component loads
+        fetchLeaderboard();
     }, []); // The empty array [] means this effect runs only once after the first render
 
     // What our component shows on the screen
@@ -65,10 +82,12 @@ const BIO101_Leaderboard = () => {
             {!loading && !error && leaderboard.length > 0 && (
                 <ol style={{ listStyleType: 'decimal', paddingLeft: '20px' }}>
                     {leaderboard.map((entry, index) => (
-                        <li key={entry.id} style={{ 
-                            marginBottom: '10px', 
-                            padding: '10px', 
-                            backgroundColor: index % 2 === 0 ? '#eef' : '#fff', // Alternating row colors
+                        // ✨ THIS IS THE FIX FOR THE KEY WARNING ✨
+                        // We use the 'entry.id' and `index` together to create a unique key
+                        <li key={entry.id || index} style={{
+                            marginBottom: '10px',
+                            padding: '10px',
+                            backgroundColor: index % 2 === 0 ? '#eef' : '#fff',
                             borderRadius: '5px',
                             display: 'flex',
                             justifyContent: 'space-between',

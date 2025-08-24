@@ -10,6 +10,9 @@
 | :---: | :---: |
 | ![Quiz Page Screenshot](https://github.com/unityaaron/MyUniStudyApp/issues/23) | ![About Page Screenshot](https://github.com/unityaaron/MyUniStudyApp/issues/24) |
 
+| Cloud Deployment of React Frontend, Django Backend & Postgresql  | Live Cloud Deployment |
+| :---: | :---: |
+| ![Cloud Deployment of React Frontend, Django Backend & Postgresql Screenshot](https://github.com/unityaaron/MyUniStudyApp/issues/30#issue-3349587810) | ![Live Cloud Deployment Screenshot](https://github.com/unityaaron/MyUniStudyApp/issues/31#issue-3349588358) |
 
 **Project Summary**
 

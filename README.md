@@ -4,7 +4,7 @@
 
 | React-Native Login Page | React-Native Home Page |
 | :---: | :---: |
-| ![Login Page Screenshot](https://github.com/unityaaron/MyUniStudyApp/issues/21) | ![Home Page Screenshot](https://github.com/unityaaron/MyUniStudyApp/issues/22) |
+| ![Login Page Screenshot](https://github.com/unityaaron/MyUniStudyApp/issues/21#issue-3349511503) | ![Home Page Screenshot](https://github.com/unityaaron/MyUniStudyApp/issues/22) |
 
 | React-Native Quiz Page | React-Native About Page |
 | :---: | :---: |

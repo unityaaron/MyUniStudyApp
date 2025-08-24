@@ -1,74 +1,82 @@
 // src/pages/GST101_Leaderboard.jsx
 
-import React, { useState, useEffect } from 'react'; // ✨ MODIFIED: Added useState and useEffect
-import axios from 'axios'; // ✨ NEW: For making API calls easily
+import React, { useState, useEffect } from 'react';
+import axios from 'axios';
 
 const GST101_Leaderboard = () => {
-    // 1. State to hold our leaderboard data
     const [leaderboard, setLeaderboard] = useState([]);
-    // 2. State to tell us if data is still loading
     const [loading, setLoading] = useState(true);
-    // 3. State to hold any error messages
     const [error, setError] = useState(null);
 
-    // This code runs when the component first shows up on the screen
     useEffect(() => {
-        // Function to fetch the leaderboard data
         const fetchLeaderboard = async () => {
             try {
-                // Get the authentication token from where you store it (e.g., localStorage)
-                const authToken = localStorage.getItem('authToken'); // Adjust this if your token is stored elsewhere
+                const authToken = localStorage.getItem('authToken');
 
-                // Make the API call to your Django backend
-                // Remember: your main project urls.py has path('api/quiz/', include('quiz.urls'))
-                // and quiz/urls.py has path('leaderboard/<str:course_code>/', LeaderboardView.as_view())
                 const response = await axios.get(
-                    `import.meta.env.VITE_API_URL + '/api/quiz/leaderboard/GST101/`, // Hardcoded GST101 for now
+                    `import.meta.env.VITE_API_URL + '/api/quiz/leaderboard/GST101/`,
                     {
                         headers: {
-                            Authorization: `Token ${authToken}` // Send the token for authentication
+                            Authorization: `Token ${authToken}`
                         }
                     }
                 );
                 
-                // Only take the top 50 scores, as per your requirement
-                const top50Scores = response.data.slice(0, 50); 
-                setLeaderboard(top50Scores); // Save the data to our state
-                setLoading(false); // Data has loaded, so set loading to false
+                // ✨ THIS IS THE NEW, SAFER CODE ✨
+                // 1. Get the data from the API response
+                const apiData = response.data;
+
+                // 2. Check if the data is a list. If it is an object, get the values from it.
+                // This handles the case where your backend might send an empty object `{}` or a list `[]`.
+                let processedData = Array.isArray(apiData) ? apiData : Object.values(apiData);
+
+                // 3. Make sure 'processedData' is a list before trying to use .map() on it
+                if (Array.isArray(processedData)) {
+                    // Sort the list by 'highest_score' from high to low
+                    processedData.sort((a, b) => b.highest_score - a.highest_score);
+                    
+                    // Slice the list to only get the top 50 scores
+                    const top50Scores = processedData.slice(0, 50); 
+                    
+                    // Set the state with the new, clean list
+                    setLeaderboard(top50Scores);
+                } else {
+                    // If we get here, something is very wrong with the data format
+                    console.error("Data received from the API is not a valid list or object:", apiData);
+                    setLeaderboard([]); // Set an empty list to prevent errors
+                }
+
+                setLoading(false);
             } catch (err) {
                 console.error("Failed to fetch leaderboard:", err);
-                setError("Failed to load leaderboard. Please try again later."); // Set an error message
-                setLoading(false); // Stop loading even if there's an error
+                setError("Failed to load leaderboard. Please try again later.");
+                setLoading(false);
             }
         };
 
-        fetchLeaderboard(); // Call the function to fetch data when the component loads
-    }, []); // The empty array [] means this effect runs only once after the first render
+        fetchLeaderboard();
+    }, []);
 
-    // What our component shows on the screen
+    // ... (rest of your component code remains the same) ...
     return (
         <div style={{ padding: '20px', fontFamily: 'Arial, sans-serif', maxWidth: '600px', margin: 'auto', backgroundColor: '#f9f9f9', borderRadius: '8px', boxShadow: '0 2px 4px rgba(0,0,0,0.1)' }}>
             <h2 style={{ textAlign: 'center', color: '#333' }}>GST101 Leaderboard</h2>
 
-            {/* Show loading message if data is still being fetched */}
             {loading && <p style={{ textAlign: 'center', color: '#555' }}>Loading leaderboard...</p>}
 
-            {/* Show error message if something went wrong */}
             {error && <p style={{ textAlign: 'center', color: 'red' }}>{error}</p>}
 
-            {/* Show message if no scores are found (after loading and no error) */}
             {!loading && !error && leaderboard.length === 0 && (
                 <p style={{ textAlign: 'center', color: '#777' }}>No scores yet for GST101. Be the first to play!</p>
             )}
 
-            {/* Display the leaderboard if data is loaded and no errors */}
             {!loading && !error && leaderboard.length > 0 && (
                 <ol style={{ listStyleType: 'decimal', paddingLeft: '20px' }}>
                     {leaderboard.map((entry, index) => (
-                        <li key={entry.id} style={{ 
-                            marginBottom: '10px', 
-                            padding: '10px', 
-                            backgroundColor: index % 2 === 0 ? '#eef' : '#fff', // Alternating row colors
+                        <li key={entry.id} style={{
+                            marginBottom: '10px',
+                            padding: '10px',
+                            backgroundColor: index % 2 === 0 ? '#eef' : '#fff',
                             borderRadius: '5px',
                             display: 'flex',
                             justifyContent: 'space-between',

@@ -14,11 +14,11 @@ class QuizConfig(AppConfig):
 
         # Check if the task is already scheduled
         # This prevents scheduling it multiple times if the app restarts
-        #- CODE - if not Task.objects.filter(task_name='quiz.tasks.scrape_all_opportunities').exists():
+        if not Task.objects.filter(task_name='quiz.tasks.scrape_all_opportunities').exists():
             # Schedule the task to run
             # The 'repeat=Task.DAILY' means it will run every day.
             # 'schedule=35' is the initial delay you set.
-            #- CODE - scrape_all_opportunities(repeat=Task.DAILY, schedule=35)
-            #- CODE - print("Scheduled scrape_all_opportunities task.")
-        #- CODE - else:
-            #- CODE - print("scrape_all_opportunities task already scheduled.")
+            scrape_all_opportunities(repeat=Task.DAILY, schedule=35)
+            print("Scheduled scrape_all_opportunities task.")
+        else:
+            print("scrape_all_opportunities task already scheduled.")

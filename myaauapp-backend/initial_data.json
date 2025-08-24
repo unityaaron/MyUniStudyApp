@@ -1,1410 +1,1318 @@
 ﻿[
-{
-  "model": "quiz.jobpost",
-  "pk": 1,
-  "fields": {
-    "title": "Social Media Manager/Administrative Assistant | Wackawackamunv2",
-    "link": "https://dixcoverhub.jobuj.com/social-media-manager-administrative-assistant-wackawackamunv2/",
-    "summary": "No summary",
-    "date_posted": "July 9, 2025",
-    "image_url": "https://dixcoverhub.jobuj.com/wp-content/uploads/2025/07/5ebed88e47677d0e947167fd_virtual-social-media-marketer-768x512.jpg",
-    "source": "Dixcoverhub",
-    "scraped_at": "2025-07-24T14:23:56.609Z"
+  {
+    "model": "quiz.jobpost",
+    "pk": 1,
+    "fields": {
+      "title": "Social Media Manager/Administrative Assistant | Wackawackamunv2",
+      "link": "https://dixcoverhub.jobuj.com/social-media-manager-administrative-assistant-wackawackamunv2/",
+      "summary": "No summary",
+      "date_posted": "July 9, 2025",
+      "image_url": "https://dixcoverhub.jobuj.com/wp-content/uploads/2025/07/5ebed88e47677d0e947167fd_virtual-social-media-marketer-768x512.jpg",
+      "source": "Dixcoverhub",
+      "scraped_at": "2025-07-24T14:23:56.609Z"
+    }
+  },
+  {
+    "model": "quiz.jobpost",
+    "pk": 2,
+    "fields": {
+      "title": "HR Officer at IPT PowerTech Group",
+      "link": "https://dixcoverhub.jobuj.com/hr-officer-at-ipt-powertech-group/",
+      "summary": "No summary",
+      "date_posted": "July 8, 2025",
+      "image_url": "https://dixcoverhub.jobuj.com/wp-content/uploads/2025/07/Screenshot_2025-07-08-15-59-48-080_com.google.android.googlequicksearchbox-edit-768x494.jpg",
+      "source": "Dixcoverhub",
+      "scraped_at": "2025-07-24T14:23:56.886Z"
+    }
+  },
+  {
+    "model": "quiz.jobpost",
+    "pk": 3,
+    "fields": {
+      "title": "Workshop Assistant at Malaria Consortium",
+      "link": "https://dixcoverhub.jobuj.com/workshop-assistant-at-malaria-consortium/",
+      "summary": "No summary",
+      "date_posted": "July 8, 2025",
+      "image_url": "https://dixcoverhub.jobuj.com/wp-content/uploads/2025/07/2011-1-768x403.jpeg",
+      "source": "Dixcoverhub",
+      "scraped_at": "2025-07-24T14:23:56.896Z"
+    }
+  },
+  {
+    "model": "quiz.jobpost",
+    "pk": 4,
+    "fields": {
+      "title": "Social Media Officer at Maxitech Global Investment Limited",
+      "link": "https://dixcoverhub.jobuj.com/social-media-officer-at-maxitech-global-investment-limited/",
+      "summary": "No summary",
+      "date_posted": "July 8, 2025",
+      "image_url": "https://dixcoverhub.jobuj.com/wp-content/uploads/2025/07/Maxitech-Global-Investment-Limited-696x348-1.jpg",
+      "source": "Dixcoverhub",
+      "scraped_at": "2025-07-24T14:23:56.904Z"
+    }
+  },
+  {
+    "model": "quiz.jobpost",
+    "pk": 5,
+    "fields": {
+      "title": "FG Technical Teachers Training Programme (TTTP) 2025",
+      "link": "https://dixcoverhub.jobuj.com/fg-technical-teachers-training-programme-tttp-2025/",
+      "summary": "No summary",
+      "date_posted": "July 8, 2025",
+      "image_url": "https://dixcoverhub.jobuj.com/wp-content/uploads/2025/07/Technical-Teachers-Training-Programme-696x348-1.jpg",
+      "source": "Dixcoverhub",
+      "scraped_at": "2025-07-24T14:23:56.911Z"
+    }
+  },
+  {
+    "model": "quiz.jobpost",
+    "pk": 6,
+    "fields": {
+      "title": "Program Support Volunteer At Global Rights",
+      "link": "https://dixcoverhub.jobuj.com/program-support-volunteer-at-global-rights/",
+      "summary": "No summary",
+      "date_posted": "July 7, 2025",
+      "image_url": "https://dixcoverhub.jobuj.com/wp-content/uploads/2025/07/global-rights.jpg",
+      "source": "Dixcoverhub",
+      "scraped_at": "2025-07-24T14:23:56.918Z"
+    }
+  },
+  {
+    "model": "quiz.jobpost",
+    "pk": 7,
+    "fields": {
+      "title": "UNICEF is Hiring 5 Assistants – Apply Now for 2025!",
+      "link": "https://dixcoverhub.jobuj.com/unicef-is-hiring-5-assistants-apply-now-for-2025/",
+      "summary": "No summary",
+      "date_posted": "July 7, 2025",
+      "image_url": "https://dixcoverhub.jobuj.com/wp-content/uploads/2025/07/unicef-2-768x768.jpg",
+      "source": "Dixcoverhub",
+      "scraped_at": "2025-07-24T14:23:56.923Z"
+    }
+  },
+  {
+    "model": "quiz.jobpost",
+    "pk": 8,
+    "fields": {
+      "title": "EditVisions is Hiring Remote Freelance Video Editors",
+      "link": "https://dixcoverhub.jobuj.com/editvisions-is-hiring-remote-freelance-video-editors/",
+      "summary": "No summary",
+      "date_posted": "July 7, 2025",
+      "image_url": "https://dixcoverhub.jobuj.com/wp-content/uploads/2025/07/175162178183989.jpg",
+      "source": "Dixcoverhub",
+      "scraped_at": "2025-07-24T14:23:56.928Z"
+    }
+  },
+  {
+    "model": "quiz.jobpost",
+    "pk": 9,
+    "fields": {
+      "title": "Front Desk Officer at Eden Solutions and Resources (NYSC)",
+      "link": "https://dixcoverhub.jobuj.com/front-desk-officer-at-eden-solutions-and-resources-nysc/",
+      "summary": "No summary",
+      "date_posted": "July 5, 2025",
+      "image_url": "https://dixcoverhub.jobuj.com/wp-content/uploads/2025/07/Eden-Solutions-and-Resources-1021x580-1-768x436.jpg",
+      "source": "Dixcoverhub",
+      "scraped_at": "2025-07-24T14:23:56.934Z"
+    }
+  },
+  {
+    "model": "quiz.jobpost",
+    "pk": 10,
+    "fields": {
+      "title": "Virtual Assistant at Raphael Group",
+      "link": "https://dixcoverhub.jobuj.com/virtual-assistant-at-raphael-group/",
+      "summary": "No summary",
+      "date_posted": "July 4, 2025",
+      "image_url": "https://dixcoverhub.jobuj.com/wp-content/uploads/2025/07/Raphael-Group-1024x512-1-768x384.jpg",
+      "source": "Dixcoverhub",
+      "scraped_at": "2025-07-24T14:23:56.939Z"
+    }
+  },
+  {
+    "model": "quiz.jobpost",
+    "pk": 11,
+    "fields": {
+      "title": "Malaria Consortium Is Hiring IT Support Assistants in Ondo State",
+      "link": "https://dixcoverhub.jobuj.com/malaria-consortium-is-hiring-it-support-assistants-in-ondo-state/",
+      "summary": "No summary",
+      "date_posted": "July 4, 2025",
+      "image_url": "https://dixcoverhub.jobuj.com/wp-content/uploads/2025/07/2011-768x403.jpeg",
+      "source": "Dixcoverhub",
+      "scraped_at": "2025-07-24T14:23:56.944Z"
+    }
+  },
+  {
+    "model": "quiz.jobpost",
+    "pk": 12,
+    "fields": {
+      "title": "Field Data collectors/Supervisors (Contract Role) at Triple M Dashboards (TMD)",
+      "link": "https://dixcoverhub.jobuj.com/field-data-collectors-supervisors-contract-role-at-triple-m-dashboards-tmd/",
+      "summary": "No summary",
+      "date_posted": "July 3, 2025",
+      "image_url": "https://dixcoverhub.jobuj.com/wp-content/uploads/2025/07/1630643539510.jpg",
+      "source": "Dixcoverhub",
+      "scraped_at": "2025-07-24T14:23:56.951Z"
+    }
+  },
+  {
+    "model": "quiz.jobpost",
+    "pk": 13,
+    "fields": {
+      "title": "Admin Officers at United Nigeria Airlines",
+      "link": "https://dixcoverhub.jobuj.com/admin-officers-at-united-nigeria-airlines/",
+      "summary": "No summary",
+      "date_posted": "July 2, 2025",
+      "image_url": "https://dixcoverhub.jobuj.com/wp-content/uploads/2025/07/United-Nigeria-Airlines-1021x580-1-768x436.jpg",
+      "source": "Dixcoverhub",
+      "scraped_at": "2025-07-24T14:23:56.957Z"
+    }
+  },
+  {
+    "model": "quiz.jobpost",
+    "pk": 14,
+    "fields": {
+      "title": "Dodageo Integrated is Seeking an Administrative Support Officer",
+      "link": "https://dixcoverhub.jobuj.com/dodageo-integrated-is-seeking-an-administrative-support-officer/",
+      "summary": "No summary",
+      "date_posted": "July 2, 2025",
+      "image_url": "https://dixcoverhub.jobuj.com/wp-content/uploads/2025/07/1688650524276.jpg",
+      "source": "Dixcoverhub",
+      "scraped_at": "2025-07-24T14:23:56.961Z"
+    }
+  },
+  {
+    "model": "quiz.jobpost",
+    "pk": 15,
+    "fields": {
+      "title": "Remote Social Media Officer Needed at Stanley & Akatu HR Partners Africa",
+      "link": "https://dixcoverhub.jobuj.com/remote-social-media-officer-needed-at-stanley-akatu-hr-partners-africa/",
+      "summary": "No summary",
+      "date_posted": "July 1, 2025",
+      "image_url": "https://dixcoverhub.jobuj.com/wp-content/uploads/2025/07/Stanley-Akatu-HR-Partners-Africa-1021x580-1-768x436.jpg",
+      "source": "Dixcoverhub",
+      "scraped_at": "2025-07-24T14:23:56.967Z"
+    }
+  },
+  {
+    "model": "quiz.jobpost",
+    "pk": 16,
+    "fields": {
+      "title": "Tranter IT Infrastructure Services Limited is Hiring IT End User Support Personnel",
+      "link": "https://dixcoverhub.jobuj.com/tranter-it-infrastructure-services-limited-is-hiring-it-end-user-support-personnel/",
+      "summary": "No summary",
+      "date_posted": "June 30, 2025",
+      "image_url": "https://dixcoverhub.jobuj.com/wp-content/uploads/2025/06/e47f81_472f67557ffd484b9c5706e5ab387bf8mv2_d_1600_1600_s_2-768x768.jpeg",
+      "source": "Dixcoverhub",
+      "scraped_at": "2025-07-24T14:23:56.972Z"
+    }
+  },
+  {
+    "model": "quiz.jobpost",
+    "pk": 17,
+    "fields": {
+      "title": "Data Analyst at PalmPay Limited Lagos",
+      "link": "https://dixcoverhub.jobuj.com/data-analyst-at-palmpay-limited-lagos/",
+      "summary": "No summary",
+      "date_posted": "June 30, 2025",
+      "image_url": "https://dixcoverhub.jobuj.com/wp-content/uploads/2025/06/20210731123558_8f7be03e-palmpay-768x576.jpg",
+      "source": "Dixcoverhub",
+      "scraped_at": "2025-07-24T14:23:56.976Z"
+    }
+  },
+  {
+    "model": "quiz.jobpost",
+    "pk": 18,
+    "fields": {
+      "title": "Talent Africa is Hiring Remote Data Collator",
+      "link": "https://dixcoverhub.jobuj.com/talent-africa-is-hiring-remote-data-collator/",
+      "summary": "No summary",
+      "date_posted": "June 28, 2025",
+      "image_url": "https://dixcoverhub.jobuj.com/wp-content/uploads/2025/06/Asset-2@2x.jpg",
+      "source": "Dixcoverhub",
+      "scraped_at": "2025-07-24T14:23:56.981Z"
+    }
+  },
+  {
+    "model": "quiz.jobpost",
+    "pk": 19,
+    "fields": {
+      "title": "Remote Virtual Office Manager (Administrative Assistant) Needed at IBT Media",
+      "link": "https://dixcoverhub.jobuj.com/remote-virtual-office-manager-administrative-assistant-needed-at-ibt-media/",
+      "summary": "No summary",
+      "date_posted": "June 28, 2025",
+      "image_url": "https://dixcoverhub.jobuj.com/wp-content/uploads/2025/06/1746559896075-768x495.jpeg",
+      "source": "Dixcoverhub",
+      "scraped_at": "2025-07-24T14:23:56.985Z"
+    }
+  },
+  {
+    "model": "quiz.jobpost",
+    "pk": 20,
+    "fields": {
+      "title": "ECOWAS Job Opportunities: Contribute to West African Development",
+      "link": "https://dixcoverhub.jobuj.com/ecowas-job-opportunities-contribute-to-west-african-development/",
+      "summary": "No summary",
+      "date_posted": "June 28, 2025",
+      "image_url": "https://dixcoverhub.jobuj.com/wp-content/uploads/2025/06/ECOWAS_Flag-768x513.png",
+      "source": "Dixcoverhub",
+      "scraped_at": "2025-07-24T14:23:56.989Z"
+    }
+  },
+  {
+    "model": "quiz.jobpost",
+    "pk": 21,
+    "fields": {
+      "title": "NADI Enumerators Recruitment: Transforming Agriculture in Northern Nigeria",
+      "link": "https://dixcoverhub.jobuj.com/nadi-enumerators-recruitment-transforming-agriculture-in-northern-nigeria/",
+      "summary": "No summary",
+      "date_posted": "June 27, 2025",
+      "image_url": "https://dixcoverhub.jobuj.com/wp-content/uploads/2025/06/00381892_14e6d27d742803419c13f84996a5725f_arc614x376_w1200-768x471.jpg",
+      "source": "Dixcoverhub",
+      "scraped_at": "2025-07-24T14:23:56.993Z"
+    }
+  },
+  {
+    "model": "quiz.jobpost",
+    "pk": 22,
+    "fields": {
+      "title": "Polaris Bank is Recruiting Nationwide Apply Now!",
+      "link": "https://dixcoverhub.jobuj.com/polaris-bank-is-recruiting-nationwide-apply-now/",
+      "summary": "No summary",
+      "date_posted": "June 27, 2025",
+      "image_url": "https://dixcoverhub.jobuj.com/wp-content/uploads/2025/06/picture.png",
+      "source": "Dixcoverhub",
+      "scraped_at": "2025-07-24T14:23:56.997Z"
+    }
+  },
+  {
+    "model": "quiz.jobpost",
+    "pk": 23,
+    "fields": {
+      "title": "Entry Level Job at Ikeja Electricity Distribution Company",
+      "link": "https://dixcoverhub.jobuj.com/entry-level-job-at-ikeja-electricity-distribution-company/",
+      "summary": "No summary",
+      "date_posted": "June 26, 2025",
+      "image_url": "https://dixcoverhub.jobuj.com/wp-content/uploads/2025/06/IKEDC-8093-Ikeja-Electricity-Distribution-Company-768x358.jpg",
+      "source": "Dixcoverhub",
+      "scraped_at": "2025-07-24T14:23:57.000Z"
+    }
+  },
+  {
+    "model": "quiz.jobpost",
+    "pk": 24,
+    "fields": {
+      "title": "Job Advert Management Assistant at MyJobMag – Fresh Graduate",
+      "link": "https://dixcoverhub.jobuj.com/job-advert-management-assistant-at-myjobmag-fresh-graduate/",
+      "summary": "No summary",
+      "date_posted": "June 26, 2025",
+      "image_url": "https://dixcoverhub.jobuj.com/wp-content/uploads/2025/01/download-28-1-1.png",
+      "source": "Dixcoverhub",
+      "scraped_at": "2025-07-24T14:23:57.004Z"
+    }
+  },
+  {
+    "model": "quiz.jobpost",
+    "pk": 25,
+    "fields": {
+      "title": "Nexus Hub & Nexus Restaurant is Hiring in Kaduna",
+      "link": "https://dixcoverhub.jobuj.com/nexus-hub-nexus-restaurant-is-hiring-in-kaduna/",
+      "summary": "No summary",
+      "date_posted": "June 26, 2025",
+      "image_url": "https://dixcoverhub.jobuj.com/wp-content/uploads/2025/06/OIP-3-1-390x220-1.webp",
+      "source": "Dixcoverhub",
+      "scraped_at": "2025-07-24T14:23:57.008Z"
+    }
+  },
+  {
+    "model": "quiz.jobpost",
+    "pk": 26,
+    "fields": {
+      "title": "Assistant Recruitment at Talent Consult",
+      "link": "https://dixcoverhub.jobuj.com/assistant-recruitment-at-talent-consult/",
+      "summary": "No summary",
+      "date_posted": "June 26, 2025",
+      "image_url": "https://dixcoverhub.jobuj.com/wp-content/uploads/2025/06/IMG-20250626-WA0000.jpg",
+      "source": "Dixcoverhub",
+      "scraped_at": "2025-07-24T14:23:57.014Z"
+    }
+  },
+  {
+    "model": "quiz.jobpost",
+    "pk": 27,
+    "fields": {
+      "title": "Apply Now: Eunisell Graduate Trainee Programme 2025",
+      "link": "https://dixcoverhub.jobuj.com/eunisell-graduate-trainee-programme-2025/",
+      "summary": "No summary",
+      "date_posted": "June 25, 2025",
+      "image_url": "https://dixcoverhub.jobuj.com/wp-content/uploads/2025/06/Eunisell-1021x580-1-768x436.jpg",
+      "source": "Dixcoverhub",
+      "scraped_at": "2025-07-24T14:23:57.017Z"
+    }
+  },
+  {
+    "model": "quiz.jobpost",
+    "pk": 28,
+    "fields": {
+      "title": "Remote Administrative Assistant / Data Entry Clerk Needed at Indulge Travels",
+      "link": "https://dixcoverhub.jobuj.com/remote-administrative-assistant-data-entry-clerk-needed-at-indulge-travels/",
+      "summary": "No summary",
+      "date_posted": "June 24, 2025",
+      "image_url": "https://dixcoverhub.jobuj.com/wp-content/uploads/2025/06/GIT20logo-removebg-preview.jpg",
+      "source": "Dixcoverhub",
+      "scraped_at": "2025-07-24T14:23:57.021Z"
+    }
+  },
+  {
+    "model": "quiz.jobpost",
+    "pk": 29,
+    "fields": {
+      "title": "Remote Youtube Video Editor at Redcity Company",
+      "link": "https://dixcoverhub.jobuj.com/remote-youtube-video-editor-at-redcity-company/",
+      "summary": "No summary",
+      "date_posted": "June 24, 2025",
+      "image_url": "https://dixcoverhub.jobuj.com/wp-content/uploads/2025/06/images-13.png",
+      "source": "Dixcoverhub",
+      "scraped_at": "2025-07-24T14:23:57.025Z"
+    }
+  },
+  {
+    "model": "quiz.jobpost",
+    "pk": 30,
+    "fields": {
+      "title": "Remote Agile Project Management Tutor at Conclase Consulting",
+      "link": "https://dixcoverhub.jobuj.com/remote-agile-project-management-tutor-at-conclase-consulting/",
+      "summary": "No summary",
+      "date_posted": "June 24, 2025",
+      "image_url": "https://dixcoverhub.jobuj.com/wp-content/uploads/2025/06/images-40-13-1.jpeg",
+      "source": "Dixcoverhub",
+      "scraped_at": "2025-07-24T14:23:57.029Z"
+    }
+  },
+  {
+    "model": "quiz.jobpost",
+    "pk": 31,
+    "fields": {
+      "title": "African Future Lab AfaRise Fellowship 2025-27",
+      "link": "https://dixcoverhub.jobuj.com/african-future-lab-afarise-fellowship-2025-27/",
+      "summary": "No summary",
+      "date_posted": "Unknown date",
+      "image_url": "https://dixcoverhub.jobuj.com/wp-content/uploads/2025/07/African-Future-Lab-AfaRise-Fellowship-2025-2027-768x430-1-300x168.jpg",
+      "source": "Dixcoverhub",
+      "scraped_at": "2025-07-24T14:23:57.033Z"
+    }
+  },
+  {
+    "model": "quiz.jobpost",
+    "pk": 32,
+    "fields": {
+      "title": "Ireland Fellows Programme Casement Fellowship in Human Rights 2026 for Nigerians | Fully-funded",
+      "link": "https://dixcoverhub.jobuj.com/ireland-fellows-programme-casement-fellowship-in-human-rights-2026/",
+      "summary": "No summary",
+      "date_posted": "Unknown date",
+      "image_url": "https://dixcoverhub.jobuj.com/wp-content/uploads/2025/07/1719844972215-300x300.jpeg",
+      "source": "Dixcoverhub",
+      "scraped_at": "2025-07-24T14:23:57.037Z"
+    }
+  },
+  {
+    "model": "quiz.jobpost",
+    "pk": 33,
+    "fields": {
+      "title": "2025 Afara Initiative Bridge Program",
+      "link": "https://dixcoverhub.jobuj.com/2025-afara-initiative-bridge-program/",
+      "summary": "No summary",
+      "date_posted": "Unknown date",
+      "image_url": "https://dixcoverhub.jobuj.com/wp-content/uploads/2025/06/images-40-16-1-241x300.jpeg",
+      "source": "Dixcoverhub",
+      "scraped_at": "2025-07-24T14:23:57.041Z"
+    }
+  },
+  {
+    "model": "quiz.jobpost",
+    "pk": 34,
+    "fields": {
+      "title": "Global Call: 2025 Young Leaders Union Paris",
+      "link": "https://dixcoverhub.jobuj.com/global-call-2025-young-leaders-union-paris/",
+      "summary": "No summary",
+      "date_posted": "Unknown date",
+      "image_url": "https://dixcoverhub.jobuj.com/wp-content/uploads/2025/06/IMG_20250625_080751-300x265.jpg",
+      "source": "Dixcoverhub",
+      "scraped_at": "2025-07-24T14:23:57.045Z"
+    }
+  },
+  {
+    "model": "quiz.jobpost",
+    "pk": 35,
+    "fields": {
+      "title": "University of Johannesburg Artists in Residence Program 2026",
+      "link": "https://dixcoverhub.jobuj.com/university-of-johannesburg-artists-in-residence-program-2026/",
+      "summary": "No summary",
+      "date_posted": "Unknown date",
+      "image_url": "https://dixcoverhub.jobuj.com/wp-content/uploads/2025/06/IMG_20250625_075150-300x233.jpg",
+      "source": "Dixcoverhub",
+      "scraped_at": "2025-07-24T14:23:57.049Z"
+    }
+  },
+  {
+    "model": "quiz.jobpost",
+    "pk": 36,
+    "fields": {
+      "title": "HKS Public Policy Leadership Conference 2025",
+      "link": "https://dixcoverhub.jobuj.com/hks-public-policy-leadership-conference-2025/",
+      "summary": "No summary",
+      "date_posted": "Unknown date",
+      "image_url": "https://dixcoverhub.jobuj.com/wp-content/uploads/2025/06/images-40-6-300x300.jpeg",
+      "source": "Dixcoverhub",
+      "scraped_at": "2025-07-24T14:23:57.053Z"
+    }
+  },
+  {
+    "model": "quiz.jobpost",
+    "pk": 37,
+    "fields": {
+      "title": "Apply for the Safe Online Youth Ambassadors Fellowship Program 2025",
+      "link": "https://dixcoverhub.jobuj.com/apply-for-the-safe-online-youth-ambassadors-fellowship-program-2025/",
+      "summary": "No summary",
+      "date_posted": "Unknown date",
+      "image_url": "https://dixcoverhub.jobuj.com/wp-content/uploads/2025/06/Safe-Online-Youth-Ambassadors-Fellowship-Program-2025-768x501-1-300x196.png",
+      "source": "Dixcoverhub",
+      "scraped_at": "2025-07-24T14:23:57.057Z"
+    }
+  },
+  {
+    "model": "quiz.jobpost",
+    "pk": 38,
+    "fields": {
+      "title": "IEJ Feminist Economics Summer School 2025 for Africans",
+      "link": "https://dixcoverhub.jobuj.com/iej-feminist-economics-summer-school-2025/",
+      "summary": "No summary",
+      "date_posted": "Unknown date",
+      "image_url": "https://dixcoverhub.jobuj.com/wp-content/uploads/2025/06/fess-300x300.jpeg",
+      "source": "Dixcoverhub",
+      "scraped_at": "2025-07-24T14:23:57.060Z"
+    }
+  },
+  {
+    "model": "quiz.jobpost",
+    "pk": 39,
+    "fields": {
+      "title": "Executive Assistant to the Chairman Needed at AW Network",
+      "link": "https://jobs.smartyacad.com/executive-assistant-to-the-chairman-at-aw-network/",
+      "summary": "No summary",
+      "date_posted": "August 4, 2025",
+      "image_url": "https://jobs.smartyacad.com/wp-content/uploads/2025/08/IMG_20250804_084347-300x170.jpg",
+      "source": "SmartyAcad",
+      "scraped_at": "2025-08-04T18:19:26.545Z"
+    }
+  },
+  {
+    "model": "quiz.jobpost",
+    "pk": 40,
+    "fields": {
+      "title": "Financial Reporting Trainee at F.A.B.E.S. Limited",
+      "link": "https://jobs.smartyacad.com/financial-reporting-trainee-at-f-a-b-e-s-limited/",
+      "summary": "No summary provided in listing",
+      "date_posted": "August 4, 2025",
+      "image_url": "https://jobs.smartyacad.com/wp-content/uploads/2025/08/FB_IMG_20250804_183141235.jpg",
+      "source": "SmartyAcad",
+      "scraped_at": "2025-08-04T18:19:26.551Z"
+    }
+  },
+  {
+    "model": "quiz.jobpost",
+    "pk": 41,
+    "fields": {
+      "title": "Front Desk Officer at The Aso Villa Clinic",
+      "link": "https://jobs.smartyacad.com/front-desk-officer-at-the-aso-villa-clinic/",
+      "summary": "No summary provided in listing",
+      "date_posted": "August 4, 2025",
+      "image_url": "https://jobs.smartyacad.com/wp-content/uploads/2025/08/ASO-VILLA-CLINIC-LOGO.jpg",
+      "source": "SmartyAcad",
+      "scraped_at": "2025-08-04T18:19:26.557Z"
+    }
+  },
+  {
+    "model": "quiz.jobpost",
+    "pk": 42,
+    "fields": {
+      "title": "Human Resource Manager at F.A.B.E.S. Limited",
+      "link": "https://jobs.smartyacad.com/human-resource-manager-at-f-a-b-e-s-limited/",
+      "summary": "No summary provided in listing",
+      "date_posted": "August 4, 2025",
+      "image_url": "https://jobs.smartyacad.com/wp-content/uploads/2025/08/FB_IMG_20250804_183141235.jpg",
+      "source": "SmartyAcad",
+      "scraped_at": "2025-08-04T18:19:26.562Z"
+    }
+  },
+  {
+    "model": "quiz.jobpost",
+    "pk": 43,
+    "fields": {
+      "title": "Assistant Network Administrator at The Aso Villa Clinic",
+      "link": "https://jobs.smartyacad.com/assistant-network-administrator-at-the-aso-villa-clinic/",
+      "summary": "No summary provided in listing",
+      "date_posted": "August 4, 2025",
+      "image_url": "https://jobs.smartyacad.com/wp-content/uploads/2025/08/ASO-VILLA-CLINIC-LOGO.jpg",
+      "source": "SmartyAcad",
+      "scraped_at": "2025-08-04T18:19:26.568Z"
+    }
+  },
+  {
+    "model": "quiz.jobpost",
+    "pk": 44,
+    "fields": {
+      "title": "Programmer/ICT Officer at The Aso Villa Clinic",
+      "link": "https://jobs.smartyacad.com/programmer-ict-officer-at-the-aso-villa-clinic/",
+      "summary": "No summary provided in listing",
+      "date_posted": "August 4, 2025",
+      "image_url": "https://jobs.smartyacad.com/wp-content/uploads/2025/08/ASO-VILLA-CLINIC-LOGO.jpg",
+      "source": "SmartyAcad",
+      "scraped_at": "2025-08-04T18:19:26.574Z"
+    }
+  },
+  {
+    "model": "quiz.jobpost",
+    "pk": 45,
+    "fields": {
+      "title": "Chief Human Resources Officer at Interswitch Group",
+      "link": "https://jobs.smartyacad.com/chief-human-resources-officer-at-interswitch-group/",
+      "summary": "No summary provided in listing",
+      "date_posted": "August 3, 2025",
+      "image_url": "https://jobs.smartyacad.com/wp-content/uploads/2025/08/images-5-1-300x168.jpeg",
+      "source": "SmartyAcad",
+      "scraped_at": "2025-08-04T18:19:26.580Z"
+    }
+  },
+  {
+    "model": "quiz.jobpost",
+    "pk": 46,
+    "fields": {
+      "title": "Software Engineer Intern at Interswitch Group",
+      "link": "https://jobs.smartyacad.com/software-engineer-intern-at-interswitch-group/",
+      "summary": "No summary provided in listing",
+      "date_posted": "August 3, 2025",
+      "image_url": "https://jobs.smartyacad.com/wp-content/uploads/2025/08/images-5-1-300x168.jpeg",
+      "source": "SmartyAcad",
+      "scraped_at": "2025-08-04T18:19:26.586Z"
+    }
+  },
+  {
+    "model": "quiz.jobpost",
+    "pk": 47,
+    "fields": {
+      "title": "Administrative Assistant at The Aso Villa Clinic",
+      "link": "https://jobs.smartyacad.com/administrative-assistant-at-the-aso-villa-clinic/",
+      "summary": "No summary provided in listing",
+      "date_posted": "August 3, 2025",
+      "image_url": "https://jobs.smartyacad.com/wp-content/uploads/2025/08/ASO-VILLA-CLINIC-LOGO.jpg",
+      "source": "SmartyAcad",
+      "scraped_at": "2025-08-04T18:19:26.592Z"
+    }
+  },
+  {
+    "model": "quiz.jobpost",
+    "pk": 48,
+    "fields": {
+      "title": "Data Analyst at Interswitch Group",
+      "link": "https://jobs.smartyacad.com/data-analyst-at-interswitch-group/",
+      "summary": "No summary provided in listing",
+      "date_posted": "August 3, 2025",
+      "image_url": "https://jobs.smartyacad.com/wp-content/uploads/2025/08/images-5-1-300x168.jpeg",
+      "source": "SmartyAcad",
+      "scraped_at": "2025-08-04T18:19:26.597Z"
+    }
+  },
+  {
+    "model": "quiz.jobpost",
+    "pk": 49,
+    "fields": {
+      "title": "Manager, Application Support at Interswitch Group",
+      "link": "https://jobs.smartyacad.com/manager-application-support-at-interswitch-group/",
+      "summary": "No summary provided in listing",
+      "date_posted": "August 3, 2025",
+      "image_url": "https://jobs.smartyacad.com/wp-content/uploads/2025/08/images-5-1-300x168.jpeg",
+      "source": "SmartyAcad",
+      "scraped_at": "2025-08-04T18:19:26.602Z"
+    }
+  },
+  {
+    "model": "quiz.jobpost",
+    "pk": 50,
+    "fields": {
+      "title": "Manager, Network Operations & Infrastructure at Interswitch Group",
+      "link": "https://jobs.smartyacad.com/manager-network-operations-infrastructure-at-interswitch-group/",
+      "summary": "No summary provided in listing",
+      "date_posted": "August 3, 2025",
+      "image_url": "https://jobs.smartyacad.com/wp-content/uploads/2025/08/images-5-1-300x168.jpeg",
+      "source": "SmartyAcad",
+      "scraped_at": "2025-08-04T18:19:26.608Z"
+    }
+  },
+  {
+    "model": "quiz.jobpost",
+    "pk": 51,
+    "fields": {
+      "title": "Data Protection Officer at Interswitch Group",
+      "link": "https://jobs.smartyacad.com/data-protection-officer-at-interswitch-group/",
+      "summary": "No summary provided in listing",
+      "date_posted": "August 3, 2025",
+      "image_url": "https://jobs.smartyacad.com/wp-content/uploads/2025/08/images-5-1-300x168.jpeg",
+      "source": "SmartyAcad",
+      "scraped_at": "2025-08-04T18:19:26.613Z"
+    }
+  },
+  {
+    "model": "quiz.jobpost",
+    "pk": 52,
+    "fields": {
+      "title": "Digital Transformation Manager at Interswitch Group",
+      "link": "https://jobs.smartyacad.com/digital-transformation-manager-at-interswitch-group/",
+      "summary": "No summary provided in listing",
+      "date_posted": "August 3, 2025",
+      "image_url": "https://jobs.smartyacad.com/wp-content/uploads/2025/08/images-5-1-300x168.jpeg",
+      "source": "SmartyAcad",
+      "scraped_at": "2025-08-04T18:19:26.618Z"
+    }
+  },
+  {
+    "model": "quiz.jobpost",
+    "pk": 53,
+    "fields": {
+      "title": "Senior Engineer, Network Operations at Interswitch Group",
+      "link": "https://jobs.smartyacad.com/senior-engineer-network-operations-at-interswitch-group/",
+      "summary": "No summary provided in listing",
+      "date_posted": "August 3, 2025",
+      "image_url": "https://jobs.smartyacad.com/wp-content/uploads/2025/08/images-5-1-300x168.jpeg",
+      "source": "SmartyAcad",
+      "scraped_at": "2025-08-04T18:19:26.623Z"
+    }
+  },
+  {
+    "model": "quiz.jobpost",
+    "pk": 54,
+    "fields": {
+      "title": "Accountant at The Aso Villa Clinic",
+      "link": "https://jobs.smartyacad.com/accountant-at-the-aso-villa-clinic/",
+      "summary": "No summary provided in listing",
+      "date_posted": "August 3, 2025",
+      "image_url": "https://jobs.smartyacad.com/wp-content/uploads/2025/08/ASO-VILLA-CLINIC-LOGO.jpg",
+      "source": "SmartyAcad",
+      "scraped_at": "2025-08-04T18:19:26.628Z"
+    }
+  },
+  {
+    "model": "quiz.jobpost",
+    "pk": 55,
+    "fields": {
+      "title": "Account Officer at The Aso Villa Clinic",
+      "link": "https://jobs.smartyacad.com/account-officer-at-the-aso-villa-clinic/",
+      "summary": "No summary provided in listing",
+      "date_posted": "August 3, 2025",
+      "image_url": "https://jobs.smartyacad.com/wp-content/uploads/2025/08/ASO-VILLA-CLINIC-LOGO.jpg",
+      "source": "SmartyAcad",
+      "scraped_at": "2025-08-04T18:19:26.633Z"
+    }
+  },
+  {
+    "model": "quiz.jobpost",
+    "pk": 56,
+    "fields": {
+      "title": "Senior Engineer, Mobile Network Operations at Interswitch Group",
+      "link": "https://jobs.smartyacad.com/senior-engineer-mobile-network-operations-at-interswitch-group/",
+      "summary": "No summary provided in listing",
+      "date_posted": "August 3, 2025",
+      "image_url": "https://jobs.smartyacad.com/wp-content/uploads/2025/08/images-5-1-300x168.jpeg",
+      "source": "SmartyAcad",
+      "scraped_at": "2025-08-04T18:19:26.638Z"
+    }
+  },
+  {
+    "model": "quiz.jobpost",
+    "pk": 57,
+    "fields": {
+      "title": "Senior Engineer, IT Service & Support at Interswitch Group",
+      "link": "https://jobs.smartyacad.com/senior-engineer-it-service-support-at-interswitch-group/",
+      "summary": "No summary provided in listing",
+      "date_posted": "August 3, 2025",
+      "image_url": "https://jobs.smartyacad.com/wp-content/uploads/2025/08/images-5-1-300x168.jpeg",
+      "source": "SmartyAcad",
+      "scraped_at": "2025-08-04T18:19:26.643Z"
+    }
+  },
+  {
+    "model": "quiz.jobpost",
+    "pk": 58,
+    "fields": {
+      "title": "IT Assistant at F.A.B.E.S. Limited",
+      "link": "https://jobs.smartyacad.com/it-assistant-at-f-a-b-e-s-limited/",
+      "summary": "No summary provided in listing",
+      "date_posted": "August 3, 2025",
+      "image_url": "https://jobs.smartyacad.com/wp-content/uploads/2025/08/FB_IMG_20250804_183141235.jpg",
+      "source": "SmartyAcad",
+      "scraped_at": "2025-08-04T18:19:26.649Z"
+    }
+  },
+  {
+    "model": "quiz.jobpost",
+    "pk": 59,
+    "fields": {
+      "title": "Information Technology Officer at The Aso Villa Clinic",
+      "link": "https://jobs.smartyacad.com/information-technology-officer-at-the-aso-villa-clinic/",
+      "summary": "No summary provided in listing",
+      "date_posted": "August 3, 2025",
+      "image_url": "https://jobs.smartyacad.com/wp-content/uploads/2025/08/ASO-VILLA-CLINIC-LOGO.jpg",
+      "source": "SmartyAcad",
+      "scraped_at": "2025-08-04T18:19:26.654Z"
+    }
+  },
+  {
+    "model": "quiz.jobpost",
+    "pk": 60,
+    "fields": {
+      "title": "Software Developer Intern at Protopie",
+      "link": "https://jobs.smartyacad.com/software-developer-intern-at-protopie/",
+      "summary": "No summary provided in listing",
+      "date_posted": "July 24, 2025",
+      "image_url": "https://jobs.smartyacad.com/wp-content/uploads/2025/07/FB_IMG_20250724_202450596.jpg",
+      "source": "SmartyAcad",
+      "scraped_at": "2025-08-04T18:19:26.659Z"
+    }
+  },
+  {
+    "model": "quiz.jobpost",
+    "pk": 61,
+    "fields": {
+      "title": "Software Developer Intern at The Aso Villa Clinic",
+      "link": "https://jobs.smartyacad.com/software-developer-intern-at-the-aso-villa-clinic/",
+      "summary": "No summary provided in listing",
+      "date_posted": "July 24, 2025",
+      "image_url": "https://jobs.smartyacad.com/wp-content/uploads/2025/08/ASO-VILLA-CLINIC-LOGO.jpg",
+      "source": "SmartyAcad",
+      "scraped_at": "2025-08-04T18:19:26.664Z"
+    }
+  },
+  {
+    "model": "quiz.jobpost",
+    "pk": 62,
+    "fields": {
+      "title": "Junior Software Engineer at The Aso Villa Clinic",
+      "link": "https://jobs.smartyacad.com/junior-software-engineer-at-the-aso-villa-clinic/",
+      "summary": "No summary provided in listing",
+      "date_posted": "July 24, 2025",
+      "image_url": "https://jobs.smartyacad.com/wp-content/uploads/2025/08/ASO-VILLA-CLINIC-LOGO.jpg",
+      "source": "SmartyAcad",
+      "scraped_at": "2025-08-04T18:19:26.669Z"
+    }
+  },
+  {
+    "model": "quiz.jobpost",
+    "pk": 63,
+    "fields": {
+      "title": "Graduate Trainee at Interswitch Group",
+      "link": "https://jobs.smartyacad.com/graduate-trainee-at-interswitch-group/",
+      "summary": "No summary provided in listing",
+      "date_posted": "July 24, 2025",
+      "image_url": "https://jobs.smartyacad.com/wp-content/uploads/2025/08/images-5-1-300x168.jpeg",
+      "source": "SmartyAcad",
+      "scraped_at": "2025-08-04T18:19:26.674Z"
+    }
+  },
+  {
+    "model": "quiz.jobpost",
+    "pk": 64,
+    "fields": {
+      "title": "Graphics Designer at The Aso Villa Clinic",
+      "link": "https://jobs.smartyacad.com/graphics-designer-at-the-aso-villa-clinic/",
+      "summary": "No summary provided in listing",
+      "date_posted": "July 24, 2025",
+      "image_url": "https://jobs.smartyacad.com/wp-content/uploads/2025/08/ASO-VILLA-CLINIC-LOGO.jpg",
+      "source": "SmartyAcad",
+      "scraped_at": "2025-08-04T18:19:26.679Z"
+    }
+  },
+  {
+    "model": "quiz.jobpost",
+    "pk": 65,
+    "fields": {
+      "title": "Front-End Developer at The Aso Villa Clinic",
+      "link": "https://jobs.smartyacad.com/front-end-developer-at-the-aso-villa-clinic/",
+      "summary": "No summary provided in listing",
+      "date_posted": "July 24, 2025",
+      "image_url": "https://jobs.smartyacad.com/wp-content/uploads/2025/08/ASO-VILLA-CLINIC-LOGO.jpg",
+      "source": "SmartyAcad",
+      "scraped_at": "2025-08-04T18:19:26.684Z"
+    }
+  },
+  {
+    "model": "quiz.jobpost",
+    "pk": 66,
+    "fields": {
+      "title": "Backend Developer at The Aso Villa Clinic",
+      "link": "https://jobs.smartyacad.com/backend-developer-at-the-aso-villa-clinic/",
+      "summary": "No summary provided in listing",
+      "date_posted": "July 24, 2025",
+      "image_url": "https://jobs.smartyacad.com/wp-content/uploads/2025/08/ASO-VILLA-CLINIC-LOGO.jpg",
+      "source": "SmartyAcad",
+      "scraped_at": "2025-08-04T18:19:26.690Z"
+    }
+  },
+  {
+    "model": "quiz.jobpost",
+    "pk": 67,
+    "fields": {
+      "title": "Data Analyst at The Aso Villa Clinic",
+      "link": "https://jobs.smartyacad.com/data-analyst-at-the-aso-villa-clinic/",
+      "summary": "No summary provided in listing",
+      "date_posted": "July 24, 2025",
+      "image_url": "https://jobs.smartyacad.com/wp-content/uploads/2025/08/ASO-VILLA-CLINIC-LOGO.jpg",
+      "source": "SmartyAcad",
+      "scraped_at": "2025-08-04T18:19:26.695Z"
+    }
+  },
+  {
+    "model": "quiz.jobpost",
+    "pk": 68,
+    "fields": {
+      "title": "IT Assistant at The Aso Villa Clinic",
+      "link": "https://jobs.smartyacad.com/it-assistant-at-the-aso-villa-clinic/",
+      "summary": "No summary provided in listing",
+      "date_posted": "July 24, 2025",
+      "image_url": "https://jobs.smartyacad.com/wp-content/uploads/2025/08/ASO-VILLA-CLINIC-LOGO.jpg",
+      "source": "SmartyAcad",
+      "scraped_at": "2025-08-04T18:19:26.700Z"
+    }
+  },
+  {
+    "model": "quiz.jobpost",
+    "pk": 69,
+    "fields": {
+      "title": "Web Developer at The Aso Villa Clinic",
+      "link": "https://jobs.smartyacad.com/web-developer-at-the-aso-villa-clinic/",
+      "summary": "No summary provided in listing",
+      "date_posted": "July 24, 2025",
+      "image_url": "https://jobs.smartyacad.com/wp-content/uploads/2025/08/ASO-VILLA-CLINIC-LOGO.jpg",
+      "source": "SmartyAcad",
+      "scraped_at": "2025-08-04T18:19:26.705Z"
+    }
+  },
+  {
+    "model": "quiz.jobpost",
+    "pk": 70,
+    "fields": {
+      "title": "Full-Stack Developer at The Aso Villa Clinic",
+      "link": "https://jobs.smartyacad.com/full-stack-developer-at-the-aso-villa-clinic/",
+      "summary": "No summary provided in listing",
+      "date_posted": "July 24, 2025",
+      "image_url": "https://jobs.smartyacad.com/wp-content/uploads/2025/08/ASO-VILLA-CLINIC-LOGO.jpg",
+      "source": "SmartyAcad",
+      "scraped_at": "2025-08-04T18:19:26.711Z"
+    }
+  },
+  {
+    "model": "quiz.scholarshippost",
+    "pk": 1,
+    "fields": {
+      "title": "MasterCard Foundation Scholars Program 2025 at University of Edinburgh",
+      "link": "https://jobs.smartyacad.com/mastercard-foundation-scholars-program-2025-at-university-of-edinburgh/",
+      "summary": "No summary provided in listing",
+      "date_posted": "July 23, 2025",
+      "image_url": "https://jobs.smartyacad.com/wp-content/uploads/2025/07/un-300x168.jpeg",
+      "source": "SmartyAcad",
+      "created_at": "2025-08-04T18:19:26.726Z",
+      "updated_at": "2025-08-04T18:19:26.726Z"
+    }
+  },
+  {
+    "model": "quiz.scholarshippost",
+    "pk": 2,
+    "fields": {
+      "title": "2026 British Chevening Scholarship for International Students",
+      "link": "https://jobs.smartyacad.com/2026-british-chevening-scholarship-for-international-students/",
+      "summary": "No summary provided in listing",
+      "date_posted": "July 23, 2025",
+      "image_url": "https://jobs.smartyacad.com/wp-content/uploads/2025/07/2024-british-chevening-scholarship.jpg",
+      "source": "SmartyAcad",
+      "created_at": "2025-08-04T18:19:26.733Z",
+      "updated_at": "2025-08-04T18:19:26.733Z"
+    }
+  },
+  {
+    "model": "quiz.scholarshippost",
+    "pk": 3,
+    "fields": {
+      "title": "2025-2026 Commonwealth Split-site Scholarship for Developing Countries",
+      "link": "https://jobs.smartyacad.com/2025-2026-commonwealth-split-site-scholarship-for-developing-countries/",
+      "summary": "No summary provided in listing",
+      "date_posted": "July 23, 2025",
+      "image_url": "https://jobs.smartyacad.com/wp-content/uploads/2025/07/2024-2025-commonwealth-split-site-scholarship.jpg",
+      "source": "SmartyAcad",
+      "created_at": "2025-08-04T18:19:26.739Z",
+      "updated_at": "2025-08-04T18:19:26.739Z"
+    }
+  },
+  {
+    "model": "quiz.scholarshippost",
+    "pk": 4,
+    "fields": {
+      "title": "Government of Canada Vanier Canada Graduate Scholarship 2026",
+      "link": "https://jobs.smartyacad.com/government-of-canada-vanier-canada-graduate-scholarship-2026/",
+      "summary": "No summary provided in listing",
+      "date_posted": "July 23, 2025",
+      "image_url": "https://jobs.smartyacad.com/wp-content/uploads/2025/07/government-of-canada-vanier-canada-graduate-scholarship.jpg",
+      "source": "SmartyAcad",
+      "created_at": "2025-08-04T18:19:26.745Z",
+      "updated_at": "2025-08-04T18:19:26.745Z"
+    }
+  },
+  {
+    "model": "quiz.scholarshippost",
+    "pk": 5,
+    "fields": {
+      "title": "Knight-Hennessy Scholarship 2026 at Stanford University, USA (Fully Funded)",
+      "link": "https://jobs.smartyacad.com/knight-hennessy-scholarship-2026-at-stanford-university-usa-fully-funded/",
+      "summary": "No summary provided in listing",
+      "date_posted": "July 23, 2025",
+      "image_url": "https://jobs.smartyacad.com/wp-content/uploads/2025/07/stanford-university.jpeg",
+      "source": "SmartyAcad",
+      "created_at": "2025-08-04T18:19:26.751Z",
+      "updated_at": "2025-08-04T18:19:26.751Z"
+    }
+  },
+  {
+    "model": "quiz.scholarshippost",
+    "pk": 6,
+    "fields": {
+      "title": "2026 Government of Brunei Darussalam Scholarship for Foreign Students (Fully Funded)",
+      "link": "https://jobs.smartyacad.com/2026-government-of-brunei-darussalam-scholarship-for-foreign-students/",
+      "summary": "No summary provided in listing",
+      "date_posted": "July 23, 2025",
+      "image_url": "https://jobs.smartyacad.com/wp-content/uploads/2025/07/brunei-darussalam-logo.jpg",
+      "source": "SmartyAcad",
+      "created_at": "2025-08-04T18:19:26.757Z",
+      "updated_at": "2025-08-04T18:19:26.757Z"
+    }
+  },
+  {
+    "model": "quiz.scholarshippost",
+    "pk": 7,
+    "fields": {
+      "title": "2026 Government of Ireland Postgraduate Scholarship Programme (Fully Funded)",
+      "link": "https://jobs.smartyacad.com/2026-government-of-ireland-postgraduate-scholarship-programme/",
+      "summary": "No summary provided in listing",
+      "date_posted": "July 23, 2025",
+      "image_url": "https://jobs.smartyacad.com/wp-content/uploads/2025/07/scholarship-in-ireland.jpg",
+      "source": "SmartyAcad",
+      "created_at": "2025-08-04T18:19:26.762Z",
+      "updated_at": "2025-08-04T18:19:26.762Z"
+    }
+  },
+  {
+    "model": "quiz.scholarshippost",
+    "pk": 8,
+    "fields": {
+      "title": "University of Queensland Scholarship 2026 in Australia for International Students",
+      "link": "https://jobs.smartyacad.com/university-of-queensland-scholarship-2026-in-australia-for-international-students/",
+      "summary": "No summary provided in listing",
+      "date_posted": "July 23, 2025",
+      "image_url": "https://jobs.smartyacad.com/wp-content/uploads/2025/07/University-of-Queensland.jpg",
+      "source": "SmartyAcad",
+      "created_at": "2025-08-04T18:19:26.768Z",
+      "updated_at": "2025-08-04T18:19:26.768Z"
+    }
+  },
+  {
+    "model": "quiz.scholarshippost",
+    "pk": 9,
+    "fields": {
+      "title": "2025 Schwarzman Scholars Program for International Students (Fully Funded)",
+      "link": "https://jobs.smartyacad.com/2025-schwarzman-scholars-program-for-international-students/",
+      "summary": "No summary provided in listing",
+      "date_posted": "July 23, 2025",
+      "image_url": "https://jobs.smartyacad.com/wp-content/uploads/2025/07/Schwarzman-Scholars-Program.jpg",
+      "source": "SmartyAcad",
+      "created_at": "2025-08-04T18:19:26.774Z",
+      "updated_at": "2025-08-04T18:19:26.774Z"
+    }
+  },
+  {
+    "model": "quiz.scholarshippost",
+    "pk": 10,
+    "fields": {
+      "title": "Government of Malaysia Scholarship 2025/2026 (Fully Funded)",
+      "link": "https://jobs.smartyacad.com/government-of-malaysia-scholarship-2025-2026/",
+      "summary": "No summary provided in listing",
+      "date_posted": "July 23, 2025",
+      "image_url": "https://jobs.smartyacad.com/wp-content/uploads/2025/07/Malaysia-Scholarship.jpg",
+      "source": "SmartyAcad",
+      "created_at": "2025-08-04T18:19:26.780Z",
+      "updated_at": "2025-08-04T18:19:26.780Z"
+    }
+  },
+  {
+    "model": "quiz.scholarshippost",
+    "pk": 11,
+    "fields": {
+      "title": "2026 Queen Elizabeth Commonwealth Scholarship for International Students",
+      "link": "https://jobs.smartyacad.com/2026-queen-elizabeth-commonwealth-scholarship-for-international-students/",
+      "summary": "No summary provided in listing",
+      "date_posted": "July 23, 2025",
+      "image_url": "https://jobs.smartyacad.com/wp-content/uploads/2025/07/Queen-Elizabeth-Commonwealth-Scholarships.jpeg",
+      "source": "SmartyAcad",
+      "created_at": "2025-08-04T18:19:26.786Z",
+      "updated_at": "2025-08-04T18:19:26.786Z"
+    }
+  },
+  {
+    "model": "quiz.scholarshippost",
+    "pk": 12,
+    "fields": {
+      "title": "2026 Government of Japan MEXT Scholarship (Fully-funded)",
+      "link": "https://jobs.smartyacad.com/2026-government-of-japan-mext-scholarship/",
+      "summary": "No summary provided in listing",
+      "date_posted": "July 23, 2025",
+      "image_url": "https://jobs.smartyacad.com/wp-content/uploads/2025/07/japan-scholarship.jpg",
+      "source": "SmartyAcad",
+      "created_at": "2025-08-04T18:19:26.791Z",
+      "updated_at": "2025-08-04T18:19:26.791Z"
+    }
+  },
+  {
+    "model": "quiz.scholarshippost",
+    "pk": 13,
+    "fields": {
+      "title": "2026 University of Kent Sanctuary Scholarship for Aspiring Students",
+      "link": "https://jobs.smartyacad.com/2026-university-of-kent-sanctuary-scholarship-for-aspiring-students/",
+      "summary": "No summary provided in listing",
+      "date_posted": "July 23, 2025",
+      "image_url": "https://jobs.smartyacad.com/wp-content/uploads/2025/07/University-of-kent.jpeg",
+      "source": "SmartyAcad",
+      "created_at": "2025-08-04T18:19:26.797Z",
+      "updated_at": "2025-08-04T18:19:26.797Z"
+    }
+  },
+  {
+    "model": "quiz.scholarshippost",
+    "pk": 14,
+    "fields": {
+      "title": "2025 University of Cambridge (UK) Scholarship for International Students",
+      "link": "https://jobs.smartyacad.com/2025-university-of-cambridge-uk-scholarship-for-international-students/",
+      "summary": "No summary provided in listing",
+      "date_posted": "July 23, 2025",
+      "image_url": "https://jobs.smartyacad.com/wp-content/uploads/2025/07/images-3-2-300x168.jpeg",
+      "source": "SmartyAcad",
+      "created_at": "2025-08-04T18:19:26.803Z",
+      "updated_at": "2025-08-04T18:19:26.803Z"
+    }
+  },
+  {
+    "model": "quiz.scholarshippost",
+    "pk": 15,
+    "fields": {
+      "title": "2025 Ngee Ann Kongsi Scholarship in Singapore (Fully-funded)",
+      "link": "https://jobs.smartyacad.com/2025-ngee-ann-kongsi-scholarship-in-singapore/",
+      "summary": "No summary provided in listing",
+      "date_posted": "July 23, 2025",
+      "image_url": "https://jobs.smartyacad.com/wp-content/uploads/2025/07/Singapore-Scholarship.jpg",
+      "source": "SmartyAcad",
+      "created_at": "2025-08-04T18:19:26.808Z",
+      "updated_at": "2025-08-04T18:19:26.808Z"
+    }
+  },
+  {
+    "model": "quiz.scholarshippost",
+    "pk": 16,
+    "fields": {
+      "title": "2025/2026 Gates Cambridge Scholarship in UK (Fully Funded)",
+      "link": "https://jobs.smartyacad.com/2025-2026-gates-cambridge-scholarship-in-uk/",
+      "summary": "No summary provided in listing",
+      "date_posted": "July 23, 2025",
+      "image_url": "https://jobs.smartyacad.com/wp-content/uploads/2025/07/Gates-Cambridge-Scholarship.jpeg",
+      "source": "SmartyAcad",
+      "created_at": "2025-08-04T18:19:26.814Z",
+      "updated_at": "2025-08-04T18:19:26.814Z"
+    }
+  },
+  {
+    "model": "quiz.scholarshippost",
+    "pk": 17,
+    "fields": {
+      "title": "2025 Rotary Peace Fellowship Program for International Students (Fully Funded)",
+      "link": "https://jobs.smartyacad.com/2025-rotary-peace-fellowship-program-for-international-students/",
+      "summary": "No summary provided in listing",
+      "date_posted": "July 23, 2025",
+      "image_url": "https://jobs.smartyacad.com/wp-content/uploads/2025/07/Rotary-peace.jpeg",
+      "source": "SmartyAcad",
+      "created_at": "2025-08-04T18:19:26.820Z",
+      "updated_at": "2025-08-04T18:19:26.820Z"
+    }
+  },
+  {
+    "model": "quiz.scholarshippost",
+    "pk": 18,
+    "fields": {
+      "title": "2025 Government of Australia Research Training Program (RTP) Scholarship",
+      "link": "https://jobs.smartyacad.com/2025-government-of-australia-research-training-program-rtp-scholarship/",
+      "summary": "No summary provided in listing",
+      "date_posted": "July 23, 2025",
+      "image_url": "https://jobs.smartyacad.com/wp-content/uploads/2025/07/australia-300x168.jpeg",
+      "source": "SmartyAcad",
+      "created_at": "2025-08-04T18:19:26.825Z",
+      "updated_at": "2025-08-04T18:19:26.825Z"
+    }
+  },
+  {
+    "model": "quiz.scholarshippost",
+    "pk": 19,
+    "fields": {
+      "title": "2025 Government of China Scholarship (Fully Funded)",
+      "link": "https://jobs.smartyacad.com/2025-government-of-china-scholarship-fully-funded/",
+      "summary": "No summary provided in listing",
+      "date_posted": "July 23, 2025",
+      "image_url": "https://jobs.smartyacad.com/wp-content/uploads/2025/07/china.jpg",
+      "source": "SmartyAcad",
+      "created_at": "2025-08-04T18:19:26.831Z",
+      "updated_at": "2025-08-04T18:19:26.831Z"
+    }
+  },
+  {
+    "model": "quiz.scholarshippost",
+    "pk": 20,
+    "fields": {
+      "title": "University of Sydney Scholarship 2025 for International Students in Australia",
+      "link": "https://jobs.smartyacad.com/university-of-sydney-scholarship-2025-for-international-students-in-australia/",
+      "summary": "No summary provided in listing",
+      "date_posted": "July 23, 2025",
+      "image_url": "https://jobs.smartyacad.com/wp-content/uploads/2025/07/University-of-Sydney.jpg",
+      "source": "SmartyAcad",
+      "created_at": "2025-08-04T18:19:26.836Z",
+      "updated_at": "2025-08-04T18:19:26.836Z"
+    }
+  },
+  {
+    "model": "quiz.scholarshippost",
+    "pk": 21,
+    "fields": {
+      "title": "2025-2026 Eiffel Excellence Scholarship Program in France (Fully Funded)",
+      "link": "https://jobs.smartyacad.com/2025-2026-eiffel-excellence-scholarship-program-in-france/",
+      "summary": "No summary provided in listing",
+      "date_posted": "July 23, 2025",
+      "image_url": "https://jobs.smartyacad.com/wp-content/uploads/2025/07/eiffel.jpeg",
+      "source": "SmartyAcad",
+      "created_at": "2025-08-04T18:19:26.842Z",
+      "updated_at": "2025-08-04T18:19:26.842Z"
+    }
+  },
+  {
+    "model": "quiz.scholarshippost",
+    "pk": 22,
+    "fields": {
+      "title": "2025 University of Adelaide Scholarship in Australia (Fully Funded)",
+      "link": "https://jobs.smartyacad.com/2025-university-of-adelaide-scholarship-in-australia/",
+      "summary": "No summary provided in listing",
+      "date_posted": "July 23, 2025",
+      "image_url": "https://jobs.smartyacad.com/wp-content/uploads/2025/07/University-of-adelaide-300x168.jpeg",
+      "source": "SmartyAcad",
+      "created_at": "2025-08-04T18:19:26.848Z",
+      "updated_at": "2025-08-04T18:19:26.848Z"
+    }
+  },
+  {
+    "model": "quiz.scholarshippost",
+    "pk": 23,
+    "fields": {
+      "title": "2026 Government of Sweden Scholarship (Fully-funded)",
+      "link": "https://jobs.smartyacad.com/2026-government-of-sweden-scholarship/",
+      "summary": "No summary provided in listing",
+      "date_posted": "July 23, 2025",
+      "image_url": "https://jobs.smartyacad.com/wp-content/uploads/2025/07/Government-of-Sweden.jpeg",
+      "source": "SmartyAcad",
+      "created_at": "2025-08-04T18:19:26.853Z",
+      "updated_at": "2025-08-04T18:19:26.853Z"
+    }
+  },
+  {
+    "model": "quiz.scholarshippost",
+    "pk": 24,
+    "fields": {
+      "title": "2026 Government of Finland Scholarship (Fully Funded)",
+      "link": "https://jobs.smartyacad.com/2026-government-of-finland-scholarship/",
+      "summary": "No summary provided in listing",
+      "date_posted": "July 23, 2025",
+      "image_url": "https://jobs.smartyacad.com/wp-content/uploads/2025/07/Government-of-Finland.jpeg",
+      "source": "SmartyAcad",
+      "created_at": "2025-08-04T18:19:26.859Z",
+      "updated_at": "2025-08-04T18:19:26.859Z"
+    }
+  },
+  {
+    "model": "quiz.scholarshippost",
+    "pk": 25,
+    "fields": {
+      "title": "University of Alberta Scholarships 2026 for International Students in Canada",
+      "link": "https://jobs.smartyacad.com/university-of-alberta-scholarships-2026-for-international-students-in-canada/",
+      "summary": "No summary provided in listing",
+      "date_posted": "July 23, 2025",
+      "image_url": "https://jobs.smartyacad.com/wp-content/uploads/2025/07/University-of-alberta.jpeg",
+      "source": "SmartyAcad",
+      "created_at": "2025-08-04T18:19:26.865Z",
+      "updated_at": "2025-08-04T18:19:26.865Z"
+    }
+  },
+  {
+    "model": "quiz.scholarshippost",
+    "pk": 26,
+    "fields": {
+      "title": "2025-2026 ETH Zurich Excellence Scholarship in Switzerland (Fully Funded)",
+      "link": "https://jobs.smartyacad.com/2025-2026-eth-zurich-excellence-scholarship-in-switzerland/",
+      "summary": "No summary provided in listing",
+      "date_posted": "July 23, 2025",
+      "image_url": "https://jobs.smartyacad.com/wp-content/uploads/2025/07/eth-300x168.jpeg",
+      "source": "SmartyAcad",
+      "created_at": "2025-08-04T18:19:26.870Z",
+      "updated_at": "2025-08-04T18:19:26.870Z"
+    }
+  },
+  {
+    "model": "quiz.scholarshippost",
+    "pk": 27,
+    "fields": {
+      "title": "2026 Queen’s University Belfast Sanctuary Scholarship for International Students",
+      "link": "https://jobs.smartyacad.com/2026-queens-university-belfast-sanctuary-scholarship-for-international-students/",
+      "summary": "No summary provided in listing",
+      "date_posted": "July 22, 2025",
+      "image_url": "https://jobs.smartyacad.com/wp-content/uploads/2025/07/Screenshot_2025-07-22-12-09-54-473_com.google.android.googlequicksearchbox-300x168.jpg",
+      "source": "SmartyAcad",
+      "created_at": "2025-08-04T18:19:27.135Z",
+      "updated_at": "2025-08-04T18:19:27.135Z"
+    }
+  },
+  {
+    "model": "quiz.scholarshippost",
+    "pk": 28,
+    "fields": {
+      "title": "2026 Curtin University RTP Scholarship in Australia",
+      "link": "https://jobs.smartyacad.com/2026-curtin-university-rtp-scholarship-in-australia/",
+      "summary": "No summary provided in listing",
+      "date_posted": "July 18, 2025",
+      "image_url": "https://jobs.smartyacad.com/wp-content/uploads/2025/07/IMG_20250718_092205.jpg",
+      "source": "SmartyAcad",
+      "created_at": "2025-08-04T18:19:27.152Z",
+      "updated_at": "2025-08-04T18:19:27.152Z"
+    }
+  },
+  {
+    "model": "quiz.scholarshippost",
+    "pk": 29,
+    "fields": {
+      "title": "Keele University SURF Scholarship 2025 in UK",
+      "link": "https://jobs.smartyacad.com/keele-university-surf-scholarship-2025-in-uk/",
+      "summary": "No summary provided in listing",
+      "date_posted": "July 18, 2025",
+      "image_url": "https://jobs.smartyacad.com/wp-content/uploads/2025/07/images-11-3.jpeg",
+      "source": "SmartyAcad",
+      "created_at": "2025-08-04T18:19:27.161Z",
+      "updated_at": "2025-08-04T18:19:27.161Z"
+    }
   }
-},
-{
-  "model": "quiz.jobpost",
-  "pk": 2,
-  "fields": {
-    "title": "HR Officer at IPT PowerTech Group",
-    "link": "https://dixcoverhub.jobuj.com/hr-officer-at-ipt-powertech-group/",
-    "summary": "No summary",
-    "date_posted": "July 8, 2025",
-    "image_url": "https://dixcoverhub.jobuj.com/wp-content/uploads/2025/07/Screenshot_2025-07-08-15-59-48-080_com.google.android.googlequicksearchbox-edit-768x494.jpg",
-    "source": "Dixcoverhub",
-    "scraped_at": "2025-07-24T14:23:56.886Z"
-  }
-},
-{
-  "model": "quiz.jobpost",
-  "pk": 3,
-  "fields": {
-    "title": "Workshop Assistant at Malaria Consortium",
-    "link": "https://dixcoverhub.jobuj.com/workshop-assistant-at-malaria-consortium/",
-    "summary": "No summary",
-    "date_posted": "July 8, 2025",
-    "image_url": "https://dixcoverhub.jobuj.com/wp-content/uploads/2025/07/2011-1-768x403.jpeg",
-    "source": "Dixcoverhub",
-    "scraped_at": "2025-07-24T14:23:56.896Z"
-  }
-},
-{
-  "model": "quiz.jobpost",
-  "pk": 4,
-  "fields": {
-    "title": "Social Media Officer at Maxitech Global Investment Limited",
-    "link": "https://dixcoverhub.jobuj.com/social-media-officer-at-maxitech-global-investment-limited/",
-    "summary": "No summary",
-    "date_posted": "July 8, 2025",
-    "image_url": "https://dixcoverhub.jobuj.com/wp-content/uploads/2025/07/Maxitech-Global-Investment-Limited-696x348-1.jpg",
-    "source": "Dixcoverhub",
-    "scraped_at": "2025-07-24T14:23:56.904Z"
-  }
-},
-{
-  "model": "quiz.jobpost",
-  "pk": 5,
-  "fields": {
-    "title": "FG Technical Teachers Training Programme (TTTP) 2025",
-    "link": "https://dixcoverhub.jobuj.com/fg-technical-teachers-training-programme-tttp-2025/",
-    "summary": "No summary",
-    "date_posted": "July 8, 2025",
-    "image_url": "https://dixcoverhub.jobuj.com/wp-content/uploads/2025/07/Technical-Teachers-Training-Programme-696x348-1.jpg",
-    "source": "Dixcoverhub",
-    "scraped_at": "2025-07-24T14:23:56.911Z"
-  }
-},
-{
-  "model": "quiz.jobpost",
-  "pk": 6,
-  "fields": {
-    "title": "Program Support Volunteer At Global Rights",
-    "link": "https://dixcoverhub.jobuj.com/program-support-volunteer-at-global-rights/",
-    "summary": "No summary",
-    "date_posted": "July 7, 2025",
-    "image_url": "https://dixcoverhub.jobuj.com/wp-content/uploads/2025/07/global-rights.jpg",
-    "source": "Dixcoverhub",
-    "scraped_at": "2025-07-24T14:23:56.918Z"
-  }
-},
-{
-  "model": "quiz.jobpost",
-  "pk": 7,
-  "fields": {
-    "title": "UNICEF is Hiring 5 Assistants û Apply Now for 2025!",
-    "link": "https://dixcoverhub.jobuj.com/unicef-is-hiring-5-assistants-apply-now-for-2025/",
-    "summary": "No summary",
-    "date_posted": "July 7, 2025",
-    "image_url": "https://dixcoverhub.jobuj.com/wp-content/uploads/2025/07/unicef-2-768x768.jpg",
-    "source": "Dixcoverhub",
-    "scraped_at": "2025-07-24T14:23:56.923Z"
-  }
-},
-{
-  "model": "quiz.jobpost",
-  "pk": 8,
-  "fields": {
-    "title": "EditVisions is Hiring Remote Freelance Video Editors",
-    "link": "https://dixcoverhub.jobuj.com/editvisions-is-hiring-remote-freelance-video-editors/",
-    "summary": "No summary",
-    "date_posted": "July 7, 2025",
-    "image_url": "https://dixcoverhub.jobuj.com/wp-content/uploads/2025/07/175162178183989.jpg",
-    "source": "Dixcoverhub",
-    "scraped_at": "2025-07-24T14:23:56.928Z"
-  }
-},
-{
-  "model": "quiz.jobpost",
-  "pk": 9,
-  "fields": {
-    "title": "Front Desk Officer at Eden Solutions and Resources (NYSC)",
-    "link": "https://dixcoverhub.jobuj.com/front-desk-officer-at-eden-solutions-and-resources-nysc/",
-    "summary": "No summary",
-    "date_posted": "July 5, 2025",
-    "image_url": "https://dixcoverhub.jobuj.com/wp-content/uploads/2025/07/Eden-Solutions-and-Resources-1021x580-1-768x436.jpg",
-    "source": "Dixcoverhub",
-    "scraped_at": "2025-07-24T14:23:56.934Z"
-  }
-},
-{
-  "model": "quiz.jobpost",
-  "pk": 10,
-  "fields": {
-    "title": "Virtual Assistant at Raphael Group",
-    "link": "https://dixcoverhub.jobuj.com/virtual-assistant-at-raphael-group/",
-    "summary": "No summary",
-    "date_posted": "July 4, 2025",
-    "image_url": "https://dixcoverhub.jobuj.com/wp-content/uploads/2025/07/Raphael-Group-1024x512-1-768x384.jpg",
-    "source": "Dixcoverhub",
-    "scraped_at": "2025-07-24T14:23:56.939Z"
-  }
-},
-{
-  "model": "quiz.jobpost",
-  "pk": 11,
-  "fields": {
-    "title": "Malaria Consortium Is Hiring IT Support Assistants in Ondo State",
-    "link": "https://dixcoverhub.jobuj.com/malaria-consortium-is-hiring-it-support-assistants-in-ondo-state/",
-    "summary": "No summary",
-    "date_posted": "July 4, 2025",
-    "image_url": "https://dixcoverhub.jobuj.com/wp-content/uploads/2025/07/2011-768x403.jpeg",
-    "source": "Dixcoverhub",
-    "scraped_at": "2025-07-24T14:23:56.944Z"
-  }
-},
-{
-  "model": "quiz.jobpost",
-  "pk": 12,
-  "fields": {
-    "title": "Field Data collectors/Supervisors (Contract Role) at Triple M Dashboards (TMD)",
-    "link": "https://dixcoverhub.jobuj.com/field-data-collectors-supervisors-contract-role-at-triple-m-dashboards-tmd/",
-    "summary": "No summary",
-    "date_posted": "July 3, 2025",
-    "image_url": "https://dixcoverhub.jobuj.com/wp-content/uploads/2025/07/1630643539510.jpg",
-    "source": "Dixcoverhub",
-    "scraped_at": "2025-07-24T14:23:56.951Z"
-  }
-},
-{
-  "model": "quiz.jobpost",
-  "pk": 13,
-  "fields": {
-    "title": "Admin Officers at United Nigeria Airlines",
-    "link": "https://dixcoverhub.jobuj.com/admin-officers-at-united-nigeria-airlines/",
-    "summary": "No summary",
-    "date_posted": "July 2, 2025",
-    "image_url": "https://dixcoverhub.jobuj.com/wp-content/uploads/2025/07/United-Nigeria-Airlines-1021x580-1-768x436.jpg",
-    "source": "Dixcoverhub",
-    "scraped_at": "2025-07-24T14:23:56.957Z"
-  }
-},
-{
-  "model": "quiz.jobpost",
-  "pk": 14,
-  "fields": {
-    "title": "Dodageo Integrated is Seeking an Administrative Support Officer",
-    "link": "https://dixcoverhub.jobuj.com/dodageo-integrated-is-seeking-an-administrative-support-officer/",
-    "summary": "No summary",
-    "date_posted": "July 2, 2025",
-    "image_url": "https://dixcoverhub.jobuj.com/wp-content/uploads/2025/07/1688650524276.jpg",
-    "source": "Dixcoverhub",
-    "scraped_at": "2025-07-24T14:23:56.961Z"
-  }
-},
-{
-  "model": "quiz.jobpost",
-  "pk": 15,
-  "fields": {
-    "title": "Remote Social Media Officer Needed at Stanley & Akatu HR Partners Africa",
-    "link": "https://dixcoverhub.jobuj.com/remote-social-media-officer-needed-at-stanley-akatu-hr-partners-africa/",
-    "summary": "No summary",
-    "date_posted": "July 1, 2025",
-    "image_url": "https://dixcoverhub.jobuj.com/wp-content/uploads/2025/07/Stanley-Akatu-HR-Partners-Africa-1021x580-1-768x436.jpg",
-    "source": "Dixcoverhub",
-    "scraped_at": "2025-07-24T14:23:56.967Z"
-  }
-},
-{
-  "model": "quiz.jobpost",
-  "pk": 16,
-  "fields": {
-    "title": "Tranter IT Infrastructure Services Limited is Hiring IT End User Support Personnel",
-    "link": "https://dixcoverhub.jobuj.com/tranter-it-infrastructure-services-limited-is-hiring-it-end-user-support-personnel/",
-    "summary": "No summary",
-    "date_posted": "June 30, 2025",
-    "image_url": "https://dixcoverhub.jobuj.com/wp-content/uploads/2025/06/e47f81_472f67557ffd484b9c5706e5ab387bf8mv2_d_1600_1600_s_2-768x768.jpeg",
-    "source": "Dixcoverhub",
-    "scraped_at": "2025-07-24T14:23:56.972Z"
-  }
-},
-{
-  "model": "quiz.jobpost",
-  "pk": 17,
-  "fields": {
-    "title": "Data Analyst at PalmPay Limited Lagos",
-    "link": "https://dixcoverhub.jobuj.com/data-analyst-at-palmpay-limited-lagos/",
-    "summary": "No summary",
-    "date_posted": "June 30, 2025",
-    "image_url": "https://dixcoverhub.jobuj.com/wp-content/uploads/2025/06/20210731123558_8f7be03e-palmpay-768x576.jpg",
-    "source": "Dixcoverhub",
-    "scraped_at": "2025-07-24T14:23:56.976Z"
-  }
-},
-{
-  "model": "quiz.jobpost",
-  "pk": 18,
-  "fields": {
-    "title": "Talent Africa is Hiring Remote Data Collator",
-    "link": "https://dixcoverhub.jobuj.com/talent-africa-is-hiring-remote-data-collator/",
-    "summary": "No summary",
-    "date_posted": "June 28, 2025",
-    "image_url": "https://dixcoverhub.jobuj.com/wp-content/uploads/2025/06/Asset-2@2x.jpg",
-    "source": "Dixcoverhub",
-    "scraped_at": "2025-07-24T14:23:56.981Z"
-  }
-},
-{
-  "model": "quiz.jobpost",
-  "pk": 19,
-  "fields": {
-    "title": "Remote Virtual Office Manager (Administrative Assistant) Needed at IBT Media",
-    "link": "https://dixcoverhub.jobuj.com/remote-virtual-office-manager-administrative-assistant-needed-at-ibt-media/",
-    "summary": "No summary",
-    "date_posted": "June 28, 2025",
-    "image_url": "https://dixcoverhub.jobuj.com/wp-content/uploads/2025/06/1746559896075-768x495.jpeg",
-    "source": "Dixcoverhub",
-    "scraped_at": "2025-07-24T14:23:56.985Z"
-  }
-},
-{
-  "model": "quiz.jobpost",
-  "pk": 20,
-  "fields": {
-    "title": "ECOWAS Job Opportunities: Contribute to West African Development",
-    "link": "https://dixcoverhub.jobuj.com/ecowas-job-opportunities-contribute-to-west-african-development/",
-    "summary": "No summary",
-    "date_posted": "June 28, 2025",
-    "image_url": "https://dixcoverhub.jobuj.com/wp-content/uploads/2025/06/ECOWAS_Flag-768x513.png",
-    "source": "Dixcoverhub",
-    "scraped_at": "2025-07-24T14:23:56.989Z"
-  }
-},
-{
-  "model": "quiz.jobpost",
-  "pk": 21,
-  "fields": {
-    "title": "NADI Enumerators Recruitment: Transforming Agriculture in Northern Nigeria",
-    "link": "https://dixcoverhub.jobuj.com/nadi-enumerators-recruitment-transforming-agriculture-in-northern-nigeria/",
-    "summary": "No summary",
-    "date_posted": "June 27, 2025",
-    "image_url": "https://dixcoverhub.jobuj.com/wp-content/uploads/2025/06/00381892_14e6d27d742803419c13f84996a5725f_arc614x376_w1200-768x471.jpg",
-    "source": "Dixcoverhub",
-    "scraped_at": "2025-07-24T14:23:56.993Z"
-  }
-},
-{
-  "model": "quiz.jobpost",
-  "pk": 22,
-  "fields": {
-    "title": "Polaris Bank is Recruiting Nationwide Apply Now!",
-    "link": "https://dixcoverhub.jobuj.com/polaris-bank-is-recruiting-nationwide-apply-now/",
-    "summary": "No summary",
-    "date_posted": "June 27, 2025",
-    "image_url": "https://dixcoverhub.jobuj.com/wp-content/uploads/2025/06/picture.png",
-    "source": "Dixcoverhub",
-    "scraped_at": "2025-07-24T14:23:56.997Z"
-  }
-},
-{
-  "model": "quiz.jobpost",
-  "pk": 23,
-  "fields": {
-    "title": "Entry Level Job at Ikeja Electricity Distribution Company",
-    "link": "https://dixcoverhub.jobuj.com/entry-level-job-at-ikeja-electricity-distribution-company/",
-    "summary": "No summary",
-    "date_posted": "June 26, 2025",
-    "image_url": "https://dixcoverhub.jobuj.com/wp-content/uploads/2025/06/IKEDC-8093-Ikeja-Electricity-Distribution-Company-768x358.jpg",
-    "source": "Dixcoverhub",
-    "scraped_at": "2025-07-24T14:23:57.000Z"
-  }
-},
-{
-  "model": "quiz.jobpost",
-  "pk": 24,
-  "fields": {
-    "title": "Job Advert Management Assistant at MyJobMag û Fresh Graduate",
-    "link": "https://dixcoverhub.jobuj.com/job-advert-management-assistant-at-myjobmag-fresh-graduate/",
-    "summary": "No summary",
-    "date_posted": "June 26, 2025",
-    "image_url": "https://dixcoverhub.jobuj.com/wp-content/uploads/2025/01/download-28-1-1.png",
-    "source": "Dixcoverhub",
-    "scraped_at": "2025-07-24T14:23:57.004Z"
-  }
-},
-{
-  "model": "quiz.jobpost",
-  "pk": 25,
-  "fields": {
-    "title": "Nexus Hub & Nexus Restaurant is Hiring in Kaduna",
-    "link": "https://dixcoverhub.jobuj.com/nexus-hub-nexus-restaurant-is-hiring-in-kaduna/",
-    "summary": "No summary",
-    "date_posted": "June 26, 2025",
-    "image_url": "https://dixcoverhub.jobuj.com/wp-content/uploads/2025/06/OIP-3-1-390x220-1.webp",
-    "source": "Dixcoverhub",
-    "scraped_at": "2025-07-24T14:23:57.008Z"
-  }
-},
-{
-  "model": "quiz.jobpost",
-  "pk": 26,
-  "fields": {
-    "title": "Assistant Recruitment at Talent Consult",
-    "link": "https://dixcoverhub.jobuj.com/assistant-recruitment-at-talent-consult/",
-    "summary": "No summary",
-    "date_posted": "June 26, 2025",
-    "image_url": "https://dixcoverhub.jobuj.com/wp-content/uploads/2025/06/IMG-20250626-WA0000.jpg",
-    "source": "Dixcoverhub",
-    "scraped_at": "2025-07-24T14:23:57.014Z"
-  }
-},
-{
-  "model": "quiz.jobpost",
-  "pk": 27,
-  "fields": {
-    "title": "Apply Now: Eunisell Graduate Trainee Programme 2025",
-    "link": "https://dixcoverhub.jobuj.com/eunisell-graduate-trainee-programme-2025/",
-    "summary": "No summary",
-    "date_posted": "June 25, 2025",
-    "image_url": "https://dixcoverhub.jobuj.com/wp-content/uploads/2025/06/Eunisell-1021x580-1-768x436.jpg",
-    "source": "Dixcoverhub",
-    "scraped_at": "2025-07-24T14:23:57.017Z"
-  }
-},
-{
-  "model": "quiz.jobpost",
-  "pk": 28,
-  "fields": {
-    "title": "Remote Administrative Assistant / Data Entry Clerk Needed at Indulge Travels",
-    "link": "https://dixcoverhub.jobuj.com/remote-administrative-assistant-data-entry-clerk-needed-at-indulge-travels/",
-    "summary": "No summary",
-    "date_posted": "June 24, 2025",
-    "image_url": "https://dixcoverhub.jobuj.com/wp-content/uploads/2025/06/GIT20logo-removebg-preview.jpg",
-    "source": "Dixcoverhub",
-    "scraped_at": "2025-07-24T14:23:57.021Z"
-  }
-},
-{
-  "model": "quiz.jobpost",
-  "pk": 29,
-  "fields": {
-    "title": "Remote Youtube Video Editor at Redcity Company",
-    "link": "https://dixcoverhub.jobuj.com/remote-youtube-video-editor-at-redcity-company/",
-    "summary": "No summary",
-    "date_posted": "June 24, 2025",
-    "image_url": "https://dixcoverhub.jobuj.com/wp-content/uploads/2025/06/images-13.png",
-    "source": "Dixcoverhub",
-    "scraped_at": "2025-07-24T14:23:57.025Z"
-  }
-},
-{
-  "model": "quiz.jobpost",
-  "pk": 30,
-  "fields": {
-    "title": "Remote Agile Project Management Tutor at Conclase Consulting",
-    "link": "https://dixcoverhub.jobuj.com/remote-agile-project-management-tutor-at-conclase-consulting/",
-    "summary": "No summary",
-    "date_posted": "June 24, 2025",
-    "image_url": "https://dixcoverhub.jobuj.com/wp-content/uploads/2025/06/images-40-13-1.jpeg",
-    "source": "Dixcoverhub",
-    "scraped_at": "2025-07-24T14:23:57.029Z"
-  }
-},
-{
-  "model": "quiz.jobpost",
-  "pk": 31,
-  "fields": {
-    "title": "African Future Lab AfaRise Fellowship 2025-27",
-    "link": "https://dixcoverhub.jobuj.com/african-future-lab-afarise-fellowship-2025-27/",
-    "summary": "No summary",
-    "date_posted": "Unknown date",
-    "image_url": "https://dixcoverhub.jobuj.com/wp-content/uploads/2025/07/African-Future-Lab-AfaRise-Fellowship-2025-2027-768x430-1-300x168.jpg",
-    "source": "Dixcoverhub",
-    "scraped_at": "2025-07-24T14:23:57.033Z"
-  }
-},
-{
-  "model": "quiz.jobpost",
-  "pk": 32,
-  "fields": {
-    "title": "Ireland Fellows Programme Casement Fellowship in Human Rights 2026 for Nigerians | Fully-funded",
-    "link": "https://dixcoverhub.jobuj.com/ireland-fellows-programme-casement-fellowship-in-human-rights-2026/",
-    "summary": "No summary",
-    "date_posted": "Unknown date",
-    "image_url": "https://dixcoverhub.jobuj.com/wp-content/uploads/2025/07/1719844972215-300x300.jpeg",
-    "source": "Dixcoverhub",
-    "scraped_at": "2025-07-24T14:23:57.037Z"
-  }
-},
-{
-  "model": "quiz.jobpost",
-  "pk": 33,
-  "fields": {
-    "title": "2025 Afara Initiative Bridge Program",
-    "link": "https://dixcoverhub.jobuj.com/2025-afara-initiative-bridge-program/",
-    "summary": "No summary",
-    "date_posted": "Unknown date",
-    "image_url": "https://dixcoverhub.jobuj.com/wp-content/uploads/2025/06/images-40-16-1-241x300.jpeg",
-    "source": "Dixcoverhub",
-    "scraped_at": "2025-07-24T14:23:57.041Z"
-  }
-},
-{
-  "model": "quiz.jobpost",
-  "pk": 34,
-  "fields": {
-    "title": "Global Call: 2025 Young Leaders Union Paris",
-    "link": "https://dixcoverhub.jobuj.com/global-call-2025-young-leaders-union-paris/",
-    "summary": "No summary",
-    "date_posted": "Unknown date",
-    "image_url": "https://dixcoverhub.jobuj.com/wp-content/uploads/2025/06/IMG_20250625_080751-300x265.jpg",
-    "source": "Dixcoverhub",
-    "scraped_at": "2025-07-24T14:23:57.045Z"
-  }
-},
-{
-  "model": "quiz.jobpost",
-  "pk": 35,
-  "fields": {
-    "title": "University of Johannesburg Artists in Residence Program 2026",
-    "link": "https://dixcoverhub.jobuj.com/university-of-johannesburg-artists-in-residence-program-2026/",
-    "summary": "No summary",
-    "date_posted": "Unknown date",
-    "image_url": "https://dixcoverhub.jobuj.com/wp-content/uploads/2025/06/IMG_20250625_075150-300x233.jpg",
-    "source": "Dixcoverhub",
-    "scraped_at": "2025-07-24T14:23:57.049Z"
-  }
-},
-{
-  "model": "quiz.jobpost",
-  "pk": 36,
-  "fields": {
-    "title": "HKS Public Policy Leadership Conference 2025",
-    "link": "https://dixcoverhub.jobuj.com/hks-public-policy-leadership-conference-2025/",
-    "summary": "No summary",
-    "date_posted": "Unknown date",
-    "image_url": "https://dixcoverhub.jobuj.com/wp-content/uploads/2025/06/images-40-6-300x300.jpeg",
-    "source": "Dixcoverhub",
-    "scraped_at": "2025-07-24T14:23:57.053Z"
-  }
-},
-{
-  "model": "quiz.jobpost",
-  "pk": 37,
-  "fields": {
-    "title": "Apply for the Safe Online Youth Ambassadors Fellowship Program 2025",
-    "link": "https://dixcoverhub.jobuj.com/apply-for-the-safe-online-youth-ambassadors-fellowship-program-2025/",
-    "summary": "No summary",
-    "date_posted": "Unknown date",
-    "image_url": "https://dixcoverhub.jobuj.com/wp-content/uploads/2025/06/Safe-Online-Youth-Ambassadors-Fellowship-Program-2025-768x501-1-300x196.png",
-    "source": "Dixcoverhub",
-    "scraped_at": "2025-07-24T14:23:57.057Z"
-  }
-},
-{
-  "model": "quiz.jobpost",
-  "pk": 38,
-  "fields": {
-    "title": "IEJ Feminist Economics Summer School 2025 for Africans",
-    "link": "https://dixcoverhub.jobuj.com/iej-feminist-economics-summer-school-2025/",
-    "summary": "No summary",
-    "date_posted": "Unknown date",
-    "image_url": "https://dixcoverhub.jobuj.com/wp-content/uploads/2025/06/fess-300x300.jpeg",
-    "source": "Dixcoverhub",
-    "scraped_at": "2025-07-24T14:23:57.060Z"
-  }
-},
-{
-  "model": "quiz.jobpost",
-  "pk": 39,
-  "fields": {
-    "title": "Executive Assistant to the Chairman Needed at AW Network",
-    "link": "https://jobs.smartyacad.com/executive-assistant-to-the-chairman-at-aw-network/",
-    "summary": "No summary",
-    "date_posted": "August 4, 2025",
-    "image_url": "https://jobs.smartyacad.com/wp-content/uploads/2025/08/IMG-20250804-WA0002-768x960.jpg",
-    "source": "Dixcoverhub",
-    "scraped_at": "2025-08-04T15:38:15.132Z"
-  }
-},
-{
-  "model": "quiz.jobpost",
-  "pk": 40,
-  "fields": {
-    "title": "Programs & Communications Officer Needed at AW Network",
-    "link": "https://jobs.smartyacad.com/programs-communications-officer-needed-at-aw-network/",
-    "summary": "No summary",
-    "date_posted": "August 4, 2025",
-    "image_url": "https://jobs.smartyacad.com/wp-content/uploads/2025/08/IMG-20250804-WA0003-768x960.jpg",
-    "source": "Dixcoverhub",
-    "scraped_at": "2025-08-04T15:38:15.291Z"
-  }
-},
-{
-  "model": "quiz.jobpost",
-  "pk": 41,
-  "fields": {
-    "title": "Data Analyst Intern Needed at Fireside Group Ltd",
-    "link": "https://jobs.smartyacad.com/data-analyst-intern-needed-at-fireside-group-ltd/",
-    "summary": "No summary",
-    "date_posted": "August 4, 2025",
-    "image_url": "https://jobs.smartyacad.com/wp-content/uploads/2025/08/images-7.jpeg",
-    "source": "Dixcoverhub",
-    "scraped_at": "2025-08-04T15:38:15.294Z"
-  }
-},
-{
-  "model": "quiz.jobpost",
-  "pk": 42,
-  "fields": {
-    "title": "Graphic Design Intern at Fel Socials",
-    "link": "https://jobs.smartyacad.com/graphic-design-intern-at-fel-socials/",
-    "summary": "No summary",
-    "date_posted": "August 4, 2025",
-    "image_url": "https://jobs.smartyacad.com/wp-content/uploads/2025/08/images-46.jpeg",
-    "source": "Dixcoverhub",
-    "scraped_at": "2025-08-04T15:38:15.300Z"
-  }
-},
-{
-  "model": "quiz.jobpost",
-  "pk": 43,
-  "fields": {
-    "title": "Job Wise Consulting is Hiring Data Entry Officers",
-    "link": "https://jobs.smartyacad.com/job-wise-consulting-is-hiring-data-entry-officers/",
-    "summary": "No summary",
-    "date_posted": "August 3, 2025",
-    "image_url": "https://jobs.smartyacad.com/wp-content/uploads/2025/08/IMG_20250803_190301.jpg",
-    "source": "Dixcoverhub",
-    "scraped_at": "2025-08-04T15:38:15.305Z"
-  }
-},
-{
-  "model": "quiz.jobpost",
-  "pk": 44,
-  "fields": {
-    "title": "Mobile Developer at Viable Knowledge Masters û Intern",
-    "link": "https://jobs.smartyacad.com/mobile-developer-at-viable-knowledge-masters/",
-    "summary": "No summary",
-    "date_posted": "August 3, 2025",
-    "image_url": "https://jobs.smartyacad.com/wp-content/uploads/2025/08/images-11-768x384.png",
-    "source": "Dixcoverhub",
-    "scraped_at": "2025-08-04T15:38:15.310Z"
-  }
-},
-{
-  "model": "quiz.jobpost",
-  "pk": 45,
-  "fields": {
-    "title": "Multiple Hiring at Godami Properties",
-    "link": "https://jobs.smartyacad.com/multiple-hiring-at-godami-properties/",
-    "summary": "No summary",
-    "date_posted": "August 3, 2025",
-    "image_url": "https://jobs.smartyacad.com/wp-content/uploads/2025/08/GxRkqw9WwAEE-oR-768x960.jpg",
-    "source": "Dixcoverhub",
-    "scraped_at": "2025-08-04T15:38:15.315Z"
-  }
-},
-{
-  "model": "quiz.jobpost",
-  "pk": 46,
-  "fields": {
-    "title": "2025 Graduate Management Trainee at International Breweries PLC",
-    "link": "https://jobs.smartyacad.com/2025-graduate-management-trainee-at-international-breweries-plc/",
-    "summary": "No summary",
-    "date_posted": "August 2, 2025",
-    "image_url": "https://jobs.smartyacad.com/wp-content/uploads/2025/08/Photograph_of_International_Breweries_Plc_logo.jpg",
-    "source": "Dixcoverhub",
-    "scraped_at": "2025-08-04T15:38:15.319Z"
-  }
-},
-{
-  "model": "quiz.jobpost",
-  "pk": 47,
-  "fields": {
-    "title": "IT Operations and Support Specialist Needed at ProvidusBank",
-    "link": "https://jobs.smartyacad.com/it-operations-and-support-specialist-needed-at-providusbank/",
-    "summary": "No summary",
-    "date_posted": "August 2, 2025",
-    "image_url": "https://jobs.smartyacad.com/wp-content/uploads/2025/08/images-4.jpeg",
-    "source": "Dixcoverhub",
-    "scraped_at": "2025-08-04T15:38:15.322Z"
-  }
-},
-{
-  "model": "quiz.jobpost",
-  "pk": 48,
-  "fields": {
-    "title": "British Council Job Opportunities 2025 | Apply Now for 2 Open Positions",
-    "link": "https://jobs.smartyacad.com/british-council-job-opportunities-2025/",
-    "summary": "No summary",
-    "date_posted": "August 1, 2025",
-    "image_url": "https://jobs.smartyacad.com/wp-content/uploads/2025/08/12-Month-Graduate-Programme-Internships-at-SABC-Now-Open-for-2025-17-780x470-1-768x463.png",
-    "source": "Dixcoverhub",
-    "scraped_at": "2025-08-04T15:38:15.325Z"
-  }
-},
-{
-  "model": "quiz.jobpost",
-  "pk": 49,
-  "fields": {
-    "title": "Personal Assistant Jobs at TotalEnergies Plc (2025) | Apply Now)",
-    "link": "https://jobs.smartyacad.com/personal-assistant-jobs-at-totalenergies-plc-2025-apply-now/",
-    "summary": "No summary",
-    "date_posted": "August 1, 2025",
-    "image_url": "https://jobs.smartyacad.com/wp-content/uploads/2025/08/17.png",
-    "source": "Dixcoverhub",
-    "scraped_at": "2025-08-04T15:38:15.330Z"
-  }
-},
-{
-  "model": "quiz.jobpost",
-  "pk": 50,
-  "fields": {
-    "title": "Avatar New Energy Materials Company Ltd is Hiring",
-    "link": "https://jobs.smartyacad.com/avatar-new-energy-materials-company-ltd-is-hiring/",
-    "summary": "No summary",
-    "date_posted": "August 1, 2025",
-    "image_url": "https://jobs.smartyacad.com/wp-content/uploads/2025/08/images-40-28.jpeg",
-    "source": "Dixcoverhub",
-    "scraped_at": "2025-08-04T15:38:15.335Z"
-  }
-},
-{
-  "model": "quiz.jobpost",
-  "pk": 51,
-  "fields": {
-    "title": "Hiring for Executive Assistant to the CEO at Salve Consulting Limited",
-    "link": "https://jobs.smartyacad.com/hiring-for-executive-assistant-to-the-ceo-at-salve-consulting-limited/",
-    "summary": "No summary",
-    "date_posted": "July 31, 2025",
-    "image_url": "https://jobs.smartyacad.com/wp-content/uploads/2025/07/IMG-20250731-WA0000-768x960.jpg",
-    "source": "Dixcoverhub",
-    "scraped_at": "2025-08-04T15:38:15.339Z"
-  }
-},
-{
-  "model": "quiz.jobpost",
-  "pk": 52,
-  "fields": {
-    "title": "Engineering & Technical Professionals Recruitment at Seplat Energy",
-    "link": "https://jobs.smartyacad.com/engineering-technical-professionals-recruitment-at-seplat-energy/",
-    "summary": "No summary",
-    "date_posted": "July 31, 2025",
-    "image_url": "https://jobs.smartyacad.com/wp-content/uploads/2025/07/IMG-20250731-WA0001-768x960.jpg",
-    "source": "Dixcoverhub",
-    "scraped_at": "2025-08-04T15:38:15.342Z"
-  }
-},
-{
-  "model": "quiz.jobpost",
-  "pk": 53,
-  "fields": {
-    "title": "Remote Backend Software Developer at eRecruiter",
-    "link": "https://jobs.smartyacad.com/remote-backend-software-developer-at-erecruiter/",
-    "summary": "No summary",
-    "date_posted": "July 30, 2025",
-    "image_url": "https://jobs.smartyacad.com/wp-content/uploads/2025/07/images-8.png",
-    "source": "Dixcoverhub",
-    "scraped_at": "2025-08-04T15:38:15.347Z"
-  }
-},
-{
-  "model": "quiz.jobpost",
-  "pk": 54,
-  "fields": {
-    "title": "Hiring for Executive Assistant to the CEO at Elysium Company",
-    "link": "https://jobs.smartyacad.com/hiring-for-executive-assistant-to-the-ceo-at-elysium-company/",
-    "summary": "No summary",
-    "date_posted": "July 29, 2025",
-    "image_url": "https://jobs.smartyacad.com/wp-content/uploads/2025/07/IMG-20250729-WA0001-768x768.jpg",
-    "source": "Dixcoverhub",
-    "scraped_at": "2025-08-04T15:38:15.351Z"
-  }
-},
-{
-  "model": "quiz.jobpost",
-  "pk": 55,
-  "fields": {
-    "title": "Financial Advisory Needed at Leadway Assurance",
-    "link": "https://jobs.smartyacad.com/financial-advisory-needed-at-leadway-assurance/",
-    "summary": "No summary",
-    "date_posted": "July 29, 2025",
-    "image_url": "https://jobs.smartyacad.com/wp-content/uploads/2025/07/IMG-20250729-WA0000.jpg",
-    "source": "Dixcoverhub",
-    "scraped_at": "2025-08-04T15:38:15.354Z"
-  }
-},
-{
-  "model": "quiz.jobpost",
-  "pk": 56,
-  "fields": {
-    "title": "Rainoil LimitedáJob Vacancy (2025) û 2 Position",
-    "link": "https://jobs.smartyacad.com/rainoil-limited-job-vacancy-2025-2-position/",
-    "summary": "No summary",
-    "date_posted": "July 29, 2025",
-    "image_url": "https://jobs.smartyacad.com/wp-content/uploads/2025/07/Rainoil-Oil-and-Gas-Company-Limited-768x366.jpg",
-    "source": "Dixcoverhub",
-    "scraped_at": "2025-08-04T15:38:15.358Z"
-  }
-},
-{
-  "model": "quiz.jobpost",
-  "pk": 57,
-  "fields": {
-    "title": "Administrative Assistant at Peridot Forte Solutions Consulting Limited",
-    "link": "https://jobs.smartyacad.com/administrative-assistant-at-peridot-forte-solutions-consulting-limited/",
-    "summary": "No summary",
-    "date_posted": "July 28, 2025",
-    "image_url": "https://jobs.smartyacad.com/wp-content/uploads/2025/07/images-40-15-1.jpeg",
-    "source": "Dixcoverhub",
-    "scraped_at": "2025-08-04T15:38:15.362Z"
-  }
-},
-{
-  "model": "quiz.jobpost",
-  "pk": 58,
-  "fields": {
-    "title": "Idio Digitals is Recruiting Tech Interns",
-    "link": "https://jobs.smartyacad.com/idio-digitals-is-recruiting-tech-interns/",
-    "summary": "No summary",
-    "date_posted": "July 28, 2025",
-    "image_url": "https://jobs.smartyacad.com/wp-content/uploads/2025/07/IMG_20250728_193354.jpg",
-    "source": "Dixcoverhub",
-    "scraped_at": "2025-08-04T15:38:15.367Z"
-  }
-},
-{
-  "model": "quiz.jobpost",
-  "pk": 59,
-  "fields": {
-    "title": "Customer Service Officer at Titan Trust Bank",
-    "link": "https://jobs.smartyacad.com/customer-service-officer-at-titan-trust-bank/",
-    "summary": "No summary",
-    "date_posted": "July 28, 2025",
-    "image_url": "https://jobs.smartyacad.com/wp-content/uploads/2025/07/IMG_0408111-scaled-1-768x412.jpg",
-    "source": "Dixcoverhub",
-    "scraped_at": "2025-08-04T15:38:15.370Z"
-  }
-},
-{
-  "model": "quiz.jobpost",
-  "pk": 60,
-  "fields": {
-    "title": "Remote Office Assistants Needed at Coalition Technologies",
-    "link": "https://jobs.smartyacad.com/remote-office-assistants-needed-at-coalition-tech/",
-    "summary": "No summary",
-    "date_posted": "July 28, 2025",
-    "image_url": "https://jobs.smartyacad.com/wp-content/uploads/2025/03/Purple-and-White-Modern-Corporate-Office-Manager-Job-Vacancy-Flyer-768x884.jpg",
-    "source": "Dixcoverhub",
-    "scraped_at": "2025-08-04T15:38:15.373Z"
-  }
-},
-{
-  "model": "quiz.jobpost",
-  "pk": 61,
-  "fields": {
-    "title": "Laravel Full-Stack Engineers at Iconic University",
-    "link": "https://jobs.smartyacad.com/laravel-full-stack-engineers-at-iconic-university/",
-    "summary": "No summary",
-    "date_posted": "July 28, 2025",
-    "image_url": "https://jobs.smartyacad.com/wp-content/uploads/2025/07/images-67.jpeg",
-    "source": "Dixcoverhub",
-    "scraped_at": "2025-08-04T15:38:15.377Z"
-  }
-},
-{
-  "model": "quiz.jobpost",
-  "pk": 62,
-  "fields": {
-    "title": "Remote Software Developer/Web Scraper at Amazing Properties Wisconsin LLC",
-    "link": "https://jobs.smartyacad.com/remote-software-developer-web-scraper-at-amazing-properties-wisconsin-llc/",
-    "summary": "No summary",
-    "date_posted": "July 27, 2025",
-    "image_url": "https://jobs.smartyacad.com/wp-content/uploads/2025/07/images-40-10-2.jpeg",
-    "source": "Dixcoverhub",
-    "scraped_at": "2025-08-04T15:38:15.382Z"
-  }
-},
-{
-  "model": "quiz.jobpost",
-  "pk": 63,
-  "fields": {
-    "title": "Social Media & Graphics Designer atáJibs-Ray Nigeria Ltd",
-    "link": "https://jobs.smartyacad.com/social-media-graphics-designer-at-jibs-ray/",
-    "summary": "No summary",
-    "date_posted": "July 27, 2025",
-    "image_url": "https://jobs.smartyacad.com/wp-content/uploads/2025/07/images-40-8-2.jpeg",
-    "source": "Dixcoverhub",
-    "scraped_at": "2025-08-04T15:38:15.385Z"
-  }
-},
-{
-  "model": "quiz.jobpost",
-  "pk": 64,
-  "fields": {
-    "title": "Coding and Robotics Instructor at YEP û Young Empowered Programmers",
-    "link": "https://jobs.smartyacad.com/coding-and-robotics-instructor-at-yep/",
-    "summary": "No summary",
-    "date_posted": "July 27, 2025",
-    "image_url": "https://jobs.smartyacad.com/wp-content/uploads/2025/07/images-40-7-2.jpeg",
-    "source": "Dixcoverhub",
-    "scraped_at": "2025-08-04T15:38:15.388Z"
-  }
-},
-{
-  "model": "quiz.jobpost",
-  "pk": 65,
-  "fields": {
-    "title": "Video Content Creator at Hello Ibadan",
-    "link": "https://jobs.smartyacad.com/video-content-creator-at-hello-ibadan/",
-    "summary": "No summary",
-    "date_posted": "July 27, 2025",
-    "image_url": "https://jobs.smartyacad.com/wp-content/uploads/2025/07/images-40-4-1.jpeg",
-    "source": "Dixcoverhub",
-    "scraped_at": "2025-08-04T15:38:15.391Z"
-  }
-},
-{
-  "model": "quiz.jobpost",
-  "pk": 66,
-  "fields": {
-    "title": "Marketing, Content & Sales Needed at OXGITAL",
-    "link": "https://jobs.smartyacad.com/marketing-content-sales-needed-at-oxgital/",
-    "summary": "No summary",
-    "date_posted": "July 26, 2025",
-    "image_url": "https://jobs.smartyacad.com/wp-content/uploads/2025/07/IMG-20250726-WA0000-768x960.jpg",
-    "source": "Dixcoverhub",
-    "scraped_at": "2025-08-04T15:38:15.396Z"
-  }
-},
-{
-  "model": "quiz.jobpost",
-  "pk": 67,
-  "fields": {
-    "title": "Hiring Product Designer (UI/UX Designer) at Iconic Open University",
-    "link": "https://jobs.smartyacad.com/hiring-product-designer-ui-ux-designer-at-iconic-open-university/",
-    "summary": "No summary",
-    "date_posted": "July 26, 2025",
-    "image_url": "https://jobs.smartyacad.com/wp-content/uploads/2025/07/IMG-20250726-WA0007-768x960.jpg",
-    "source": "Dixcoverhub",
-    "scraped_at": "2025-08-04T15:38:15.402Z"
-  }
-},
-{
-  "model": "quiz.jobpost",
-  "pk": 68,
-  "fields": {
-    "title": "Job Vacancy: Inventory Officer Needed at Nigeria Info FM",
-    "link": "https://jobs.smartyacad.com/job-vacancy-inventory-officer-needed-at-nigeria-info-fm/",
-    "summary": "No summary",
-    "date_posted": "July 26, 2025",
-    "image_url": "https://jobs.smartyacad.com/wp-content/uploads/2025/07/images-7.webp",
-    "source": "Dixcoverhub",
-    "scraped_at": "2025-08-04T15:38:15.406Z"
-  }
-},
-{
-  "model": "quiz.jobpost",
-  "pk": 69,
-  "fields": {
-    "title": "Kano State Information Technology Development Agency (KASITDA): Call for Digital Literacy Advocates Programme 2025",
-    "link": "https://jobs.smartyacad.com/kano-state-information-technology-development-agency-kasitda-call-for-digital-literacy-advocates-programme-2025/",
-    "summary": "No summary",
-    "date_posted": "Unknown date",
-    "image_url": "https://jobs.smartyacad.com/wp-content/uploads/2025/08/FB_IMG_1754069440540-240x300.jpg",
-    "source": "Dixcoverhub",
-    "scraped_at": "2025-08-04T15:38:15.410Z"
-  }
-},
-{
-  "model": "quiz.jobpost",
-  "pk": 70,
-  "fields": {
-    "title": "2025 Queen Elizabeth Commonwealth Trust Network",
-    "link": "https://jobs.smartyacad.com/2025-queen-elizabeth-commonwealth-trust-network/",
-    "summary": "No summary",
-    "date_posted": "Unknown date",
-    "image_url": "https://jobs.smartyacad.com/wp-content/uploads/2025/07/Queen-Elizabeth-Commonwealth-Trust-Network-QECT-Application-747x420-1-300x169.jpg",
-    "source": "Dixcoverhub",
-    "scraped_at": "2025-08-04T15:38:15.415Z"
-  }
-},
-{
-  "model": "quiz.jobpost",
-  "pk": 71,
-  "fields": {
-    "title": "DLL Africa! AfriLead Discover, Learn, Lead Conference 2026",
-    "link": "https://jobs.smartyacad.com/afrilead-discover-learn-lead-conference-2026/",
-    "summary": "No summary",
-    "date_posted": "Unknown date",
-    "image_url": "https://jobs.smartyacad.com/wp-content/uploads/2025/07/images-40-17-1-241x300.jpeg",
-    "source": "Dixcoverhub",
-    "scraped_at": "2025-08-04T15:38:15.419Z"
-  }
-},
-{
-  "model": "quiz.jobpost",
-  "pk": 72,
-  "fields": {
-    "title": "Cohort 2026 of WIPO Young Experts Program",
-    "link": "https://jobs.smartyacad.com/cohort-2026-of-wipo-young-experts-program/",
-    "summary": "No summary",
-    "date_posted": "Unknown date",
-    "image_url": "https://jobs.smartyacad.com/wp-content/uploads/2025/07/images-40-2-300x157.jpeg",
-    "source": "Dixcoverhub",
-    "scraped_at": "2025-08-04T15:38:15.423Z"
-  }
-},
-{
-  "model": "quiz.jobpost",
-  "pk": 73,
-  "fields": {
-    "title": "Call for Applications: African Union Media Fellowship 2025",
-    "link": "https://jobs.smartyacad.com/african-union-media-fellowship-2025/",
-    "summary": "No summary",
-    "date_posted": "Unknown date",
-    "image_url": "https://jobs.smartyacad.com/wp-content/uploads/2025/07/African-Union-Media-Fellowship-2025-768x559-1-300x218.jpg",
-    "source": "Dixcoverhub",
-    "scraped_at": "2025-08-04T15:38:15.427Z"
-  }
-},
-{
-  "model": "quiz.jobpost",
-  "pk": 74,
-  "fields": {
-    "title": "Ibom Ideas Free Digital Training Project Cohort 3 | Free Courses",
-    "link": "https://jobs.smartyacad.com/ibom-ideas-free-digital-training-project-cohort-3/",
-    "summary": "No summary",
-    "date_posted": "Unknown date",
-    "image_url": "https://jobs.smartyacad.com/wp-content/uploads/2025/07/FB_IMG_1753107922438-1200x1350-1-267x300.jpg",
-    "source": "Dixcoverhub",
-    "scraped_at": "2025-08-04T15:38:15.432Z"
-  }
-},
-{
-  "model": "quiz.jobpost",
-  "pk": 75,
-  "fields": {
-    "title": "Africa Youth Negotiators Fellowship (AYNF) û Cohort 4",
-    "link": "https://jobs.smartyacad.com/africa-youth-negotiators-fellowship-aynf-cohort-4/",
-    "summary": "No summary",
-    "date_posted": "Unknown date",
-    "image_url": "https://jobs.smartyacad.com/wp-content/uploads/2025/07/1752662744840-240x300.webp",
-    "source": "Dixcoverhub",
-    "scraped_at": "2025-08-04T15:38:15.437Z"
-  }
-},
-{
-  "model": "quiz.jobpost",
-  "pk": 76,
-  "fields": {
-    "title": "World Bank Africa Fellowship Program 2026",
-    "link": "https://jobs.smartyacad.com/world-bank-africa-fellowship-program-2026/",
-    "summary": "No summary",
-    "date_posted": "Unknown date",
-    "image_url": "https://jobs.smartyacad.com/wp-content/uploads/2025/07/afr-fellowship-ce-keyframe-780-300x169.jpg",
-    "source": "Dixcoverhub",
-    "scraped_at": "2025-08-04T15:38:15.441Z"
-  }
-},
-{
-  "model": "quiz.scholarshippost",
-  "pk": 1,
-  "fields": {
-    "title": "AfOx Graduate Scholarships for the 2026-2027 MBA Programme",
-    "link": "https://jobs.smartyacad.com/afox-graduate-scholarships-for-the-2026-2027-mba-programme/",
-    "summary": "No summary provided in listing",
-    "date_posted": "August 2, 2025",
-    "image_url": "https://jobs.smartyacad.com/wp-content/uploads/2025/08/AfOx-Graduate-Scholarships-for-the-MBA-Programme-768x432.jpg",
-    "source": "SmartyAcad",
-    "created_at": "2025-08-04T18:19:26.928Z",
-    "updated_at": "2025-08-04T18:19:26.928Z"
-  }
-},
-{
-  "model": "quiz.scholarshippost",
-  "pk": 2,
-  "fields": {
-    "title": "2026 Vice Chancellor PhD Excellence Scholarships at ACU | Australian Catholic University",
-    "link": "https://jobs.smartyacad.com/2026-vice-chancellor-phd-excellence-scholarships-at-acu-australian-catholic-university/",
-    "summary": "No summary provided in listing",
-    "date_posted": "August 2, 2025",
-    "image_url": "https://jobs.smartyacad.com/wp-content/uploads/2025/08/images-42.jpeg",
-    "source": "SmartyAcad",
-    "created_at": "2025-08-04T18:19:26.976Z",
-    "updated_at": "2025-08-04T18:19:26.976Z"
-  }
-},
-{
-  "model": "quiz.scholarshippost",
-  "pk": 3,
-  "fields": {
-    "title": "2026 Rhodes West Africa Scholarship in UK",
-    "link": "https://jobs.smartyacad.com/2026-rhodes-west-africa-scholarship-in-uk/",
-    "summary": "No summary provided in listing",
-    "date_posted": "August 2, 2025",
-    "image_url": "https://jobs.smartyacad.com/wp-content/uploads/2025/08/images-41.jpeg",
-    "source": "SmartyAcad",
-    "created_at": "2025-08-04T18:19:26.982Z",
-    "updated_at": "2025-08-04T18:19:26.982Z"
-  }
-},
-{
-  "model": "quiz.scholarshippost",
-  "pk": 4,
-  "fields": {
-    "title": "Medical University of Graz Scholarship 2026 in Austria",
-    "link": "https://jobs.smartyacad.com/medical-university-of-graz-scholarship-2026-in-austria/",
-    "summary": "No summary provided in listing",
-    "date_posted": "August 2, 2025",
-    "image_url": "https://jobs.smartyacad.com/wp-content/uploads/2025/08/330px-Neuer_Med_Campus.jpg",
-    "source": "SmartyAcad",
-    "created_at": "2025-08-04T18:19:26.988Z",
-    "updated_at": "2025-08-04T18:19:26.988Z"
-  }
-},
-{
-  "model": "quiz.scholarshippost",
-  "pk": 5,
-  "fields": {
-    "title": "Bridge Scholarship Program For Nigerians 2025 | Fully Funded",
-    "link": "https://jobs.smartyacad.com/bridge-scholarship-program-for-nigerians-2025/",
-    "summary": "No summary provided in listing",
-    "date_posted": "August 1, 2025",
-    "image_url": "https://jobs.smartyacad.com/wp-content/uploads/2025/08/5b74968b00d2ff840f14c38d3074c6bf682d44cf.png",
-    "source": "SmartyAcad",
-    "created_at": "2025-08-04T18:19:26.996Z",
-    "updated_at": "2025-08-04T18:19:26.996Z"
-  }
-},
-{
-  "model": "quiz.scholarshippost",
-  "pk": 6,
-  "fields": {
-    "title": "American University Emerging Global Leader Scholarship 2026",
-    "link": "https://jobs.smartyacad.com/american-university-emerging-global-leader-scholarship-2026/",
-    "summary": "No summary provided in listing",
-    "date_posted": "August 1, 2025",
-    "image_url": "https://jobs.smartyacad.com/wp-content/uploads/2025/08/images-40-30.jpeg",
-    "source": "SmartyAcad",
-    "created_at": "2025-08-04T18:19:27.003Z",
-    "updated_at": "2025-08-04T18:19:27.003Z"
-  }
-},
-{
-  "model": "quiz.scholarshippost",
-  "pk": 7,
-  "fields": {
-    "title": "100 Fully Sponsored Slots to Study 5 Humanitarian Courses on ImpactSkills Hub",
-    "link": "https://jobs.smartyacad.com/100-fully-sponsored-slots-to-study-5-humanitarian-courses-on-impactskills-hub/",
-    "summary": "No summary provided in listing",
-    "date_posted": "July 31, 2025",
-    "image_url": "https://jobs.smartyacad.com/wp-content/uploads/2025/07/images-70.jpeg",
-    "source": "SmartyAcad",
-    "created_at": "2025-08-04T18:19:27.011Z",
-    "updated_at": "2025-08-04T18:19:27.011Z"
-  }
-},
-{
-  "model": "quiz.scholarshippost",
-  "pk": 8,
-  "fields": {
-    "title": "Grooming Centre University Grants 2025 For Nigerian Students",
-    "link": "https://jobs.smartyacad.com/grooming-centre-university-grants-2025/",
-    "summary": "No summary provided in listing",
-    "date_posted": "July 31, 2025",
-    "image_url": "https://jobs.smartyacad.com/wp-content/uploads/2025/07/Grooming-Centre-University-Grants-747x420-1.jpg",
-    "source": "SmartyAcad",
-    "created_at": "2025-08-04T18:19:27.016Z",
-    "updated_at": "2025-08-04T18:19:27.016Z"
-  }
-},
-{
-  "model": "quiz.scholarshippost",
-  "pk": 9,
-  "fields": {
-    "title": "Nagas Group Scholarship 2025",
-    "link": "https://jobs.smartyacad.com/nagas-group-scholarship-2025/",
-    "summary": "No summary provided in listing",
-    "date_posted": "July 30, 2025",
-    "image_url": "https://jobs.smartyacad.com/wp-content/uploads/2025/07/images-40-23-1.jpeg",
-    "source": "SmartyAcad",
-    "created_at": "2025-08-04T18:19:27.021Z",
-    "updated_at": "2025-08-04T18:19:27.021Z"
-  }
-},
-{
-  "model": "quiz.scholarshippost",
-  "pk": 10,
-  "fields": {
-    "title": "University of Warwick Research Scholarships 2026 in UK",
-    "link": "https://jobs.smartyacad.com/university-of-warwick-research-scholarships-2026/",
-    "summary": "No summary provided in listing",
-    "date_posted": "July 30, 2025",
-    "image_url": "https://jobs.smartyacad.com/wp-content/uploads/2025/07/images-40-21-1.jpeg",
-    "source": "SmartyAcad",
-    "created_at": "2025-08-04T18:19:27.030Z",
-    "updated_at": "2025-08-04T18:19:27.030Z"
-  }
-},
-{
-  "model": "quiz.scholarshippost",
-  "pk": 11,
-  "fields": {
-    "title": "Round 3 Application of the SHE Soars Scholarship Program 2025",
-    "link": "https://jobs.smartyacad.com/she-soars-scholarship-program-2025/",
-    "summary": "No summary provided in listing",
-    "date_posted": "July 30, 2025",
-    "image_url": "https://jobs.smartyacad.com/wp-content/uploads/2025/07/images-40-20-1.jpeg",
-    "source": "SmartyAcad",
-    "created_at": "2025-08-04T18:19:27.036Z",
-    "updated_at": "2025-08-04T18:19:27.036Z"
-  }
-},
-{
-  "model": "quiz.scholarshippost",
-  "pk": 12,
-  "fields": {
-    "title": "PICFI Scholarship 2025",
-    "link": "https://jobs.smartyacad.com/picfi-scholarship-2025/",
-    "summary": "No summary provided in listing",
-    "date_posted": "July 29, 2025",
-    "image_url": "https://jobs.smartyacad.com/wp-content/uploads/2025/07/images-40-18-1.jpeg",
-    "source": "SmartyAcad",
-    "created_at": "2025-08-04T18:19:27.045Z",
-    "updated_at": "2025-08-04T18:19:27.045Z"
-  }
-},
-{
-  "model": "quiz.scholarshippost",
-  "pk": 13,
-  "fields": {
-    "title": "Fully Funded Oxford Pershing Square Scholarship 2026 in UK",
-    "link": "https://jobs.smartyacad.com/fully-funded-oxford-pershing-square-scholarship-2026-in-uk/",
-    "summary": "No summary provided in listing",
-    "date_posted": "July 29, 2025",
-    "image_url": "https://jobs.smartyacad.com/wp-content/uploads/2025/07/images-68.jpeg",
-    "source": "SmartyAcad",
-    "created_at": "2025-08-04T18:19:27.051Z",
-    "updated_at": "2025-08-04T18:19:27.051Z"
-  }
-},
-{
-  "model": "quiz.scholarshippost",
-  "pk": 14,
-  "fields": {
-    "title": "2026 DAAD Double Degree Scholarship",
-    "link": "https://jobs.smartyacad.com/2026-daad-double-degree-scholarship/",
-    "summary": "No summary provided in listing",
-    "date_posted": "July 27, 2025",
-    "image_url": "https://jobs.smartyacad.com/wp-content/uploads/2025/07/images-40-12-1.jpeg",
-    "source": "SmartyAcad",
-    "created_at": "2025-08-04T18:19:27.056Z",
-    "updated_at": "2025-08-04T18:19:27.056Z"
-  }
-},
-{
-  "model": "quiz.scholarshippost",
-  "pk": 15,
-  "fields": {
-    "title": "Hartpury International Scholarship 2025",
-    "link": "https://jobs.smartyacad.com/hartpury-international-scholarship-2025/",
-    "summary": "No summary provided in listing",
-    "date_posted": "July 27, 2025",
-    "image_url": "https://jobs.smartyacad.com/wp-content/uploads/2025/07/images-40-11-1.jpeg",
-    "source": "SmartyAcad",
-    "created_at": "2025-08-04T18:19:27.064Z",
-    "updated_at": "2025-08-04T18:19:27.064Z"
-  }
-},
-{
-  "model": "quiz.scholarshippost",
-  "pk": 16,
-  "fields": {
-    "title": "2025/26 University of Pisa DSU Scholarship in Italy",
-    "link": "https://jobs.smartyacad.com/2025-26-university-of-pisa-dsu-scholarship-in-italy/",
-    "summary": "No summary provided in listing",
-    "date_posted": "July 26, 2025",
-    "image_url": "https://jobs.smartyacad.com/wp-content/uploads/2025/07/images-40-10-1.jpeg",
-    "source": "SmartyAcad",
-    "created_at": "2025-08-04T18:19:27.070Z",
-    "updated_at": "2025-08-04T18:19:27.070Z"
-  }
-},
-{
-  "model": "quiz.scholarshippost",
-  "pk": 17,
-  "fields": {
-    "title": "Al-Fulk Dawah Forum Scholarship 2025/26",
-    "link": "https://jobs.smartyacad.com/al-fulk-dawah-forum-scholarship-2025-26/",
-    "summary": "No summary provided in listing",
-    "date_posted": "July 26, 2025",
-    "image_url": "https://jobs.smartyacad.com/wp-content/uploads/2025/07/images-40-7-1-768x384.jpeg",
-    "source": "SmartyAcad",
-    "created_at": "2025-08-04T18:19:27.077Z",
-    "updated_at": "2025-08-04T18:19:27.077Z"
-  }
-},
-{
-  "model": "quiz.scholarshippost",
-  "pk": 18,
-  "fields": {
-    "title": "Girl in Bloom African Student Scholarship 2025",
-    "link": "https://jobs.smartyacad.com/girl-in-bloom-african-student-scholarship-2025/",
-    "summary": "No summary provided in listing",
-    "date_posted": "July 25, 2025",
-    "image_url": "https://jobs.smartyacad.com/wp-content/uploads/2025/07/images-40-5.jpeg",
-    "source": "SmartyAcad",
-    "created_at": "2025-08-04T18:19:27.082Z",
-    "updated_at": "2025-08-04T18:19:27.082Z"
-  }
-},
-{
-  "model": "quiz.scholarshippost",
-  "pk": 19,
-  "fields": {
-    "title": "2025/2026 University of Rwanda Mastercard Scholarships",
-    "link": "https://jobs.smartyacad.com/2025-2026-university-of-rwanda-mastercard-scholarships/",
-    "summary": "No summary provided in listing",
-    "date_posted": "July 24, 2025",
-    "image_url": "https://jobs.smartyacad.com/wp-content/uploads/2025/07/images-40-4.jpeg",
-    "source": "SmartyAcad",
-    "created_at": "2025-08-04T18:19:27.087Z",
-    "updated_at": "2025-08-04T18:19:27.087Z"
-  }
-},
-{
-  "model": "quiz.scholarshippost",
-  "pk": 20,
-  "fields": {
-    "title": "Karen and Edward Adebanjo Foundation Scholarship 2025",
-    "link": "https://jobs.smartyacad.com/karen-and-edward-adebanjo-foundation-scholarship-2025/",
-    "summary": "No summary provided in listing",
-    "date_posted": "July 24, 2025",
-    "image_url": "https://jobs.smartyacad.com/wp-content/uploads/2025/07/IMG_20250724_075427.jpg",
-    "source": "SmartyAcad",
-    "created_at": "2025-08-04T18:19:27.097Z",
-    "updated_at": "2025-08-04T18:19:27.097Z"
-  }
-},
-{
-  "model": "quiz.scholarshippost",
-  "pk": 21,
-  "fields": {
-    "title": "UNS International Scholarship 2026",
-    "link": "https://jobs.smartyacad.com/uns-international-scholarship-2026/",
-    "summary": "No summary provided in listing",
-    "date_posted": "July 23, 2025",
-    "image_url": "https://jobs.smartyacad.com/wp-content/uploads/2025/07/images-33-1.jpeg",
-    "source": "SmartyAcad",
-    "created_at": "2025-08-04T18:19:27.102Z",
-    "updated_at": "2025-08-04T18:19:27.102Z"
-  }
-},
-{
-  "model": "quiz.scholarshippost",
-  "pk": 22,
-  "fields": {
-    "title": "2026 Louisiana State University Scholarships",
-    "link": "https://jobs.smartyacad.com/2026-louisiana-state-university-scholarships/",
-    "summary": "No summary provided in listing",
-    "date_posted": "July 23, 2025",
-    "image_url": "https://jobs.smartyacad.com/wp-content/uploads/2025/07/images-32-1.jpeg",
-    "source": "SmartyAcad",
-    "created_at": "2025-08-04T18:19:27.110Z",
-    "updated_at": "2025-08-04T18:19:27.110Z"
-  }
-},
-{
-  "model": "quiz.scholarshippost",
-  "pk": 23,
-  "fields": {
-    "title": "Ritman University Postgraduate Scholarship 2025 (Nigerian/Overseas)",
-    "link": "https://jobs.smartyacad.com/ritman-university-postgraduate-scholarship-2025-nigerian-overseas/",
-    "summary": "No summary provided in listing",
-    "date_posted": "July 22, 2025",
-    "image_url": "https://jobs.smartyacad.com/wp-content/uploads/2025/07/FB_IMG_1753190222947-768x644.webp",
-    "source": "SmartyAcad",
-    "created_at": "2025-08-04T18:19:27.118Z",
-    "updated_at": "2025-08-04T18:19:27.118Z"
-  }
-},
-{
-  "model": "quiz.scholarshippost",
-  "pk": 24,
-  "fields": {
-    "title": "2025 Google EMEA Generation Scholarship For Women In Europe, Middle East and African Countries",
-    "link": "https://jobs.smartyacad.com/2025-google-emea-generation-scholarship/",
-    "summary": "No summary provided in listing",
-    "date_posted": "July 21, 2025",
-    "image_url": "https://jobs.smartyacad.com/wp-content/uploads/2025/07/generation-google-scholarship-emea-recipients1.webpn-w1198-h799-fcrop641000020faffffdf53-rw-768x381.webp",
-    "source": "SmartyAcad",
-    "created_at": "2025-08-04T18:19:27.125Z",
-    "updated_at": "2025-08-04T18:19:27.125Z"
-  }
-},
-{
-  "model": "quiz.scholarshippost",
-  "pk": 25,
-  "fields": {
-    "title": "2025 Stethoscopes and Sacrifices Scholarship for Medical Students",
-    "link": "https://jobs.smartyacad.com/2025-stethoscopes-and-sacrifices-scholarship/",
-    "summary": "No summary provided in listing",
-    "date_posted": "July 21, 2025",
-    "image_url": "https://jobs.smartyacad.com/wp-content/uploads/2025/07/images-31-1.jpeg",
-    "source": "SmartyAcad",
-    "created_at": "2025-08-04T18:19:27.131Z",
-    "updated_at": "2025-08-04T18:19:27.131Z"
-  }
-},
-{
-  "model": "quiz.scholarshippost",
-  "pk": 26,
-  "fields": {
-    "title": "2025 MTN Foundation MUSON Scholarshipáfor Nigerian Students",
-    "link": "https://jobs.smartyacad.com/2025-mtn-foundation-muson-scholarship-for-nigerian-students/",
-    "summary": "No summary provided in listing",
-    "date_posted": "July 19, 2025",
-    "image_url": "https://jobs.smartyacad.com/wp-content/uploads/2025/07/Scholars_Programme_Advert-768x810-1.jpg",
-    "source": "SmartyAcad",
-    "created_at": "2025-08-04T18:19:27.138Z",
-    "updated_at": "2025-08-04T18:19:27.138Z"
-  }
-},
-{
-  "model": "quiz.scholarshippost",
-  "pk": 27,
-  "fields": {
-    "title": "ARASH Scholarship by OA Foundation for Nigerians 2025 | Fully Funded",
-    "link": "https://jobs.smartyacad.com/arash-scholarship-by-oa-foundation-for-nigerians-2025-fully-funded/",
-    "summary": "No summary provided in listing",
-    "date_posted": "July 18, 2025",
-    "image_url": "https://jobs.smartyacad.com/wp-content/uploads/2025/07/OA-Foundation-ARASH-Scholarship-1-696x392-1.jpg",
-    "source": "SmartyAcad",
-    "created_at": "2025-08-04T18:19:27.145Z",
-    "updated_at": "2025-08-04T18:19:27.145Z"
-  }
-},
-{
-  "model": "quiz.scholarshippost",
-  "pk": 28,
-  "fields": {
-    "title": "2026 Curtin University RTP Scholarship in Australia",
-    "link": "https://jobs.smartyacad.com/2026-curtin-university-rtp-scholarship-in-australia/",
-    "summary": "No summary provided in listing",
-    "date_posted": "July 18, 2025",
-    "image_url": "https://jobs.smartyacad.com/wp-content/uploads/2025/07/IMG_20250718_092205.jpg",
-    "source": "SmartyAcad",
-    "created_at": "2025-08-04T18:19:27.152Z",
-    "updated_at": "2025-08-04T18:19:27.152Z"
-  }
-},
-{
-  "model": "quiz.scholarshippost",
-  "pk": 29,
-  "fields": {
-    "title": "Keele University SURF Scholarship 2025 in UK",
-    "link": "https://jobs.smartyacad.com/keele-university-surf-scholarship-2025-in-uk/",
-    "summary": "No summary provided in listing",
-    "date_posted": "July 18, 2025",
-    "image_url": "https://jobs.smartyacad.com/wp-content/uploads/2025/07/images-11-3.jpeg",
-    "source": "SmartyAcad",
-    "created_at": "2025-08-04T18:19:27.160Z",
-    "updated_at": "2025-08-04T18:19:27.160Z"
-  }
-},
-{
-  "model": "quiz.scholarshippost",
-  "pk": 30,
-  "fields": {
-    "title": "2025/2026 OA Foundation ARASH Scholarship",
-    "link": "https://jobs.smartyacad.com/2025-2026-oa-foundation-arash-scholarship/",
-    "summary": "No summary provided in listing",
-    "date_posted": "July 18, 2025",
-    "image_url": "https://jobs.smartyacad.com/wp-content/uploads/2025/07/images-10-3.jpeg",
-    "source": "SmartyAcad",
-    "created_at": "2025-08-04T18:19:27.165Z",
-    "updated_at": "2025-08-04T18:19:27.165Z"
-  }
-}
 ]

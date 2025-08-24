@@ -139,21 +139,33 @@ body {
   box-shadow: 0 -2px 5px var(--card-shadow-color); /* Uses theme variable */
 }
 
+/* Your existing nav-item style */
 .nav-item {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  color: var(--nav-text-color); /* Uses theme variable */
+  color: var(--nav-text-color);
   text-decoration: none;
   transition: all 0.3s ease-in-out;
   padding: 5px 0;
   
+  /* 🎉 NEW CODE BELOW THIS LINE */
+  flex: 1; /* This is the most important part! */
+  white-space: nowrap; /* Prevents text from wrapping to a new line */
 }
 
-.nav-item a { /* Added to ensure links inside nav items inherit color and remove underline */
+/* Added to ensure links inside nav items inherit color and remove underline */
+.nav-item a {
   color: inherit;
   text-decoration: none;
+}
+
+/* 📱 NEW: Make things smaller for mobile screens */
+@media (max-width: 600px) {
+  .nav-item span {
+    font-size: 0.75em; /* Makes the text a bit smaller to fit */
+  }
 }
 
 .active {

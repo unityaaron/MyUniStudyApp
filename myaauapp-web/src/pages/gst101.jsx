@@ -1,4 +1,4 @@
-// src/pages/GST101QuizPage.jsx
+// src/pages/GST101QuizPage.jsx test
 
 // Part 1: Bring in the Tools (Our React building blocks)
 import React, { useState, useEffect, useCallback } from 'react';
@@ -44,7 +44,7 @@ const GST101Page = () => {
       console.log("DEBUG FRONTEND: Score value IMMEDIATELY before sending to backend:", correctAnswersCount);
 
       const response = await axios.post(
-        import.meta.env.VITE_API_URL + '/api/quiz/submit-quiz-result/',
+        'http://localhost:8000/api/quiz/submit-quiz-result/',
         {
           course_code: 'GST101',
           score: correctAnswersCount
@@ -94,7 +94,7 @@ const GST101Page = () => {
   // Robot 1: Get questions when component loads
   useEffect(() => {
     console.log("Robot 1: Starting to fetch questions...");
-    axios.get(import.meta.env.VITE_API_URL + '/api/quiz/questions/GST101/')
+    axios.get('http://localhost:8000/api/quiz/questions/GST101/')
       .then((response) => {
         console.log("Robot 1: Questions fetched successfully!", response.data);
         setQuestions(response.data);

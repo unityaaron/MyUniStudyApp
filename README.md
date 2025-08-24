@@ -4,15 +4,18 @@
 
 | React-Native Login Page | React-Native Home Page |
 | :---: | :---: |
-| ![Login Page Screenshot](https://github.com/unityaaron/MyUniStudyApp/issues/21#issue-3349511503) | ![Home Page Screenshot](https://github.com/unityaaron/MyUniStudyApp/issues/22) |
+| ![Login Page Screenshot](https://github.com/unityaaron/MyUniStudyApp/assets/65918712/e5e8e894-31e8-4235-857e-3754964177eb) | ![Home Page Screenshot](https://github.com/unityaaron/MyUniStudyApp/assets/65918712/1c97047f-8c31-40c2-9e86-161b9a1d9571) |
 
 | React-Native Quiz Page | React-Native About Page |
 | :---: | :---: |
-| ![Quiz Page Screenshot](https://github.com/unityaaron/MyUniStudyApp/issues/23) | ![About Page Screenshot](https://github.com/unityaaron/MyUniStudyApp/issues/24) |
+| ![Quiz Page Screenshot](https://github.com/unityaaron/MyUniStudyApp/assets/65918712/612711d5-9195-45c1-8408-54b2d56d4986) | ![About Page Screenshot](https://github.com/unityaaron/MyUniStudyApp/assets/65918712/e13f283d-e25f-4f81-8071-70014a01c40b) |
 
-| Cloud Deployment of React Frontend, Django Backend & Postgresql  | Live Cloud Deployment |
+
+### Cloud Deployment Screenshots
+
+| Cloud Deployment of React Frontend, Django Backend & Postgresql | Live Cloud Deployment |
 | :---: | :---: |
-| ![Cloud Deployment of React Frontend, Django Backend & Postgresql Screenshot](https://github.com/unityaaron/MyUniStudyApp/issues/30#issue-3349587810) | ![Live Cloud Deployment Screenshot](https://github.com/unityaaron/MyUniStudyApp/issues/31#issue-3349588358) |
+| ![Cloud Deployment of React Frontend, Django Backend & Postgresql](https://github.com/unityaaron/MyUniStudyApp/assets/65918712/f6227920-f5a0-4a6c-9226-e179e0f6c240) | ![Live Cloud Deployment](https://github.com/unityaaron/MyUniStudyApp/assets/65918712/a1b5d63f-9169-4251-897c-473d09a0614a) |
 
 **Project Summary**
 
@@ -27,6 +30,7 @@ As a Solo-Developer, I built a real, full-stack, cross-platform application with
 **Table of Contents**
 
 * [App Screenshots](#app-screenshots)
+* [Cloud Deployment Screenshots](#cloud-deployment-screenshots)
 * [Overview](#overview)
 * [Live Deployment](#live-deployment)
 * [Core Features](#core-features)
@@ -96,18 +100,18 @@ This project follows a clean, layered approach, separating the user interface fr
 **High-level diagram:**
 
 [React Web & React Native App]
-  ├─ UI Components / Screens
-  ├─ State Management (React Hooks)
-  ├─ Services (Axios for API calls)
-  └─ Storage (for tokens & data)
-           │
-           ▼
+  ├─ UI Components / Screens
+  ├─ State Management (React Hooks)
+  ├─ Services (Axios for API calls)
+  └─ Storage (for tokens & data)
+            │
+            ▼
 [Django REST API]
-  ├─ Auth (dj-rest-auth + JWT)
-  ├─ Quizzes & Marketplace Modules
-  └─ Admin & Announcements
-           │
-           ▼
+  ├─ Auth (dj-rest-auth + JWT)
+  ├─ Quizzes & Marketplace Modules
+  └─ Admin & Announcements
+            │
+            ▼
 [PostgreSQL 17]
 
 ---

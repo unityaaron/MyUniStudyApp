@@ -1,5 +1,16 @@
 # AAU GST App: A Full-Stack Web & Mobile Platform
 
+### App Screenshots
+
+| React-Native Login Page | React-Native Home Page |
+| :---: | :---: |
+| ![Login Page Screenshot](https://github.com/unityaaron/MyUniStudyApp/issues/21) | ![Home Page Screenshot](https://github.com/unityaaron/MyUniStudyApp/issues/22) |
+
+| React-Native Quiz Page | React-Native About Page |
+| :---: | :---: |
+| ![Quiz Page Screenshot](https://github.com/unityaaron/MyUniStudyApp/issues/23) | ![About Page Screenshot](https://github.com/unityaaron/MyUniStudyApp/issues/24) |
+
+
 **Project Summary**
 
 The AAU GST App is a modern, student-focused platform designed to streamline campus life at Ambrose Alli University. It provides essential services like secure user authentication, a dynamic buy-and-sell marketplace, and an educational quiz module for GST (General Studies) courses and other first-year courses. The project is a full-stack application consisting of a cross-platform mobile app (built with React Native) and a single-page web application (built with React), both powered by a unified Django backend API. This entire platform has been successfully deployed and is live in the cloud.
@@ -12,6 +23,7 @@ As a Solo-Developer, I built a real, full-stack, cross-platform application with
 
 **Table of Contents**
 
+* [App Screenshots](#app-screenshots)
 * [Overview](#overview)
 * [Live Deployment](#live-deployment)
 * [Core Features](#core-features)
@@ -81,18 +93,18 @@ This project follows a clean, layered approach, separating the user interface fr
 **High-level diagram:**
 
 [React Web & React Native App]
-  ├─ UI Components / Screens
-  ├─ State Management (React Hooks)
-  ├─ Services (Axios for API calls)
-  └─ Storage (for tokens & data)
-           │
-           ▼
+  ├─ UI Components / Screens
+  ├─ State Management (React Hooks)
+  ├─ Services (Axios for API calls)
+  └─ Storage (for tokens & data)
+           │
+           ▼
 [Django REST API]
-  ├─ Auth (dj-rest-auth + JWT)
-  ├─ Quizzes & Marketplace Modules
-  └─ Admin & Announcements
-           │
-           ▼
+  ├─ Auth (dj-rest-auth + JWT)
+  ├─ Quizzes & Marketplace Modules
+  └─ Admin & Announcements
+           │
+           ▼
 [PostgreSQL 17]
 
 ---

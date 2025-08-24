@@ -190,7 +190,7 @@ CORS_ALLOWED_ORIGINS = [
     "http://172.20.10.3:8000",
     "http://localhost:8081",
     "https://aau-gst-frontend.onrender.com",
-    "myuni-studyapp",
+    "https://myuni-studyapp.onrender.com",
 ]
 
 #THIS IS FOR REACT NATIVE LOGIN

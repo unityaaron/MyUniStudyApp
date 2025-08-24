@@ -52,7 +52,7 @@ const LeaderBoardScores = () => {
       textDecoration: 'none',
       padding: '8px 12px',
       borderRadius: '6px',
-      display: 'inline-block' }} to='/chm,101_leaderboard'>CHM 101</Link>
+      display: 'inline-block' }} to='/chm101_leaderboard'>CHM 101</Link>
         </li>
 
         <li>
